@@ -1,0 +1,18 @@
+# jekyll serve --baseurl "" --watch
+name: Juni 2014
+markdown: kramdown
+pygments: true
+exclude: [Gemfile, Gemfile.lock, .gitignore, README.md, COPYING, build.sh]
+baseurl: /juni2014
+# cdn_url: //assets.malmo.se/external/3.0-evolve
+cdn_url: //www.local.malmo.se:3001/assets
+permalink: /:categories/:title
+relative_permalinks: false
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
