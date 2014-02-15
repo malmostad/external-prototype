@@ -1,4 +1,7 @@
-juni2014
-========
+# Juni 2014
 
-Prototypes for external web content
+Mobile first prototypes for external web content. Developed with Jekyll.
+
+
+## License
+Released under AGPL version 3.
