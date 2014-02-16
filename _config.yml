@@ -1,7 +1,6 @@
 # jekyll serve --baseurl "" --watch
 name: Juni 2014
 markdown: kramdown
-pygments: true
 exclude: [Gemfile, Gemfile.lock, .gitignore, README.md, COPYING, build.sh]
 baseurl: /juni2014
 # cdn_url: //assets.malmo.se/external/3.0-evolve
@@ -14,5 +13,5 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  smart_quotes: rsquo,rsquo,rdquo,rdquo
   use_coderay: false
