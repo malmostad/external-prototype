@@ -11,11 +11,10 @@
     <link rel='icon' type='image/x-icon' href='{{ site.cdn_url }}/favicon.ico'/>
   </head>
   <body>
-  <div class='app-title'><a href='{{ site.baseurl }}/'>{{ site.name }}</a></div>
-    <article class='body-copy'>
+    <section class='main'>
       {{ content }}
-    </article>
-    <footer>Big foot</footer>
+    </section>
+    <footer class="bigfoot">Big foot</footer>
     <script src='{{ site.cdn_url }}/malmo.js'></script>
     <script src='{{ site.baseurl }}/javascripts/application.js'></script>
   </body>

@@ -3,8 +3,10 @@ layout: default
 title: Prototyp för extern webb
 permalink: /
 ---
+<article class="body-copy">
 
-# Juni 2014
-
-## Prototypvyer
-* [Bassida 1](/body-copy-1/)
+<h1>Prototypvyer</h1>
+<nav>
+  <li><a href="/body-copy-1/">Bassida 1</a></li>
+</nav>
+</article>

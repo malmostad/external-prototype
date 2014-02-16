@@ -1,0 +1,11 @@
+body {
+  max-width: 20em;
+  margin: 0; }
+
+section.main {
+  margin: 1em;
+  min-height: 12.5em; }
+
+footer.bigfoot {
+  margin: 2em 0 0;
+  min-height: 12.5em; }
