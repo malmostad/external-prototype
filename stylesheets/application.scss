@@ -1,0 +1,9 @@
+// ☺ (utf-8 hack for sass compile)
+
+// Dev: sass --watch stylesheets/application.scss
+// Before pushing to Github: ./build.sh
+
+@import "variables";
+@import "mixins";
+@import "functions";
+@import "main";
