@@ -1,0 +1,82 @@
+---
+layout: default
+title:  Artikel med formulär
+permalink: /body-copy-4/
+---
+
+<article class="body-copy">
+  <h1>Anmälan ditt barn till 5:2-menyn</h1>
+
+  <p class="preamble">
+    Preamble, sed ad homero similique. Et has everti oportere
+    adversarium, epicuri singulis persequeris ea qui, dissentiet
+    philosophia eu est. Possim timeam nec te. Alia enim ex usu, in
+    mazim consul duo.
+  </p>
+
+  <h2>Anmälan</h2>
+
+  <form action="{{ site.baseurl }}/body-copy-4/" method="post" class="form-horizontal malmo-form" onsubmit="if (window.confirm('Vill du se valideringsmeddelanden och formatering av svarstexter?')){document.location='http://malmostad.github.io/wag/forms/#form-validation'};return false">
+    <section>
+      <p class="help">
+        Fyll i uppgifterna på heder och samvete.
+      </p>
+
+      <div class="control-group">
+        <label for="person-name" class="control-label">Barnets namn:*</label>
+        <div class="controls">
+          <input type="text" id="person-name" name="person-name" class="input-wide" placeholder="t.ex. Frank Mosely"/>
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="social-security" class="control-label">Barnets personnummer:*</label>
+        <div class="controls">
+          <input type="text" id="social-security" name="social-security" class="input-wide" placeholder="t.ex. 031231-1234"/>
+          <p class="help-inline">
+            Använd formatet 031231-1234
+          </p>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="email" class="control-label">Min e-postadress:*</label>
+        <div class="controls">
+          <input type="email" id="email" name="email" class="input-wide" placeholder="t.ex. joan.doe@malmo.se"/>
+          <p class="help-inline">
+            Glöm inte apörat!
+          </p>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">Mitt barn äter följande:*</div>
+          <label class="checkbox inline">
+            <input type="checkbox" name="color-2" value="red"/>
+            5
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="color-2" value="green"/>
+            2
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="color-2" value="blue"/>
+            5:2
+          </label>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="comment" class="control-label">Kommentarer:*</label>
+        <div class="controls">
+          <textarea id="comment" name="comment" rows="5" class="input-wide" placeholder=""></textarea>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <input type="submit" value="Anmäl" class="btn btn-primary"/>
+        </div>
+      </div>
+    </section>
+  </form>
+</article>
