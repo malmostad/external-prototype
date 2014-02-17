@@ -13,3 +13,6 @@ article.body-copy img.full {
   width: 100%;
   height: auto;
   margin: 0 0 1em; }
+
+.btn.act-now {
+  margin: .7em 0 1.5em 0; }

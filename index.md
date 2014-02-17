@@ -6,9 +6,10 @@ permalink: /
 <article class="body-copy">
   <h1>Prototypvyer</h1>
   <nav>
-    <li><a href="{{ site.baseurl }}/body-copy-1/">Bassida, två listor</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-2/">Bassida, huvudbild</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-3/">Bassida, en tabell</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-4/">Bassida, formulär</a></li>
+    <li><a href="{{ site.baseurl }}/body-copy-1/">Bassida med några listor</a></li>
+    <li><a href="{{ site.baseurl }}/body-copy-2/">Bassida med huvudbild</a></li>
+    <li><a href="{{ site.baseurl }}/body-copy-3/">Bassida med en RWD-tabell</a></li>
+    <li><a href="{{ site.baseurl }}/body-copy-4/">Bassida med formulär</a></li>
+    <li><a href="{{ site.baseurl }}/body-copy-5/">Bassida med agera</a></li>
   </nav>
 </article>
