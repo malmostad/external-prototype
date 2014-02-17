@@ -9,5 +9,6 @@ permalink: /
 <nav>
   <li><a href="/body-copy-1/">Bassida</a></li>
   <li><a href="/body-copy-2/">Bassida, med en bild</a></li>
+  <li><a href="/body-copy-3/">Bassida, med en tabell</a></li>
 </nav>
 </article>
