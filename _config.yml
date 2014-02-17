@@ -3,7 +3,7 @@
 # coffee -c -w javascripts/application.coffee
 name: Juni 2014
 markdown: kramdown
-exclude: [Gemfile, Gemfile.lock, .gitignore, README.md, COPYING, build.sh]
+exclude: [Gemfile, Gemfile.lock, .gitignore, README.md, COPYING, build.sh, "*.scss", "*.coffee"]
 baseurl: /juni2014
 # cdn_url: //assets.malmo.se/external/3.0-evolve
 cdn_url: //www.local.malmo.se:3001/assets

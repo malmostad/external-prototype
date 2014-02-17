@@ -6,6 +6,9 @@
 #    sass --watch stylesheets/application.scss
 #    coffee -c -w javascripts/application.coffee
 
+echo "Removing last version"
+rm -rf _site
+
 echo "Converting and compressing Coffee files"
 cd javascripts
 coffee -c application.coffee
@@ -17,3 +20,6 @@ echo "Converting and compressing Sass files"
 cd ../stylesheets
 sass --style compressed application.scss:application.css
 cd ..
+
+echo "Building site"
+jekyll build
