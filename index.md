@@ -11,5 +11,7 @@ permalink: /
     <li><a href="{{ site.baseurl }}/body-copy-3/">Bassida med en RWD-tabell</a></li>
     <li><a href="{{ site.baseurl }}/body-copy-4/">Bassida med formulär</a></li>
     <li><a href="{{ site.baseurl }}/body-copy-5/">Bassida med agera</a></li>
+    <li><a href="{{ site.baseurl }}/body-copy-6/">Bassida med video</a></li>
+    <li><a href="{{ site.baseurl }}/body-copy-7/">Bassida med videolänk</a></li>
   </nav>
 </article>
