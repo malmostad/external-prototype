@@ -4,6 +4,17 @@ article.body-copy {
     height: auto;
     margin: 0 0 1em;
   }
+  .the-map {
+    display: none;
+    width: 100%;
+    height: emize(360);
+    margin: 1em 0;
+    border: $border;
+    iframe {
+      width: 100%;
+      height: emize(360);
+    }
+  }
 }
 .btn.act-now {
   margin: .7em 0 1.5em 0;

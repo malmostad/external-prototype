@@ -13,6 +13,15 @@ article.body-copy img.full {
   width: 100%;
   height: auto;
   margin: 0 0 1em; }
+article.body-copy .the-map {
+  display: none;
+  width: 100%;
+  height: 22.5em;
+  margin: 1em 0;
+  border: #cccccc 1px solid; }
+  article.body-copy .the-map iframe {
+    width: 100%;
+    height: 22.5em; }
 
 .btn.act-now {
   margin: .7em 0 1.5em 0; }
