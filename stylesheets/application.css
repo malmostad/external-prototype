@@ -22,6 +22,12 @@ article.body-copy .context-map {
   article.body-copy .context-map iframe {
     width: 100%;
     height: 22.5em; }
+article.body-copy .box-content p, article.body-copy .box-content li {
+  font-size: 0.875em; }
+article.body-copy .box-content ul {
+  margin-left: 0; }
+article.body-copy nav li {
+  margin-bottom: .7em; }
 
 .btn.act-now {
   margin: .7em 0 1.5em 0; }

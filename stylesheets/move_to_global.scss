@@ -15,6 +15,17 @@ article.body-copy {
       height: emize(360);
     }
   }
+  .box-content {
+    p, li {
+      font-size: emize(14);
+    }
+    ul {
+      margin-left: 0;
+    }
+  }
+  nav li {
+    margin-bottom: .7em;
+  }
 }
 .btn.act-now {
   margin: .7em 0 1.5em 0;
