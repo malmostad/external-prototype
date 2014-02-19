@@ -1,9 +1,3 @@
-header#malmo-masthead {
-  display: none; }
-
-body {
-  margin-top: 1em; }
-
 body {
   max-width: 20em; }
 
@@ -32,12 +26,26 @@ article.body-copy .context-map {
 .btn.act-now {
   margin: .7em 0 1.5em 0; }
 
-section.contact-us .contact-us-map {
-  display: none;
-  width: 100%;
-  height: 22.5em;
-  margin: 1em 0;
-  border: #cccccc 1px solid; }
-  section.contact-us .contact-us-map iframe {
+section.contact-us {
+  font-family: "XXXOpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
+  section.contact-us h1 {
+    font-size: 0.9375em;
+    border-bottom: #cccccc 1px solid;
+    padding-bottom: .2em;
+    margin: 2em 0 .4em; }
+  section.contact-us h2 {
+    font-size: 0.8125em;
+    font-weight: bold;
+    margin: 1em 0 0;
+    padding: 0; }
+  section.contact-us > div {
+    font-size: 0.8125em; }
+  section.contact-us .contact-us-map {
+    display: none;
     width: 100%;
-    height: 22.5em; }
+    height: 22.5em;
+    margin: 1em 0;
+    border: #cccccc 1px solid; }
+    section.contact-us .contact-us-map iframe {
+      width: 100%;
+      height: 22.5em; }

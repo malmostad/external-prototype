@@ -1,9 +1,19 @@
 section.contact-us {
+  font-family: $sansSerif;
   h1 {
-
+    font-size: emize(15, 16);
+    border-bottom: $border;
+    padding-bottom: .2em;
+    margin: 2em 0 .4em;
   }
   h2 {
-
+    font-size: emize(13, 16);
+    font-weight: bold;
+    margin: 1em 0 0;
+    padding: 0;
+  }
+  > div {
+    font-size: emize(13);
   }
   .contact-us-map {
     display: none;
