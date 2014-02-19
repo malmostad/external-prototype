@@ -1,0 +1,30 @@
+<section class="feedback">
+  <h1>Fick du hjälp av den här sidan?</h1>
+  <p class="trigger">Betygsätt sidan och lämna synpunkter</p>
+
+  <form action="{{ site.baseurl }}/" method="post" class="form-horizontal malmo-form">
+    <section>
+      <div class="control-group">
+        <div class="help">Hur bra var sidan på en skala?</div>
+          <label class="checkbox"><input type="checkbox" name="rating" value="Mycket bra"/>Mycket bra</label>
+          <label class="checkbox"><input type="checkbox" name="rating" value="Bra"/>Bra</label>
+          <label class="checkbox"><input type="checkbox" name="rating" value="Dålig"/>Dålig</label>
+          <label class="checkbox"><input type="checkbox" name="rating" value="Mycket dålig"/>Mycket dålig</label>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="comment" class="control-label">Synpunkter:</label>
+        <div class="controls">
+          <textarea id="comment" name="comment" rows="8" class="input-wide" placeholder=""></textarea>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <input type="submit" value="Skicka in dina synpunkter" class="btn btn-primary"/>
+        </div>
+      </div>
+    </section>
+  </form>
+</section>

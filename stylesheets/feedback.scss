@@ -1,0 +1,18 @@
+section.feedback {
+  h1 {
+    font-family: $sansSerif;
+    font-size: emize(15);
+    border-bottom: $border;
+    padding-bottom: .2em;
+    margin: 2em 0 .4em;
+  }
+  .trigger {
+    font-family: $sansSerif;
+    font-size: emize(13);
+    color: $linkColor;
+    cursor: pointer;
+  }
+  form {
+    display: none;
+  }
+}
