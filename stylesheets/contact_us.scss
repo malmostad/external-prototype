@@ -1,10 +1,8 @@
-article.body-copy {
-  img.full {
-    width: 100%;
-    height: auto;
-    margin: 0 0 1em;
+section.contact-us {
+  h1 {
+
   }
-  .context-map {
+  .contact-us-map {
     display: none;
     width: 100%;
     height: emize(360);
@@ -16,7 +14,3 @@ article.body-copy {
     }
   }
 }
-.btn.act-now {
-  margin: .7em 0 1.5em 0;
-}
-

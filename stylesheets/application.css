@@ -1,3 +1,9 @@
+header#malmo-masthead {
+  display: none; }
+
+body {
+  margin-top: 1em; }
+
 body {
   max-width: 20em; }
 
@@ -13,15 +19,25 @@ article.body-copy img.full {
   width: 100%;
   height: auto;
   margin: 0 0 1em; }
-article.body-copy .the-map {
+article.body-copy .context-map {
   display: none;
   width: 100%;
   height: 22.5em;
   margin: 1em 0;
   border: #cccccc 1px solid; }
-  article.body-copy .the-map iframe {
+  article.body-copy .context-map iframe {
     width: 100%;
     height: 22.5em; }
 
 .btn.act-now {
   margin: .7em 0 1.5em 0; }
+
+section.contact-us .contact-us-map {
+  display: none;
+  width: 100%;
+  height: 22.5em;
+  margin: 1em 0;
+  border: #cccccc 1px solid; }
+  section.contact-us .contact-us-map iframe {
+    width: 100%;
+    height: 22.5em; }
