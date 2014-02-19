@@ -68,16 +68,18 @@ section.contact-us {
       width: 100%;
       height: 22.5em; }
 
-section.feedback h1 {
-  font-family: "XXXOpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  font-size: 0.9375em;
-  border-bottom: #b5b5b5 1px solid;
-  padding-bottom: .2em;
-  margin: 2em 0 .4em; }
-section.feedback .trigger {
-  font-family: "XXXOpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  font-size: 0.8125em;
-  color: #0065a5;
-  cursor: pointer; }
-section.feedback form {
-  display: none; }
+section.feedback {
+  margin-top: 1em; }
+  section.feedback h1 {
+    font-family: "XXXOpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 0.9375em;
+    border-bottom: #b5b5b5 1px solid;
+    padding-bottom: .2em;
+    margin: 2em 0 .4em; }
+  section.feedback .trigger {
+    font-family: "XXXOpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 0.8125em;
+    color: #0065a5;
+    cursor: pointer; }
+  section.feedback form {
+    display: none; }
