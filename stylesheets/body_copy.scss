@@ -20,3 +20,19 @@ article.body-copy {
   margin: .7em 0 1.5em 0;
 }
 
+.share a span {
+  font-size: 1.6em;
+  margin-right: .3em;
+  &.icon-twitter, &.icon-twitter-sign {
+    color: #55acee;
+  }
+  &.icon-twitter {
+    font-size: 1.8em;
+  }
+  &.icon-facebook, &.icon-facebook-sign {
+    color: #4C66A4;
+  }
+  &.icon-google-plus, &.icon-google-plus {
+    color: #dd4b39;
+  }
+}

@@ -26,6 +26,18 @@ article.body-copy .context-map {
 .btn.act-now {
   margin: .7em 0 1.5em 0; }
 
+.share a span {
+  font-size: 1.6em;
+  margin-right: .3em; }
+  .share a span.icon-twitter, .share a span.icon-twitter-sign {
+    color: #55acee; }
+  .share a span.icon-twitter {
+    font-size: 1.8em; }
+  .share a span.icon-facebook, .share a span.icon-facebook-sign {
+    color: #4C66A4; }
+  .share a span.icon-google-plus, .share a span.icon-google-plus {
+    color: #dd4b39; }
+
 section.contact-us {
   font-family: "XXXOpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
   section.contact-us h1 {
