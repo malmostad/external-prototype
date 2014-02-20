@@ -115,8 +115,8 @@ nav.nav-page {
           font-size: .8em;
           content: "\f054";
           display: inline-block;
-          margin: .2em 0 0 .5em;
-          color: #bbb; }
+          margin: .25em 0 0 .5em;
+          color: #0075a5; }
     nav.nav-page > ul > li img {
       width: 100%;
       display: block;
@@ -134,14 +134,14 @@ nav.nav-page {
         color: black;
         font-size: 0.9375em;
         border-top: #b5b5b5 1px solid; }
-        nav.nav-page ul.popular > li > a:after {
+        nav.nav-page ul.popular > li > a:before {
           float: right;
           font-family: FontAwesome;
           font-size: .8em;
           content: "\f054";
           display: inline-block;
-          margin-top: .3em;
-          color: #bbb; }
+          margin-top: .35em;
+          color: #0075a5; }
     nav.nav-page ul.popular:before {
       font-size: 0.9375em;
       content: "Gå direkt till:";
