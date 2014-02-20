@@ -1,24 +1,34 @@
 nav.nav-page {
   font-family: $sansSerif;
-  > ul > li > a {
-    color: black;
-    font-size: emize(25);
-    font-weight: bold;
+  > ul > li {
+    margin: 0 0 2em;
+    > a {
+      color: black;
+      font-size: emize(25);
+      font-weight: bold;
+      line-height: 1;
+    }
   }
   ul.popular {
-    > li > a {
-      color: black;
-      font-size: emize(15);
+    margin: 1em 0;
+    > li {
+      margin-bottom: .5em;
+      > a {
+        color: black;
+        font-size: emize(15);
+      }
     }
     &:before {
-      font-size: emize(17);
+      font-size: emize(15);
       content: "Gå direkt till:";
       display: block;
+      margin-bottom: .5em;
     }
   }
   img {
     width: 100%;
+    display: block;
     height: auto;
-    margin: 0 0 1em;
+    margin: 0 0 .2em;
   }
 }

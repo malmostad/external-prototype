@@ -89,18 +89,27 @@ section.feedback {
 
 nav.nav-page {
   font-family: "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
-  nav.nav-page > ul > li > a {
-    color: black;
-    font-size: 1.5625em;
-    font-weight: bold; }
-  nav.nav-page ul.popular > li > a {
-    color: black;
-    font-size: 0.9375em; }
-  nav.nav-page ul.popular:before {
-    font-size: 1.0625em;
-    content: "Gå direkt till:";
-    display: block; }
+  nav.nav-page > ul > li {
+    margin: 0 0 2em; }
+    nav.nav-page > ul > li > a {
+      color: black;
+      font-size: 1.5625em;
+      font-weight: bold;
+      line-height: 1; }
+  nav.nav-page ul.popular {
+    margin: 1em 0; }
+    nav.nav-page ul.popular > li {
+      margin-bottom: .5em; }
+      nav.nav-page ul.popular > li > a {
+        color: black;
+        font-size: 0.9375em; }
+    nav.nav-page ul.popular:before {
+      font-size: 0.9375em;
+      content: "Gå direkt till:";
+      display: block;
+      margin-bottom: .5em; }
   nav.nav-page img {
     width: 100%;
+    display: block;
     height: auto;
-    margin: 0 0 1em; }
+    margin: 0 0 .2em; }
