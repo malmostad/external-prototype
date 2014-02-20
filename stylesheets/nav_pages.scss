@@ -22,9 +22,10 @@ nav.nav-page {
         &:before {
           float: right;
           font-family: $iconFont;
+          font-size: .8em;
           content: "\f054";
           display: inline-block;
-          margin: .1em 0 0 .5em;
+          margin: .2em 0 0 .5em;
           color: #bbb;
         }
       }
@@ -49,9 +50,10 @@ nav.nav-page {
         &:after {
           float: right;
           font-family: $iconFont;
+          font-size: .8em;
           content: "\f054";
           display: inline-block;
-          margin-top: .1em;
+          margin-top: .3em;
           color: #bbb;
         }
       }

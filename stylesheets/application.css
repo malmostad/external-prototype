@@ -112,9 +112,10 @@ nav.nav-page {
         nav.nav-page > ul > li > a h2:before {
           float: right;
           font-family: FontAwesome;
+          font-size: .8em;
           content: "\f054";
           display: inline-block;
-          margin: .1em 0 0 .5em;
+          margin: .2em 0 0 .5em;
           color: #bbb; }
     nav.nav-page > ul > li img {
       width: 100%;
@@ -136,9 +137,10 @@ nav.nav-page {
         nav.nav-page ul.popular > li > a:after {
           float: right;
           font-family: FontAwesome;
+          font-size: .8em;
           content: "\f054";
           display: inline-block;
-          margin-top: .1em;
+          margin-top: .3em;
           color: #bbb; }
     nav.nav-page ul.popular:before {
       font-size: 0.9375em;
