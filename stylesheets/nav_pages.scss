@@ -19,15 +19,6 @@ nav.nav-page {
         margin: 0;
         padding: .4em .3em .5em;
         border-top: $border;
-        &:before {
-          float: right;
-          font-family: $iconFont;
-          font-size: .8em;
-          content: "\f054";
-          display: inline-block;
-          margin: .25em 0 0 .5em;
-          color: $linkColor;
-        }
       }
     }
     img {
@@ -47,15 +38,6 @@ nav.nav-page {
         color: black;
         font-size: emize(15);
         border-top: $border;
-        &:before {
-          float: right;
-          font-family: $iconFont;
-          font-size: .8em;
-          content: "\f054";
-          display: inline-block;
-          margin-top: .35em;
-          color: $linkColor
-        }
       }
     }
     &:before {
@@ -73,5 +55,26 @@ nav.nav-page {
 nav.nav-page.no-images {
   > ul > li > a > h2 {
     border-top: none;
+  }
+}
+
+nav.nav-page.chevron {
+  > ul > li > a h2:before {
+    float: right;
+    font-family: $iconFont;
+    font-size: .8em;
+    content: "\f054";
+    display: inline-block;
+    margin: .25em 0 0 .5em;
+    color: $linkColor;
+  }
+  ul.popular > li > a:before {
+    float: right;
+    font-family: $iconFont;
+    font-size: .8em;
+    content: "\f054";
+    display: inline-block;
+    margin-top: .35em;
+    color: $linkColor
   }
 }

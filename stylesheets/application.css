@@ -109,14 +109,6 @@ nav.nav-page {
         margin: 0;
         padding: .4em .3em .5em;
         border-top: #b5b5b5 1px solid; }
-        nav.nav-page > ul > li > a h2:before {
-          float: right;
-          font-family: FontAwesome;
-          font-size: .8em;
-          content: "\f054";
-          display: inline-block;
-          margin: .25em 0 0 .5em;
-          color: #0075a5; }
     nav.nav-page > ul > li img {
       width: 100%;
       display: block;
@@ -134,14 +126,6 @@ nav.nav-page {
         color: black;
         font-size: 0.9375em;
         border-top: #b5b5b5 1px solid; }
-        nav.nav-page ul.popular > li > a:before {
-          float: right;
-          font-family: FontAwesome;
-          font-size: .8em;
-          content: "\f054";
-          display: inline-block;
-          margin-top: .35em;
-          color: #0075a5; }
     nav.nav-page ul.popular:before {
       font-size: 0.9375em;
       content: "Gå direkt till:";
@@ -153,3 +137,20 @@ nav.nav-page {
 
 nav.nav-page.no-images > ul > li > a > h2 {
   border-top: none; }
+
+nav.nav-page.chevron > ul > li > a h2:before {
+  float: right;
+  font-family: FontAwesome;
+  font-size: .8em;
+  content: "\f054";
+  display: inline-block;
+  margin: .25em 0 0 .5em;
+  color: #0075a5; }
+nav.nav-page.chevron ul.popular > li > a:before {
+  float: right;
+  font-family: FontAwesome;
+  font-size: .8em;
+  content: "\f054";
+  display: inline-block;
+  margin-top: .35em;
+  color: #0075a5; }
