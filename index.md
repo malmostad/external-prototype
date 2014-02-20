@@ -16,5 +16,6 @@ permalink: /
     <li><a href="{{ site.baseurl }}/body-copy-7/">Bassida med videolänk</a></li>
     <li><a href="{{ site.baseurl }}/body-copy-8/">Bassida med visa på karta i text</a></li>
     <li><a href="{{ site.baseurl }}/nav-page-1/">Navigeringssida med bilder</a></li>
+    <li><a href="{{ site.baseurl }}/nav-page-2/">Navigeringssida utan bilder</a></li>
   </nav>
 </article>

@@ -17,7 +17,7 @@ nav.nav-page {
         font-weight: bold;
         line-height: 1.1;
         margin: 0;
-        padding: .5em .3em .5em;
+        padding: .4em .3em .5em;
         border-top: $border;
         &:before {
           float: right;
@@ -65,5 +65,11 @@ nav.nav-page {
       padding: .2em .6em;
       border-top: $border;
     }
+  }
+}
+
+nav.nav-page.no-images {
+  > ul > li > a > h2 {
+    border-top: none;
   }
 }

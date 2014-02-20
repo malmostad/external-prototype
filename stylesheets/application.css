@@ -107,7 +107,7 @@ nav.nav-page {
         font-weight: bold;
         line-height: 1.1;
         margin: 0;
-        padding: .5em .3em .5em;
+        padding: .4em .3em .5em;
         border-top: #b5b5b5 1px solid; }
         nav.nav-page > ul > li > a h2:before {
           float: right;
@@ -148,3 +148,6 @@ nav.nav-page {
       color: black;
       padding: .2em .6em;
       border-top: #b5b5b5 1px solid; }
+
+nav.nav-page.no-images > ul > li > a > h2 {
+  border-top: none; }
