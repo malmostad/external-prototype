@@ -1,0 +1,24 @@
+nav.nav-page {
+  font-family: $sansSerif;
+  > ul > li > a {
+    color: black;
+    font-size: emize(25);
+    font-weight: bold;
+  }
+  ul.popular {
+    > li > a {
+      color: black;
+      font-size: emize(15);
+    }
+    &:before {
+      font-size: emize(17);
+      content: "Gå direkt till";
+      display: block;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 1em;
+  }
+}
