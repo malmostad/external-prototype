@@ -3,21 +3,29 @@ layout: default
 title: Prototyp för extern webb
 permalink: /
 ---
-<article class="body-copy">
+<section class="body-copy toc">
   <h1>Prototypvyer</h1>
+  <h2>Bassidor</h2>
   <nav>
-    <li><a href="{{ site.baseurl }}/body-copy-2/">Bassida, huvudbild</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-1/">Bassida, listor</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-9/">Bassida, fakta och läs mer</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-3/">Bassida, hz-skrollad tabell</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-4/">Bassida, formulär</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-5/">Bassida, ”agera”</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-6/">Bassida, inline video</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-7/">Bassida, videolänk</a></li>
-    <li><a href="{{ site.baseurl }}/body-copy-8/">Bassida, visa på karta i text</a></li>
-    <li><a href="{{ site.baseurl }}/nav-page-1/">Navigeringssida, bilder</a></li>
-    <li><a href="{{ site.baseurl }}/nav-page-3/">Navigeringssida, bilder + chevrons</a></li>
-    <li><a href="{{ site.baseurl }}/nav-page-2/">Navigeringssida, text</a></li>
-    <li><a href="{{ site.baseurl }}/nav-page-4/">Navigeringssida, text + chevrons</a></li>
+    <ul>
+      <li><a href="{{ site.baseurl }}/body-copy-2/">Huvudbild</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-1/">Listor</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-9/">Fakta och läs mer</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-3/">Hz-skrollad tabell</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-4/">Formulär</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-5/">”Agera”</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-6/">Inline video</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-7/">Videolänk</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-8/">Visa på karta i text</a></li>
+    </ul>
   </nav>
-</article>
+  <h2>Navigeringssidor</h2>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}/nav-page-1/">Bilder</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-3/">Bilder + chevrons</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-2/">Text</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-4/">Text + chevrons</a></li>
+    </ul>
+  </nav>
+</section>
