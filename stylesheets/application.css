@@ -98,7 +98,7 @@ nav.nav-page {
     font-size: 0.9375em; }
   nav.nav-page ul.popular:before {
     font-size: 1.0625em;
-    content: "Gå direkt till";
+    content: "Gå direkt till:";
     display: block; }
   nav.nav-page img {
     width: 100%;
