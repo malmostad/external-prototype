@@ -2,18 +2,17 @@ nav.nav-page.boxed {
   a:hover {
     text-decoration: underline;
   }
-  font-family: $sansSerif;
   > ul > li {
+    font-family: $sansSerif;
     background-color: $backgroundLight;
-    border: $border;
-    @include radius(4px);
     margin: 0 0 1.5em;
     padding: 0;
     > a {
       display: block;
       color: black;
+      border: $border;
       h2 {
-        font-size: emize(24, 16);
+        font-size: emize(22, 16);
         font-weight: bold;
         line-height: 1.1;
         margin: 0;
@@ -30,7 +29,11 @@ nav.nav-page.boxed {
         padding: .6em .6em;
         color: black;
         font-size: emize(15);
-        border-top: $border;
+        border: $border;
+        border-bottom: none;
+      }
+      &:last-child > a {
+        border-bottom: $border;
       }
     }
     &:before {
@@ -39,11 +42,45 @@ nav.nav-page.boxed {
       display: block;
       background-color: white;
       color: black;
-      padding: .2em .6em;
-      border-top: $border;
+      padding: .6em .6em .2em;
     }
   }
 }
+
+nav.nav-page.boxed.light {
+  > ul > li {
+    background-color: white;
+    margin-bottom: 2em;
+    > a {
+      color: $linkColor;
+    }
+    ul.popular li > a {
+      color: $linkColor;
+    }
+  }
+}
+nav.nav-page.boxed.light.full {
+  margin-left: -1em;
+  margin-right: -1em;
+  > ul > li > a {
+    border-left-width: 0;
+    border-right-width: 0;
+    h2 {
+      padding: .25em .8em .35em;
+    }
+  }
+  ul.popular {
+    > li > a {
+      border-left-width: 0;
+      border-right-width: 0;
+      padding: .6em 1.2em;
+    }
+    &:before {
+      padding: 1em 1.2em .2em;
+    }
+  }
+}
+
 
 nav.nav-page.boxed.chevron {
   > ul > li > a h2:before {
@@ -71,14 +108,14 @@ nav.nav-page.simple {
   a:hover {
     text-decoration: underline;
   }
-  font-family: $sansSerif;
   > ul > li {
+    font-family: $sansSerif;
     margin: 0 0 1.5em;
     padding: 0;
     > a {
       display: block;
       h2 {
-        font-size: emize(24, 16);
+        font-size: emize(22, 16);
         font-weight: bold;
         line-height: 1.1;
         margin: 0;
@@ -92,8 +129,8 @@ nav.nav-page.simple {
       margin: 0;
       > a {
         display: block;
-        padding: .5em 0;
-        font-size: emize(15);
+        padding: .45em 0;
+        font-size: emize(16);
       }
     }
     &:before {
@@ -101,7 +138,7 @@ nav.nav-page.simple {
       content: "Gå direkt till:";
       display: block;
       color: black;
-      padding: .2em 0 .5em ;
+      padding: .2em 0 .45em;
     }
   }
 }
