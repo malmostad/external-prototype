@@ -1,4 +1,4 @@
-nav.nav-page {
+nav.nav-page.boxed {
   a:hover {
     text-decoration: underline;
   }
@@ -18,14 +18,7 @@ nav.nav-page {
         line-height: 1.1;
         margin: 0;
         padding: .4em .3em .5em;
-        border-top: $border;
       }
-    }
-    img {
-      width: 100%;
-      display: block;
-      height: auto;
-      @include radius(4px 4px 0 0);
     }
   }
   ul.popular {
@@ -52,13 +45,7 @@ nav.nav-page {
   }
 }
 
-nav.nav-page.no-images {
-  > ul > li > a > h2 {
-    border-top: none;
-  }
-}
-
-nav.nav-page.chevron {
+nav.nav-page.boxed.chevron {
   > ul > li > a h2:before {
     float: right;
     font-family: $iconFont;
@@ -76,5 +63,45 @@ nav.nav-page.chevron {
     display: inline-block;
     margin-top: .35em;
     color: $linkColor
+  }
+}
+
+
+nav.nav-page.simple {
+  a:hover {
+    text-decoration: underline;
+  }
+  font-family: $sansSerif;
+  > ul > li {
+    margin: 0 0 1.5em;
+    padding: 0;
+    > a {
+      display: block;
+      h2 {
+        font-size: emize(24, 16);
+        font-weight: bold;
+        line-height: 1.1;
+        margin: 0;
+        padding: .4em 0 .5em;
+      }
+    }
+  }
+  ul.popular {
+    margin: 0;
+    > li {
+      margin: 0;
+      > a {
+        display: block;
+        padding: .5em 0;
+        font-size: emize(15);
+      }
+    }
+    &:before {
+      font-size: emize(15);
+      content: "Gå direkt till:";
+      display: block;
+      color: black;
+      padding: .2em 0 .5em ;
+    }
   }
 }
