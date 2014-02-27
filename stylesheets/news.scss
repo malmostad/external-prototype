@@ -1,0 +1,34 @@
+ul.news {
+  margin-top: 1em;
+  li {
+    display: block;
+    margin: 0 0 0em;
+    margin: 0 0 1em;
+  }
+  li.pushed {
+    margin: 0 0 2em;
+  }
+  h2 {
+    font-family: $sansSerif;
+    font-size: emize(15);
+    margin: 0;
+    a {
+      color: black;
+      span {
+        font-weight: normal;
+        font-style: italic;
+        display: block;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.alt {
+  ul.news h2 a {
+    color: $linkColor;
+  }
+}

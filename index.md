@@ -22,11 +22,11 @@ permalink: /
   <h2>Navigeringssidor</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/nav-page-1/">Enkel</a></li>
       <li><a href="{{ site.baseurl }}/nav-page-2/">Box</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-3/">Box med chevrons</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-1/">Enkel</a></li>
       <li><a href="{{ site.baseurl }}/nav-page-4/">Box, vit</a></li>
       <li><a href="{{ site.baseurl }}/nav-page-5/">Box, vit, fullbredd</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-3/">Box med chevrons</a></li>
     </ul>
   </nav>
 </section>

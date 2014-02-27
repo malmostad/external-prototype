@@ -199,3 +199,28 @@ nav.nav-page.simple ul.popular {
     display: block;
     color: black;
     padding: .2em 0 .45em; }
+
+ul.news {
+  margin-top: 1em; }
+  ul.news li {
+    display: block;
+    margin: 0 0 0em;
+    margin: 0 0 1em; }
+  ul.news li.pushed {
+    margin: 0 0 2em; }
+  ul.news h2 {
+    font-family: "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 0.9375em;
+    margin: 0; }
+    ul.news h2 a {
+      color: black; }
+      ul.news h2 a span {
+        font-weight: normal;
+        font-style: italic;
+        display: block; }
+  ul.news img {
+    width: 100%;
+    height: auto; }
+
+.alt ul.news h2 a {
+  color: #0075a5; }
