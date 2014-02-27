@@ -257,13 +257,15 @@ section.feedback .trigger {
   font-size: 0.875em; }
 
 nav.nav-page.boxed > ul > li > a h2 {
-  font-size: 1.625em;
+  font-size: 1.5625em;
   padding: .3em .3em .4em; }
 
 nav.nav-page.boxed ul.popular > li > a {
   padding: .55em .6em;
   font-size: 1em; }
 
+nav.nav-page.simple > ul > li > a h2 {
+  font-size: 1.5em; }
 nav.nav-page.simple ul.popular > li > a {
   padding: .45em 0;
   font-size: 1em; }

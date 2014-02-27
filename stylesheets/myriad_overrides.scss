@@ -59,7 +59,7 @@ section.feedback {
 }
 
 nav.nav-page.boxed > ul > li > a h2 {
-  font-size: emize(26);
+  font-size: emize(25);
   padding: .3em .3em .4em;
 }
 
@@ -69,6 +69,14 @@ nav.nav-page.boxed ul.popular > li > a {
 }
 
 nav.nav-page.simple {
+  > ul > li {
+    > a {
+      h2 {
+        font-size: emize(24, 16);
+      }
+    }
+  }
+
   ul.popular {
     > li {
       > a {
