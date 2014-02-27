@@ -221,3 +221,48 @@ ul.news {
   ul.news img {
     width: 100%;
     height: auto; }
+
+article.body-copy p.caption {
+  font-size: 0.875em;
+  line-height: 1.2;
+  margin-bottom: 1.2em; }
+article.body-copy p.preamble {
+  font-size: 1.0625em;
+  line-height: 1.2em; }
+
+@media (max-width: 1043em) {
+  #malmo-masthead #nav-triggers {
+    margin: .6em 1em 0 0; }
+    #malmo-masthead #nav-triggers a {
+      height: 2em;
+      font-size: 0.875em; }
+  #malmo-masthead #nav-menu-trigger a {
+    margin-right: 1.3em; }
+    #malmo-masthead #nav-menu-trigger a span {
+      padding-left: .3em;
+      font-size: 0.92857em; }
+  #malmo-masthead #nav-search-trigger a span {
+    padding-left: .3em;
+    font-size: 0.92857em; } }
+section.contact-us h1 {
+  font-size: 1em; }
+section.contact-us h2 {
+  font-size: 0.875em; }
+section.contact-us > div {
+  font-size: 0.875em; }
+
+section.feedback h1 {
+  font-size: 1em; }
+section.feedback .trigger {
+  font-size: 0.875em; }
+
+nav.nav-page.boxed > ul > li > a h2 {
+  font-size: 1.625em;
+  padding: .3em .3em .4em; }
+
+nav.nav-page.boxed ul.popular > li > a {
+  padding: .55em .6em;
+  font-size: 1em; }
+
+.malmo-form * {
+  font-size: 14px !important; }

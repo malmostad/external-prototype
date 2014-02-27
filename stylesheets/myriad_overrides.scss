@@ -1,0 +1,73 @@
+article.body-copy {
+  p.caption {
+    font-size: emize(14);
+    line-height: 1.2;
+    margin-bottom: 1.2em;
+  }
+  p.preamble {
+    font-size: emize(17, 16);
+    line-height: emize(18, 15);
+  }
+}
+
+@media (max-width: 1043em) {
+  #malmo-masthead {
+    #nav-triggers {
+      margin: .6em 1em 0 0;
+      a {
+        height: 2em;
+        font-size: emize(14, 16);
+      }
+    }
+    #nav-menu-trigger {
+      a {
+        margin-right: 1.3em;
+        span {
+          padding-left: .3em;
+          font-size: emize(13, 14);
+        }
+      }
+    }
+    #nav-search-trigger a {
+      span {
+        padding-left: .3em;
+        font-size: emize(13, 14);
+      }
+    }
+  }
+}
+
+section.contact-us {
+  h1 {
+    font-size: emize(16);
+  }
+  h2 {
+    font-size: emize(14);
+  }
+  > div {
+    font-size: emize(14);
+  }
+}
+
+section.feedback {
+  h1 {
+    font-size: emize(16);
+  }
+  .trigger {
+    font-size: emize(14);
+  }
+}
+
+nav.nav-page.boxed > ul > li > a h2 {
+  font-size: emize(26);
+  padding: .3em .3em .4em;
+}
+
+nav.nav-page.boxed ul.popular > li > a {
+  padding: .55em .6em;
+  font-size: emize(16);
+}
+
+.malmo-form * {
+  font-size: 14px !important;
+}
