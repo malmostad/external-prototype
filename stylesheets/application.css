@@ -263,6 +263,8 @@ nav.nav-page.boxed > ul > li > a h2 {
 nav.nav-page.boxed ul.popular > li > a {
   padding: .55em .6em;
   font-size: 1em; }
+nav.nav-page.boxed ul.popular:before {
+  font-size: 1em; }
 
 nav.nav-page.simple > ul > li > a h2 {
   font-size: 1.5em; }

@@ -63,9 +63,14 @@ nav.nav-page.boxed > ul > li > a h2 {
   padding: .3em .3em .4em;
 }
 
-nav.nav-page.boxed ul.popular > li > a {
-  padding: .55em .6em;
-  font-size: emize(16);
+nav.nav-page.boxed ul.popular {
+    > li > a {
+    padding: .55em .6em;
+    font-size: emize(16);
+  }
+  &:before {
+    font-size: emize(16);
+  }
 }
 
 nav.nav-page.simple {
