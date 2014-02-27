@@ -68,6 +68,23 @@ nav.nav-page.boxed ul.popular > li > a {
   font-size: emize(16);
 }
 
+nav.nav-page.simple {
+  ul.popular {
+    > li {
+      > a {
+        padding: .45em 0;
+        font-size: emize(16);
+      }
+    }
+    &:before {
+      font-size: emize(16);
+      padding: .2em 0 .45em;
+    }
+  }
+}
+
 .malmo-form * {
   font-size: 14px !important;
 }
+
+

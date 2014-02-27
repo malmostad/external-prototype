@@ -192,7 +192,7 @@ nav.nav-page.simple ul.popular {
     nav.nav-page.simple ul.popular > li > a {
       display: block;
       padding: .45em 0;
-      font-size: 1em; }
+      font-size: 0.9375em; }
   nav.nav-page.simple ul.popular:before {
     font-size: 0.9375em;
     content: "Gå direkt till:";
@@ -263,6 +263,13 @@ nav.nav-page.boxed > ul > li > a h2 {
 nav.nav-page.boxed ul.popular > li > a {
   padding: .55em .6em;
   font-size: 1em; }
+
+nav.nav-page.simple ul.popular > li > a {
+  padding: .45em 0;
+  font-size: 1em; }
+nav.nav-page.simple ul.popular:before {
+  font-size: 1em;
+  padding: .2em 0 .45em; }
 
 .malmo-form * {
   font-size: 14px !important; }
