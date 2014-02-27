@@ -52,7 +52,7 @@ section.toc ul {
   margin-left: 0; }
 
 section.contact-us {
-  font-family: "OpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
+  font-family: "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
   section.contact-us h1 {
     font-size: 0.9375em;
     border-bottom: #b5b5b5 1px solid;
@@ -80,13 +80,13 @@ section.contact-us {
 section.feedback {
   margin-top: 1em; }
   section.feedback h1 {
-    font-family: "OpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-family: "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 0.9375em;
     border-bottom: #b5b5b5 1px solid;
     padding-bottom: .2em;
     margin: 2em 0 .4em; }
   section.feedback .trigger {
-    font-family: "OpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-family: "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 0.8125em;
     color: #0075a5;
     cursor: pointer; }
@@ -96,7 +96,7 @@ section.feedback {
 nav.nav-page.boxed a:hover {
   text-decoration: underline; }
 nav.nav-page.boxed > ul > li {
-  font-family: "OpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+  font-family: "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
   background-color: #f0f0f0;
   margin: 0 0 1.5em;
   padding: 0; }
@@ -174,7 +174,7 @@ nav.nav-page.boxed.chevron ul.popular > li > a:before {
 nav.nav-page.simple a:hover {
   text-decoration: underline; }
 nav.nav-page.simple > ul > li {
-  font-family: "OpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+  font-family: "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
   margin: 0 0 1.5em;
   padding: 0; }
   nav.nav-page.simple > ul > li > a {
@@ -209,7 +209,7 @@ ul.news {
   ul.news li.pushed {
     margin: 0 0 2em; }
   ul.news h2 {
-    font-family: "OpenSans", "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-family: "myriad-pro", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 0.9375em;
     margin: 0; }
     ul.news h2 a {
