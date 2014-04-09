@@ -280,3 +280,14 @@ nav.page-nav {
     color: black; }
     nav.page-nav li a:hover {
       text-decoration: none; }
+
+nav.breadcrumbs {
+  margin: 1em 0 1em;
+  border-top: #b5b5b5 1px solid;
+  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
+  nav.breadcrumbs li a {
+    font-size: 0.8125em;
+    display: block;
+    color: black; }
+    nav.breadcrumbs li a:hover {
+      text-decoration: none; }
