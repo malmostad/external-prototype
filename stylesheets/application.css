@@ -283,7 +283,6 @@ nav.page-nav {
 
 nav.breadcrumbs {
   margin: 1em 0 1em;
-  border-top: #b5b5b5 1px solid;
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
   nav.breadcrumbs li a {
     font-size: 0.8125em;
