@@ -286,7 +286,7 @@ nav.breadcrumbs {
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
   nav.breadcrumbs li a {
     font-size: 0.8125em;
-    display: block;
+    display: inline-block;
     color: black; }
     nav.breadcrumbs li a:hover {
       text-decoration: none; }

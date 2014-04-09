@@ -3,7 +3,7 @@ nav.breadcrumbs {
   font-family: $sansSerif;
   li a {
     font-size: emize(13);
-    display: block;
+    display: inline-block;
     color: black;
     &:hover {
       text-decoration: none;
