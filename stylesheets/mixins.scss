@@ -12,13 +12,12 @@
   width: percentage($span / $total-columns) - (($total-columns / $span - 1) * $gutter / ($total-columns / $span));
 
   // No gutter to the right if the column is last in a row
-  @if not $last {
+  @if not $last and $span != $total-columns {
     margin-right: $gutter;
   } @else {
     margin-right: 0;
   }
   @if $span == $total-columns {
-    margin-right: 0;
     float: none;
   }
 

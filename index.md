@@ -3,7 +3,7 @@ layout: default
 title: Prototyp för extern webb
 permalink: /
 ---
-<!-- <section class="body-copy toc">
+<section class="body-copy toc">
   <h1>Prototypvyer</h1>
   <h2>Bassidor</h2>
   <nav>
@@ -30,4 +30,4 @@ permalink: /
     </ul>
   </nav>
 </section>
- -->
+

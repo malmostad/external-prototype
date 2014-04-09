@@ -1,0 +1,15 @@
+nav.page-nav {
+  margin: 1em 0 2em;
+  border-top: $border;
+  font-family: $sansSerif;
+  li a {
+    font-size: emize(15);
+    display: block;
+    padding: .8em 0 .8em;
+    border-bottom: $border;
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

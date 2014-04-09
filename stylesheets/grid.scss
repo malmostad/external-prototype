@@ -1,12 +1,33 @@
-body {
+section.main {
+  margin: 1em auto;
+  max-width: 45em;
+  padding: 0 1em;
 }
 
-section.main {
-  margin: 1em;
-  min-height: emize(300);
+article.body-copy {
+  @include columns(8, false, 5%);
+}
+
+nav.page-nav {
+  @include columns(4, true, 5%);
+}
+
+// One column grid
+@media (max-width: 42em) {
+  section.main {
+    max-width: 30em;
+  }
+  article.body-copy, nav.page-nav {
+    @include columns(12);
+  }
+}
+
+.news, .feedback, .share, .contact-us {
+  @include columns(8);
 }
 
 footer.bigfoot {
+  @include columns(12);
   margin: 2em 0 0;
-  min-height: emize(800);
+  min-height: emize(400);
 }
