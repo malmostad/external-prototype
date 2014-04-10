@@ -6,6 +6,7 @@ section.main {
 
 article.body-copy {
   @include columns(8, false, 6%);
+  margin-bottom: 1em;
 }
 
 nav.page-nav {
@@ -23,7 +24,7 @@ nav.page-nav {
 }
 
 .news, .feedback, .share, .contact-us {
-  @include columns(8);
+  @include columns(12);
 }
 
 footer.bigfoot {
