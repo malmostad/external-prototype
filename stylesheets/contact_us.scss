@@ -18,12 +18,18 @@ section.contact-us {
   .contact-us-map {
     display: none;
     width: 100%;
-    height: emize(360);
+    height: 40em;
     margin: 1em 0;
     border: $border;
     iframe {
       width: 100%;
-      height: emize(360);
+      height: 40em;
+    }
+    @media (max-width: 40em) {
+      height: 30em;
+      iframe {
+        height: 30em;
+      }
     }
   }
   .icon-phone {
