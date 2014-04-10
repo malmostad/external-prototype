@@ -3,7 +3,7 @@
   $(function() {
     $("section.feedback .trigger").click(function() {
       $(this).hide();
-      $("section.feedback form").show();
+      $("section.feedback form").slideDown(100);
       return $('html, body').animate({
         scrollTop: $("section.feedback").offset().top - 45
       }, 100);
@@ -11,7 +11,7 @@
     $("section.contact-us .write-to-us").click(function(event) {
       event.preventDefault();
       $(this).hide();
-      $("section.contact-us form").show();
+      $("section.contact-us form").slideDown(100);
       return $('html, body').animate({
         scrollTop: $("section.contact-us form").offset().top - 50
       }, 100);

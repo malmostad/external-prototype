@@ -5,7 +5,7 @@ $ ->
   # Dummy stuff
   $("section.feedback .trigger").click ->
     $(@).hide()
-    $("section.feedback form").show()
+    $("section.feedback form").slideDown(100)
     $('html, body').animate
       scrollTop: $("section.feedback").offset().top - 45
     , 100
@@ -13,7 +13,7 @@ $ ->
   $("section.contact-us .write-to-us").click (event) ->
     event.preventDefault()
     $(@).hide()
-    $("section.contact-us form").show()
+    $("section.contact-us form").slideDown(100)
     $('html, body').animate
       scrollTop: $("section.contact-us form").offset().top - 50
     , 100
