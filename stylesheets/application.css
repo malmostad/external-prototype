@@ -1,7 +1,7 @@
 @charset "UTF-8";
 section.main {
   margin: 1em auto;
-  max-width: 48em;
+  max-width: 50em;
   padding: 0 1em; }
 
 article.body-copy {
@@ -23,9 +23,9 @@ nav.page-nav {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media (max-width: 42em) {
+@media (max-width: 46em) {
   section.main {
-    max-width: 30em; }
+    max-width: 32em; }
 
   article.body-copy, nav.page-nav {
     width: 100%;
