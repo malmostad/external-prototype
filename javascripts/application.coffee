@@ -4,7 +4,12 @@
 $ ->
   # Dummy stuff
   $("section.feedback .trigger").click ->
-    $("section.feedback form").toggle()
+    $("section.feedback form").show()
+    $('html, body').animate
+      scrollTop: $("section.feedback").offset().top - 45
+    , 100
+    $(@).hide()
+
 
   $("section.feedback form").submit (event) ->
     event.preventDefault()

@@ -2,7 +2,11 @@
 (function() {
   $(function() {
     $("section.feedback .trigger").click(function() {
-      return $("section.feedback form").toggle();
+      $("section.feedback form").show();
+      $('html, body').animate({
+        scrollTop: $("section.feedback").offset().top - 45
+      }, 100);
+      return $(this).hide();
     });
     $("section.feedback form").submit(function(event) {
       event.preventDefault();
