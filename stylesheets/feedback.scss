@@ -8,10 +8,7 @@ section.feedback {
     margin: 2em 0 .4em;
   }
   .trigger {
-    font-family: $sansSerif;
-    font-size: emize(13);
-    color: $linkColor;
-    cursor: pointer;
+    margin-bottom: 1em;
   }
   form {
     display: none;
