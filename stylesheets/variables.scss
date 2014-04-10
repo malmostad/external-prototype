@@ -19,9 +19,8 @@ $backgroundLightHover: darken($backgroundLight, 5%);
 $backgroundDark: #888;
 $backgroundDarker: darken($backgroundDark, 34%);
 
-// Masthead with hover effects
-$mastheadBackground: #004679;
-$mastheadBackgroundHighlight: desaturate(lighten($mastheadBackground, 12%), 25%);
+// Masthead
+$mastheadBackground: #00B5E2;
 $mastheadColor: white;
 
 // Masthead in collapsed mode
