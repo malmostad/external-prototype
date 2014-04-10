@@ -27,10 +27,7 @@ nav.page-nav {
 }
 
 xnav.page-nav {
-  a {
-    color: black;
-  }
-
+  margin: 0 0 1em;
   h1 {
     font-size: emize(15);
     font-weight: bold;
@@ -51,7 +48,7 @@ xnav.page-nav {
     margin: 0 0 1em;
     font-size: emize(13);
   }
-  li:first-child {
-    margin-top: 0;
+  a {
+    color: black;
   }
 }
