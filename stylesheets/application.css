@@ -131,7 +131,7 @@ section.contact-us {
         section.contact-us .contact-us-map iframe {
           height: 30em; } }
   section.contact-us .icon-phone {
-    color: #0080a5; }
+    color: #007896; }
 
 section.feedback {
   margin-top: 1em; }
@@ -188,9 +188,9 @@ nav.nav-page.boxed.light > ul > li {
   background-color: white;
   margin-bottom: 2em; }
   nav.nav-page.boxed.light > ul > li > a {
-    color: #0080a5; }
+    color: #007896; }
   nav.nav-page.boxed.light > ul > li ul.popular li > a {
-    color: #0080a5; }
+    color: #007896; }
 
 nav.nav-page.boxed.light.full {
   margin-left: -1em;
@@ -214,7 +214,7 @@ nav.nav-page.boxed.chevron > ul > li > a h2:before {
   content: "\f054";
   display: inline-block;
   margin: .25em 0 0 .5em;
-  color: #0080a5; }
+  color: #007896; }
 nav.nav-page.boxed.chevron ul.popular > li > a:before {
   float: right;
   font-family: FontAwesome;
@@ -222,7 +222,7 @@ nav.nav-page.boxed.chevron ul.popular > li > a:before {
   content: "\f054";
   display: inline-block;
   margin-top: .35em;
-  color: #0080a5; }
+  color: #007896; }
 
 nav.nav-page.simple a:hover {
   text-decoration: underline; }

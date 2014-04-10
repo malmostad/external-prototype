@@ -2,7 +2,7 @@
 // with green links in content
 $bodyBackground: white;
 $bodyColor: black;
-$linkColor: #0080A5;
+$linkColor: #007896;
 
 // Borders around boxes etc.
 $borderColor: #b5b5b5;
@@ -11,6 +11,10 @@ $border: $borderColor 1px solid;
 $borderColorDark: darken($borderColor, 20%);
 $borderDark: $borderColorDark 1px solid;
 
+// Masthead
+$mastheadBackground: #00B5E2;
+$mastheadColor: white;
+
 // Background colors
 $backgroundLight: #f0f0f0;
 // Use it for hover effect when the area is linked
@@ -18,20 +22,6 @@ $backgroundLightHover: darken($backgroundLight, 5%);
 // Background colors used with inverted text
 $backgroundDark: #888;
 $backgroundDarker: darken($backgroundDark, 34%);
-
-// Masthead
-$mastheadBackground: #00B5E2;
-$mastheadColor: white;
-
-// Masthead in collapsed mode
-$narrowNavBackground: #5a5a5a;
-$narrowNavBackgroundHiglight: #000;
-$narrowNavBorderColor: white;
-$narrowNavBottomBorderColor: none;
-$narrowNavBackground: $backgroundLight;
-$narrowNavBackgroundHiglight: $backgroundLightHover;
-$narrowNavColor: black;
-$narrowNavBorderColor: $borderColor;
 
 // Title bars for boxes
 $boxTitleBackground: $backgroundDarker;
