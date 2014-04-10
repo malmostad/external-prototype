@@ -4,14 +4,21 @@
 $ ->
   # Dummy stuff
   $("section.feedback .trigger").click ->
+    $(@).hide()
     $("section.feedback form").show()
     $('html, body').animate
       scrollTop: $("section.feedback").offset().top - 45
     , 100
+
+  $("section.contact-us .write-to-us").click (event) ->
+    event.preventDefault()
     $(@).hide()
+    $("section.contact-us form").show()
+    $('html, body').animate
+      scrollTop: $("section.contact-us form").offset().top - 50
+    , 100
 
-
-  $("section.feedback form").submit (event) ->
+  $("section.feedback form, section.contact-us form").submit (event) ->
     event.preventDefault()
     if window.confirm('Vill du se design av svarstexter till användaren?')
       document.location='http://malmostad.github.io/wag/messages/'
@@ -20,3 +27,4 @@ $ ->
     event.preventDefault()
     if window.confirm('Vill du se design av valideringsmeddelanden?')
       document.location='http://malmostad.github.io/wag/forms/#form-validation'
+

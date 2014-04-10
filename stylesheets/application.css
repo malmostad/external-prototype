@@ -112,7 +112,10 @@ section.contact-us {
     margin: 1em 0 0;
     padding: 0; }
   section.contact-us > div {
-    font-size: 0.8125em; }
+    font-size: 0.8125em;
+    line-height: 1.7; }
+  section.contact-us form {
+    display: none; }
   section.contact-us .contact-us-map {
     display: none;
     width: 100%;
@@ -139,7 +142,7 @@ section.feedback {
     padding-bottom: .2em;
     margin: 1em 0 .4em; }
   section.feedback .trigger {
-    margin-bottom: 1em; }
+    margin: 1em 0; }
   section.feedback form {
     display: none; }
 

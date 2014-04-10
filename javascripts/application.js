@@ -2,13 +2,21 @@
 (function() {
   $(function() {
     $("section.feedback .trigger").click(function() {
+      $(this).hide();
       $("section.feedback form").show();
-      $('html, body').animate({
+      return $('html, body').animate({
         scrollTop: $("section.feedback").offset().top - 45
       }, 100);
-      return $(this).hide();
     });
-    $("section.feedback form").submit(function(event) {
+    $("section.contact-us .write-to-us").click(function(event) {
+      event.preventDefault();
+      $(this).hide();
+      $("section.contact-us form").show();
+      return $('html, body').animate({
+        scrollTop: $("section.contact-us form").offset().top - 50
+      }, 100);
+    });
+    $("section.feedback form, section.contact-us form").submit(function(event) {
       event.preventDefault();
       if (window.confirm('Vill du se design av svarstexter till användaren?')) {
         return document.location = 'http://malmostad.github.io/wag/messages/';
