@@ -1,4 +1,4 @@
-nav.page-nav {
+xnav.page-nav {
   margin: 0 0 2em;
   font-family: $sansSerif;
   h1 {
@@ -50,5 +50,31 @@ xnav.page-nav {
   }
   a {
     color: black;
+  }
+}
+
+nav.page-nav {
+  margin: 0 0 2em;
+  font-family: $sansSerif;
+  h1 {
+    font-size: emize(15);
+    font-weight: bold;
+    line-height: 1;
+    font-family: $sansSerif;
+    border-bottom: $border;
+    margin: .6em 0 0em;
+    padding: 0 .4em .4em;
+  }
+  li a {
+    font-size: emize(15);
+    display: block;
+    padding: .8em .4em .8em;
+    border-bottom: $border;
+    color: black;
+    margin: 0;
+    &:hover {
+      background: $backgroundLight;
+      text-decoration: none;
+    }
   }
 }

@@ -15,7 +15,7 @@ $ ->
     $(@).hide()
     $("section.contact-us form").slideDown(100)
     $('html, body').animate
-      scrollTop: $("section.contact-us form").offset().top - 50
+      scrollTop: $("section.contact-us form").offset().top - 45
     , 100
 
   $("section.feedback form, section.contact-us form").submit (event) ->
