@@ -19,7 +19,7 @@ permalink: /
       <li><a href="{{ site.baseurl }}/body-copy-8/">Visa på karta i text</a></li>
     </ul>
   </nav>
-<!--   <h2>Navigeringssidor</h2>
+  <h2>Navigeringssidor</h2>
   <nav>
     <ul>
       <li><a href="{{ site.baseurl }}/nav-page-2/">Box med balkar</a></li>
@@ -29,5 +29,5 @@ permalink: /
       <li><a href="{{ site.baseurl }}/nav-page-5/">Vit med fullbreddsbalkar</a></li>
     </ul>
   </nav>
- --></section>
+</section>
 
