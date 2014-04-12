@@ -7,8 +7,9 @@
 
 nav.nav-page {
   > h1 {
+    // font-family: $sansSerif;
+    // font-weight: bold;
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 800;
     letter-spacing: -1px;
     font-size: emize(32, 16);
