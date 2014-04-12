@@ -144,8 +144,21 @@ section.feedback {
   section.feedback form {
     display: none; }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
 nav.nav-page {
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
+  nav.nav-page > h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 2em;
+    line-height: 1.1;
+    margin: .1em 0 .3em; }
   nav.nav-page > ul {
     margin: 1.5em 0 0; }
     nav.nav-page > ul > li {
@@ -196,7 +209,7 @@ nav.nav-page {
           -moz-box-sizing: border-box;
           box-sizing: border-box; } }
   nav.nav-page > ul > li li {
-    font-size: 0.9375em; }
+    font-size: 0.8125em; }
   nav.nav-page h2 {
     font-size: 0.9375em;
     font-weight: bold;
@@ -270,10 +283,10 @@ nav.page-nav {
     line-height: 1;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     border-bottom: #b5b5b5 1px solid;
-    margin: .6em 0 0em;
-    padding: 0 .4em .3em; }
+    margin: .6em 0 0;
+    padding: 0 .4em .4em; }
   nav.page-nav li a {
-    font-size: 0.9375em;
+    font-size: 0.8125em;
     display: block;
     padding: .6em .4em .6em;
     border-bottom: #b5b5b5 1px solid;

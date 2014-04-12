@@ -1,4 +1,21 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
 nav.nav-page {
+  > h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: emize(32, 16);
+    line-height: 1.1;
+    margin: .1em 0 .3em;
+  }
+
   font-family: $sansSerif;
   > ul {
     margin: 1.5em 0 0;
@@ -24,7 +41,7 @@ nav.nav-page {
   }
 
   > ul > li li {
-    font-size: emize(15);
+    font-size: emize(13);
   }
 
   h2 {
