@@ -1,17 +1,38 @@
 nav.nav-page {
-  margin: 0 0 2em;
   font-family: $sansSerif;
-  h1 {
+  margin: 2em 0 0;
+  > ul > li {
+    margin-bottom: 2em;
+    @media (min-width: 52em) {
+      @include columns(4, false, 4%);
+      &:nth-child(3n) {
+        @include columns(4, true, 4%);
+      }
+    }
+    @media (max-width: 52em) and (min-width: 30em) {
+      @include columns(6, false, 4%);
+      &:nth-child(2n) {
+        @include columns(6, true, 4%);
+      }
+    }
+    @media (max-width: 30em) {
+      @include columns(12);
+    }
+  }
+
+  > ul > li {
+    border-top: $border;
+    li {
+      font-size: emize(15);
+    }
+  }
+  h2 {
     font-size: emize(15);
     font-weight: bold;
-    line-height: 1;
-    font-family: $sansSerif;
-    border-bottom: $border;
-    margin: .6em 0 0em;
-    padding: 0 .4em .3em;
+    margin: 0;
+    padding: 0;
   }
   li a {
-    font-size: emize(15);
     display: block;
     padding: .6em .4em .6em;
     border-bottom: $border;

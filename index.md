@@ -22,11 +22,7 @@ permalink: /
   <h2>Navigeringssidor</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/nav-page-2/">Box med balkar</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-3/">Box med balkar och chevrons</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-1/">Ren design</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-4/">Box, vit med balkar</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-5/">Vit med fullbreddsbalkar</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page/">Navigeringssida</a></li>
     </ul>
   </nav>
 </section>

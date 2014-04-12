@@ -145,18 +145,64 @@ section.feedback {
     display: none; }
 
 nav.nav-page {
-  margin: 0 0 2em;
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
-  nav.nav-page h1 {
+  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+  margin: 2em 0 0; }
+  nav.nav-page > ul > li {
+    margin-bottom: 2em; }
+    @media (min-width: 52em) {
+      nav.nav-page > ul > li {
+        width: 30.66667%;
+        margin-right: 4%;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        nav.nav-page > ul > li:nth-child(3n) {
+          width: 30.66667%;
+          margin-right: 0;
+          float: left;
+          -ms-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; } }
+    @media (max-width: 52em) and (min-width: 30em) {
+      nav.nav-page > ul > li {
+        width: 48%;
+        margin-right: 4%;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        nav.nav-page > ul > li:nth-child(2n) {
+          width: 48%;
+          margin-right: 0;
+          float: left;
+          -ms-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; } }
+    @media (max-width: 30em) {
+      nav.nav-page > ul > li {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; } }
+  nav.nav-page > ul > li {
+    border-top: #b5b5b5 1px solid; }
+    nav.nav-page > ul > li li {
+      font-size: 0.9375em; }
+  nav.nav-page h2 {
     font-size: 0.9375em;
     font-weight: bold;
-    line-height: 1;
-    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    border-bottom: #b5b5b5 1px solid;
-    margin: .6em 0 0em;
-    padding: 0 .4em .3em; }
+    margin: 0;
+    padding: 0; }
   nav.nav-page li a {
-    font-size: 0.9375em;
     display: block;
     padding: .6em .4em .6em;
     border-bottom: #b5b5b5 1px solid;
