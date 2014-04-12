@@ -145,58 +145,58 @@ section.feedback {
     display: none; }
 
 nav.nav-page {
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  margin: 2em 0 0; }
-  nav.nav-page > ul > li {
-    margin-bottom: 2em; }
-    @media (min-width: 52em) {
-      nav.nav-page > ul > li {
-        width: 30.66667%;
-        margin-right: 4%;
-        float: left;
-        -ms-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-        nav.nav-page > ul > li:nth-child(3n) {
+  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
+  nav.nav-page > ul {
+    margin: 1.5em 0 0; }
+    nav.nav-page > ul > li {
+      margin-bottom: 2em;
+      border-top: #b5b5b5 1px solid; }
+      @media (min-width: 52em) {
+        nav.nav-page > ul > li {
           width: 30.66667%;
-          margin-right: 0;
+          margin-right: 4%;
           float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
-          box-sizing: border-box; } }
-    @media (max-width: 52em) and (min-width: 30em) {
-      nav.nav-page > ul > li {
-        width: 48%;
-        margin-right: 4%;
-        float: left;
-        -ms-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-        nav.nav-page > ul > li:nth-child(2n) {
+          box-sizing: border-box; }
+          nav.nav-page > ul > li:nth-child(3n) {
+            width: 30.66667%;
+            margin-right: 0;
+            float: left;
+            -ms-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; } }
+      @media (max-width: 52em) and (min-width: 30em) {
+        nav.nav-page > ul > li {
           width: 48%;
+          margin-right: 4%;
+          float: left;
+          -ms-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+          nav.nav-page > ul > li:nth-child(2n) {
+            width: 48%;
+            margin-right: 0;
+            float: left;
+            -ms-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; } }
+      @media (max-width: 30em) {
+        nav.nav-page > ul > li {
+          width: 100%;
           margin-right: 0;
+          float: none;
           float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           box-sizing: border-box; } }
-    @media (max-width: 30em) {
-      nav.nav-page > ul > li {
-        width: 100%;
-        margin-right: 0;
-        float: none;
-        float: left;
-        -ms-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; } }
-  nav.nav-page > ul > li {
-    border-top: #b5b5b5 1px solid; }
-    nav.nav-page > ul > li li {
-      font-size: 0.9375em; }
+  nav.nav-page > ul > li li {
+    font-size: 0.9375em; }
   nav.nav-page h2 {
     font-size: 0.9375em;
     font-weight: bold;
@@ -207,10 +207,37 @@ nav.nav-page {
     padding: .6em .4em .6em;
     border-bottom: #b5b5b5 1px solid;
     color: black;
-    margin: 0; }
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
     nav.nav-page li a:hover {
       background: #f0f0f0;
       text-decoration: none; }
+  nav.nav-page .banner {
+    position: relative; }
+    nav.nav-page .banner img {
+      width: 100%;
+      height: auto; }
+    nav.nav-page .banner div {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 2em;
+      width: 12em;
+      padding: .8em 1em 1em;
+      color: white; }
+      nav.nav-page .banner div h1 {
+        font-size: 0.9375em;
+        margin: 0 0 .3em; }
+      nav.nav-page .banner div p {
+        font-size: 0.8125em;
+        margin: 0; }
+    nav.nav-page .banner div.overlay {
+      z-index: 1;
+      opacity: 0.5;
+      background: black;
+      height: 9.81em; }
 
 ul.news {
   margin-top: 1em; }

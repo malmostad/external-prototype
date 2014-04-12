@@ -22,7 +22,8 @@ permalink: /
   <h2>Navigeringssidor</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/nav-page/">Navigeringssida</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-1/">Navigeringssida</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-2/">Navigeringssida med banner</a></li>
     </ul>
   </nav>
 </section>
