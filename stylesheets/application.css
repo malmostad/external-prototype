@@ -1,4 +1,3 @@
-@charset "UTF-8";
 section.main {
   margin: 1em auto;
   max-width: 50em;
@@ -145,112 +144,27 @@ section.feedback {
   section.feedback form {
     display: none; }
 
-nav.nav-page.boxed a:hover {
-  text-decoration: underline; }
-nav.nav-page.boxed > ul > li {
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  background-color: #f0f0f0;
-  margin: 0 0 1.5em;
-  padding: 0; }
-  nav.nav-page.boxed > ul > li > a {
-    display: block;
-    color: black;
-    border: #b5b5b5 1px solid; }
-    nav.nav-page.boxed > ul > li > a h2 {
-      font-size: 1.375em;
-      font-weight: bold;
-      line-height: 1.1;
-      margin: 0;
-      padding: .4em .3em .5em; }
-nav.nav-page.boxed ul.popular {
-  margin: 0; }
-  nav.nav-page.boxed ul.popular > li {
-    margin: 0; }
-    nav.nav-page.boxed ul.popular > li > a {
-      display: block;
-      padding: .6em .6em;
-      color: black;
-      font-size: 0.9375em;
-      border: #b5b5b5 1px solid;
-      border-bottom: none; }
-    nav.nav-page.boxed ul.popular > li:last-child > a {
-      border-bottom: #b5b5b5 1px solid; }
-  nav.nav-page.boxed ul.popular:before {
+nav.nav-page {
+  margin: 0 0 2em;
+  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
+  nav.nav-page h1 {
     font-size: 0.9375em;
-    content: "Gå direkt till:";
-    display: block;
-    background-color: white;
-    color: black;
-    padding: .6em .6em .2em; }
-
-nav.nav-page.boxed.light > ul > li {
-  background-color: white;
-  margin-bottom: 2em; }
-  nav.nav-page.boxed.light > ul > li > a {
-    color: #007896; }
-  nav.nav-page.boxed.light > ul > li ul.popular li > a {
-    color: #007896; }
-
-nav.nav-page.boxed.light.full {
-  margin-left: -1em;
-  margin-right: -1em; }
-  nav.nav-page.boxed.light.full > ul > li > a {
-    border-left-width: 0;
-    border-right-width: 0; }
-    nav.nav-page.boxed.light.full > ul > li > a h2 {
-      padding: .25em .8em .35em; }
-  nav.nav-page.boxed.light.full ul.popular > li > a {
-    border-left-width: 0;
-    border-right-width: 0;
-    padding: .6em 1.2em; }
-  nav.nav-page.boxed.light.full ul.popular:before {
-    padding: 1em 1.2em .2em; }
-
-nav.nav-page.boxed.chevron > ul > li > a h2:before {
-  float: right;
-  font-family: FontAwesome;
-  font-size: .8em;
-  content: "\f054";
-  display: inline-block;
-  margin: .25em 0 0 .5em;
-  color: #007896; }
-nav.nav-page.boxed.chevron ul.popular > li > a:before {
-  float: right;
-  font-family: FontAwesome;
-  font-size: .8em;
-  content: "\f054";
-  display: inline-block;
-  margin-top: .35em;
-  color: #007896; }
-
-nav.nav-page.simple a:hover {
-  text-decoration: underline; }
-nav.nav-page.simple > ul > li {
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  margin: 0 0 1.5em;
-  padding: 0; }
-  nav.nav-page.simple > ul > li > a {
-    display: block; }
-    nav.nav-page.simple > ul > li > a h2 {
-      font-size: 1.375em;
-      font-weight: bold;
-      line-height: 1.1;
-      margin: 0;
-      padding: .4em 0 .5em; }
-nav.nav-page.simple ul.popular {
-  margin: 0; }
-  nav.nav-page.simple ul.popular > li {
-    margin: 0; }
-    nav.nav-page.simple ul.popular > li > a {
-      display: block;
-      padding: .45em 0;
-      font-size: 0.9375em; }
-  nav.nav-page.simple ul.popular:before {
+    font-weight: bold;
+    line-height: 1;
+    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    border-bottom: #b5b5b5 1px solid;
+    margin: .6em 0 0em;
+    padding: 0 .4em .3em; }
+  nav.nav-page li a {
     font-size: 0.9375em;
-    content: "Gå direkt till:";
     display: block;
+    padding: .6em .4em .6em;
+    border-bottom: #b5b5b5 1px solid;
     color: black;
-    padding: .2em 0 .45em; }
+    margin: 0; }
+    nav.nav-page li a:hover {
+      background: #f0f0f0;
+      text-decoration: none; }
 
 ul.news {
   margin-top: 1em; }
@@ -273,50 +187,6 @@ ul.news {
   ul.news img {
     width: 100%;
     height: auto; }
-
-xnav.page-nav {
-  margin: 0 0 2em;
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
-  xnav.page-nav h1 {
-    font-size: 0.9375em;
-    font-weight: bold;
-    line-height: 1;
-    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    margin: .6em 0 0em;
-    padding: 0.3em 0.5em 0.4em;
-    background: #00b5e2;
-    color: white; }
-  xnav.page-nav li a {
-    font-size: 0.9375em;
-    display: block;
-    padding: 0.8em 0.5em 0.8em;
-    border-bottom: #b5b5b5 1px solid;
-    color: black;
-    margin: 0; }
-    xnav.page-nav li a:hover {
-      background: #f0f0f0;
-      text-decoration: none; }
-
-xnav.page-nav {
-  margin: 0 0 1em; }
-  xnav.page-nav h1 {
-    font-size: 0.9375em;
-    font-weight: bold;
-    line-height: 1;
-    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    border-bottom: #b5b5b5 1px solid;
-    margin: .6em 0 .6em;
-    padding-bottom: .2em; }
-  xnav.page-nav ul {
-    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    list-style: none;
-    margin: 0 0 1.6em;
-    padding: 0; }
-  xnav.page-nav li {
-    margin: 0 0 1em;
-    font-size: 0.8125em; }
-  xnav.page-nav a {
-    color: black; }
 
 nav.page-nav {
   margin: 0 0 2em;

@@ -1,144 +1,25 @@
-nav.nav-page.boxed {
-  a:hover {
-    text-decoration: underline;
-  }
-  > ul > li {
+nav.nav-page {
+  margin: 0 0 2em;
+  font-family: $sansSerif;
+  h1 {
+    font-size: emize(15);
+    font-weight: bold;
+    line-height: 1;
     font-family: $sansSerif;
-    background-color: $backgroundLight;
-    margin: 0 0 1.5em;
-    padding: 0;
-    > a {
-      display: block;
-      color: black;
-      border: $border;
-      h2 {
-        font-size: emize(22, 16);
-        font-weight: bold;
-        line-height: 1.1;
-        margin: 0;
-        padding: .4em .3em .5em;
-      }
-    }
+    border-bottom: $border;
+    margin: .6em 0 0em;
+    padding: 0 .4em .3em;
   }
-  ul.popular {
+  li a {
+    font-size: emize(15);
+    display: block;
+    padding: .6em .4em .6em;
+    border-bottom: $border;
+    color: black;
     margin: 0;
-    > li {
-      margin: 0;
-      > a {
-        display: block;
-        padding: .6em .6em;
-        color: black;
-        font-size: emize(15);
-        border: $border;
-        border-bottom: none;
-      }
-      &:last-child > a {
-        border-bottom: $border;
-      }
-    }
-    &:before {
-      font-size: emize(15);
-      content: "Gå direkt till:";
-      display: block;
-      background-color: white;
-      color: black;
-      padding: .6em .6em .2em;
-    }
-  }
-}
-
-nav.nav-page.boxed.light {
-  > ul > li {
-    background-color: white;
-    margin-bottom: 2em;
-    > a {
-      color: $linkColor;
-    }
-    ul.popular li > a {
-      color: $linkColor;
-    }
-  }
-}
-nav.nav-page.boxed.light.full {
-  margin-left: -1em;
-  margin-right: -1em;
-  > ul > li > a {
-    border-left-width: 0;
-    border-right-width: 0;
-    h2 {
-      padding: .25em .8em .35em;
-    }
-  }
-  ul.popular {
-    > li > a {
-      border-left-width: 0;
-      border-right-width: 0;
-      padding: .6em 1.2em;
-    }
-    &:before {
-      padding: 1em 1.2em .2em;
-    }
-  }
-}
-
-
-nav.nav-page.boxed.chevron {
-  > ul > li > a h2:before {
-    float: right;
-    font-family: $iconFont;
-    font-size: .8em;
-    content: "\f054";
-    display: inline-block;
-    margin: .25em 0 0 .5em;
-    color: $linkColor;
-  }
-  ul.popular > li > a:before {
-    float: right;
-    font-family: $iconFont;
-    font-size: .8em;
-    content: "\f054";
-    display: inline-block;
-    margin-top: .35em;
-    color: $linkColor
-  }
-}
-
-
-nav.nav-page.simple {
-  a:hover {
-    text-decoration: underline;
-  }
-  > ul > li {
-    font-family: $sansSerif;
-    margin: 0 0 1.5em;
-    padding: 0;
-    > a {
-      display: block;
-      h2 {
-        font-size: emize(22, 16);
-        font-weight: bold;
-        line-height: 1.1;
-        margin: 0;
-        padding: .4em 0 .5em;
-      }
-    }
-  }
-  ul.popular {
-    margin: 0;
-    > li {
-      margin: 0;
-      > a {
-        display: block;
-        padding: .45em 0;
-        font-size: emize(15);
-      }
-    }
-    &:before {
-      font-size: emize(15);
-      content: "Gå direkt till:";
-      display: block;
-      color: black;
-      padding: .2em 0 .45em;
+    &:hover {
+      background: $backgroundLight;
+      text-decoration: none;
     }
   }
 }
