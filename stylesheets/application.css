@@ -424,7 +424,7 @@ section.news {
     box-sizing: border-box; }
   section.news ul li.more {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.8125em;
+    font-size: 0.6875em;
     text-align: right;
     margin-bottom: -1em; }
     section.news ul li.more a {
@@ -591,5 +591,5 @@ section.movies {
     bottom: .5em;
     right: .6em;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.8125em;
+    font-size: 0.6875em;
     color: white; }
