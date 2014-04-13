@@ -2,6 +2,9 @@ section.news {
   @include clearfix();
   width: 100%;
   @include box-sizing(border-box);
+  a {
+    color: black;
+  }
   h1 {
     font-size: emize(15);
     font-weight: bold;
@@ -23,9 +26,6 @@ section.news {
     @media (max-width: 26em) { font-size: emize(16) }
     @media (max-width: 22em) { font-size: emize(14) }
     font-weight: normal;
-    a {
-      color: black;
-    }
     .date {
       font-family: $sansSerif;
       font-size: .75em;

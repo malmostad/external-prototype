@@ -283,6 +283,8 @@ section.news {
     line-height: 0; }
   section.news:after {
     clear: both; }
+  section.news a {
+    color: black; }
   section.news h1 {
     font-size: 0.9375em;
     font-weight: bold;
@@ -313,8 +315,6 @@ section.news {
     @media (max-width: 22em) {
       section.news h2 {
         font-size: 0.875em; } }
-    section.news h2 a {
-      color: black; }
     section.news h2 .date {
       font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
       font-size: .75em;
