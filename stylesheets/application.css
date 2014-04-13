@@ -227,6 +227,8 @@ nav.nav-page {
     font-weight: bold;
     margin: 0;
     padding: 0; }
+  nav.nav-page li.go-to {
+    font-size: 0.6875em; }
   nav.nav-page li a {
     position: relative;
     display: block;
@@ -566,6 +568,7 @@ section.movies {
     top: 0;
     bottom: 0;
     margin: auto;
+    border: 1px solid black;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

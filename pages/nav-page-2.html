@@ -8,26 +8,14 @@ permalink: /nav-page-2/
 
 <nav class="nav-page">
   <h1>Förskola &amp; utbildning</h1>
-  <section class="banner">
-    <a href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/images/banner.jpg" alt="Dricka kaffe"/>
-      <div>
-        <h1>Frivilligt socialt arbete</h1>
-        <p>
-          Malmö stad söker dig som vill göra en social insats för barn och
-          vuxna med särskilda behov. Se vad du kan göra!
-        </p>
-      </div>
-      <div class="overlay"></div>
-    </a>
-  </section>
-
+  {% include banner.html %}
   <ul>
     <li>
       <a href="{{ site.baseurl }}/body-copy-2/">
         <h2>Förskola</h2>
       </a>
       <ul class="popular">
+        <li class="go-to">Gå direkt till:</li>
         <li><a href="{{ site.baseurl }}/body-copy-2/">Anmälan till förskola</a></li>
         <li><a href="{{ site.baseurl }}/body-copy-2/">Avgifter och regler för Malmös förskolor</a></li>
         <li><a href="{{ site.baseurl }}/body-copy-2/">Förskolor i Malmö</a></li>
