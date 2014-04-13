@@ -19,13 +19,13 @@ nav.nav-page {
           @include columns(4, true, 4%);
         }
       }
-      @media (max-width: 51.9375em) and (min-width: 30em) {
+      @media (max-width: 51.99em) and (min-width: 30em) {
         @include columns(6, false, 4%);
         &:nth-child(2n) {
           @include columns(6, true, 4%);
         }
       }
-      @media (max-width: 29.9375em) {
+      @media (max-width: 29.99em) {
         @include columns(12);
       }
     }

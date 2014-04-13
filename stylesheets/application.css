@@ -176,7 +176,7 @@ nav.nav-page {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box; } }
-      @media (max-width: 51.9375em) and (min-width: 30em) {
+      @media (max-width: 51.99em) and (min-width: 30em) {
         nav.nav-page > ul > li {
           width: 48%;
           margin-right: 4%;
@@ -193,7 +193,7 @@ nav.nav-page {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box; } }
-      @media (max-width: 29.9375em) {
+      @media (max-width: 29.99em) {
         nav.nav-page > ul > li {
           width: 100%;
           margin-right: 0;
