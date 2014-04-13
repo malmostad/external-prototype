@@ -1,4 +1,7 @@
 section.news {
+  @include clearfix();
+  width: 100%;
+  @include box-sizing(border-box);
   h1 {
     font-size: emize(15);
     font-weight: bold;
@@ -15,7 +18,7 @@ section.news {
     font-family: $serif;
     font-size: emize(16);
     @media (max-width: 56em) { font-size: emize(14) }
-    @media (max-width: 52em) { font-size: emize(16) }
+    @media (max-width: 48em) { font-size: emize(16) }
     @media (max-width: 40em) { font-size: emize(14) }
     @media (max-width: 26em) { font-size: emize(16) }
     @media (max-width: 22em) { font-size: emize(14) }
@@ -35,7 +38,7 @@ section.news {
     &:last-child {
       @include columns(3, true, 4%);
     }
-    @media (max-width: 52em) {
+    @media (max-width: 48em) {
       @include columns(6, false, 4%);
       &:nth-child(2n) {
         @include columns(6, true, 4%);
@@ -51,6 +54,9 @@ section.news {
   li li {
     display: block;
     margin-bottom: .6em;
+    &:last-child {
+      margin-bottom: .6em;
+    }
   }
 
   li ul {
@@ -83,24 +89,13 @@ section.news {
     margin: auto;
     @include box-sizing(border-box);
   }
-  .more {
+  ul li.more {
     font-family: $sansSerif;
     font-size: emize(13);
     text-align: right;
-  }
-}
-
-section.news.movies {
-  margin: -1em 0 0;
-  padding: .8em .8em;
-  background: $backgroundDarker;
-  color: white;
-  h2 a {
-    color: white;
-    font-family: $sansSerif;
-    font-size: emize(13);
-  }
-  li {
-    margin-bottom: 0;
+    margin: 0;
+    a {
+      color: black;
+    }
   }
 }

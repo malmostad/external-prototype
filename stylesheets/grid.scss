@@ -23,7 +23,7 @@ nav.page-nav {
   }
 }
 
-.news, .feedback, .share, .contact-us {
+.feedback, .share, .contact-us {
   @include columns(8, false, 4%);
   @media (max-width: 46em) {
     @include columns(12);

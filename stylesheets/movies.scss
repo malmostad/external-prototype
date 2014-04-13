@@ -1,0 +1,74 @@
+section.movies {
+  @include clearfix();
+  padding: .8em .8em;
+  background: $backgroundDarker;
+  h2 {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: $sansSerif;
+    font-size: emize(11);
+    font-weight: normal;
+    a {
+      color: white;
+    }
+  }
+  > ul > li {
+    margin: 0;
+    @include columns(3, false, 3%);
+    &:last-child {
+      @include columns(3, true, 3%);
+    }
+    @media (max-width: 48em) {
+      @include columns(6, false, 3%);
+      &:nth-child(2n) {
+        @include columns(6, true, 3%);
+      }
+      margin-top: 1em;
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 26em) {
+      @include columns(12);
+      &:nth-child(2n) {
+        @include columns(12);
+      }
+      margin-top: 1em !important;
+      &:nth-child(-n+1) {
+        margin-top: 0 !important;
+      }
+    }
+  }
+
+  .crop {
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+    margin-bottom: .3em;
+    overflow: hidden;
+    background: $backgroundLight;
+    @include box-sizing(border-box);
+  }
+  img {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    @include box-sizing(border-box);
+  }
+  .more {
+    font-family: $sansSerif;
+    font-size: emize(13);
+    text-align: right;
+  }
+}
