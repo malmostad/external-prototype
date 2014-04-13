@@ -1,7 +1,11 @@
 section.movies {
+  position: relative;
   @include clearfix();
   padding: .8em .8em;
   background: $backgroundDarker;
+  a {
+    color: white;
+  }
   h2 {
     margin: 0;
     overflow: hidden;
@@ -9,20 +13,17 @@ section.movies {
     font-family: $sansSerif;
     font-size: emize(11);
     font-weight: normal;
-    a {
-      color: white;
-    }
   }
   > ul > li {
     margin: 0;
-    @include columns(3, false, 3%);
+    @include columns(3, false, 4%);
     &:last-child {
-      @include columns(3, true, 3%);
+      @include columns(3, true, 4%);
     }
     @media (max-width: 48em) {
-      @include columns(6, false, 3%);
+      @include columns(6, false, 4%);
       &:nth-child(2n) {
-        @include columns(6, true, 3%);
+        @include columns(6, true, 4%);
       }
       margin-top: 1em;
       &:nth-child(-n+2) {
@@ -42,7 +43,6 @@ section.movies {
   }
 
   .crop {
-    display: block;
     width: 100%;
     position: relative;
     height: 0;
@@ -52,12 +52,26 @@ section.movies {
     background: $backgroundLight;
     @include box-sizing(border-box);
   }
+  .play {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../images/play.png) 50% 50% no-repeat;
+    @include transition(opacity 0.4s);
+    opacity: 0;
+    &:hover {
+      opacity: .8;
+    }
+  }
   img {
     position: absolute;
     z-index: 1;
     display: block;
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
     left: 0;
     right: 0;
@@ -67,8 +81,10 @@ section.movies {
     @include box-sizing(border-box);
   }
   .more {
+    position: absolute;
+    bottom: .5em;
+    right: .6em;
     font-family: $sansSerif;
     font-size: emize(13);
-    text-align: right;
   }
 }

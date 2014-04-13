@@ -397,8 +397,7 @@ section.news {
     position: absolute;
     z-index: 1;
     display: block;
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
     left: 0;
     right: 0;
@@ -413,7 +412,7 @@ section.news {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 0.8125em;
     text-align: right;
-    margin: 0; }
+    margin-bottom: -1em; }
     section.news ul li.more a {
       color: black; }
 
@@ -440,6 +439,7 @@ nav.page-nav {
       text-decoration: none; }
 
 section.movies {
+  position: relative;
   *zoom: 1;
   padding: .8em .8em;
   background: #313131; }
@@ -449,6 +449,8 @@ section.movies {
     line-height: 0; }
   section.movies:after {
     clear: both; }
+  section.movies a {
+    color: white; }
   section.movies h2 {
     margin: 0;
     overflow: hidden;
@@ -456,19 +458,17 @@ section.movies {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 0.6875em;
     font-weight: normal; }
-    section.movies h2 a {
-      color: white; }
   section.movies > ul > li {
     margin: 0;
-    width: 22.75%;
-    margin-right: 3%;
+    width: 22%;
+    margin-right: 4%;
     float: left;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
     section.movies > ul > li:last-child {
-      width: 22.75%;
+      width: 22%;
       margin-right: 0;
       float: left;
       -ms-box-sizing: border-box;
@@ -477,8 +477,8 @@ section.movies {
       box-sizing: border-box; }
     @media (max-width: 48em) {
       section.movies > ul > li {
-        width: 48.5%;
-        margin-right: 3%;
+        width: 48%;
+        margin-right: 4%;
         float: left;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -486,7 +486,7 @@ section.movies {
         box-sizing: border-box;
         margin-top: 1em; }
         section.movies > ul > li:nth-child(2n) {
-          width: 48.5%;
+          width: 48%;
           margin-right: 0;
           float: left;
           -ms-box-sizing: border-box;
@@ -518,7 +518,6 @@ section.movies {
         section.movies > ul > li:nth-child(-n+1) {
           margin-top: 0 !important; } }
   section.movies .crop {
-    display: block;
     width: 100%;
     position: relative;
     height: 0;
@@ -530,12 +529,27 @@ section.movies {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
+  section.movies .play {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../images/play.png) 50% 50% no-repeat;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    opacity: 0; }
+    section.movies .play:hover {
+      opacity: .8; }
   section.movies img {
     position: absolute;
     z-index: 1;
     display: block;
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
     left: 0;
     right: 0;
@@ -547,6 +561,8 @@ section.movies {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
   section.movies .more {
+    position: absolute;
+    bottom: .5em;
+    right: .6em;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.8125em;
-    text-align: right; }
+    font-size: 0.8125em; }
