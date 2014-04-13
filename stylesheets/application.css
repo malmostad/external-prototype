@@ -438,83 +438,75 @@ nav.page-nav {
       background: #f0f0f0;
       text-decoration: none; }
 
-section.movies h1 {
-  font-size: 0.9375em;
-  font-weight: bold;
-  line-height: 1;
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  border-bottom: #b5b5b5 1px solid;
-  margin: 0 0 .6em 0;
-  padding: 0 .4em .4em; }
-section.movies h2 {
-  margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  font-size: 0.6875em;
-  font-weight: normal; }
-section.movies > ul {
-  position: relative;
-  *zoom: 1;
-  padding: .8em .8em;
-  background: #313131; }
-  section.movies > ul:before, section.movies > ul:after {
-    display: table;
-    content: "";
-    line-height: 0; }
-  section.movies > ul:after {
-    clear: both; }
-  section.movies > ul a {
-    color: white; }
-section.movies > ul > li {
-  margin: 0;
-  width: 22%;
-  margin-right: 4%;
-  float: left;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  section.movies > ul > li:last-child {
+section.movies {
+  position: relative; }
+  section.movies h1 {
+    font-size: 0.9375em;
+    font-weight: bold;
+    line-height: 1;
+    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    border-bottom: #b5b5b5 1px solid;
+    margin: 0 0 .6em 0;
+    padding: 0 .4em .4em; }
+  section.movies h2 {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 0.6875em;
+    font-weight: normal; }
+  section.movies > ul {
+    position: relative;
+    *zoom: 1;
+    padding: .8em .8em;
+    background: #313131; }
+    section.movies > ul:before, section.movies > ul:after {
+      display: table;
+      content: "";
+      line-height: 0; }
+    section.movies > ul:after {
+      clear: both; }
+    section.movies > ul a {
+      color: white; }
+  section.movies > ul > li {
+    margin: 0;
     width: 22%;
-    margin-right: 0;
+    margin-right: 4%;
     float: left;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  @media (max-width: 48em) {
-    section.movies > ul > li {
-      width: 48%;
-      margin-right: 4%;
+    section.movies > ul > li:last-child {
+      width: 22%;
+      margin-right: 0;
       float: left;
       -ms-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      margin-top: 1em; }
-      section.movies > ul > li:nth-child(2n) {
+      box-sizing: border-box; }
+    @media (max-width: 48em) {
+      section.movies > ul > li {
         width: 48%;
-        margin-right: 0;
+        margin-right: 4%;
         float: left;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-      section.movies > ul > li:nth-child(-n+2) {
-        margin-top: 0; } }
-  @media (max-width: 26em) {
-    section.movies > ul > li {
-      width: 100%;
-      margin-right: 0;
-      float: none;
-      float: left;
-      -ms-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      margin-top: 1em !important; }
-      section.movies > ul > li:nth-child(2n) {
+        box-sizing: border-box;
+        margin-top: 1em; }
+        section.movies > ul > li:nth-child(2n) {
+          width: 48%;
+          margin-right: 0;
+          float: left;
+          -ms-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+        section.movies > ul > li:nth-child(-n+2) {
+          margin-top: 0; } }
+    @media (max-width: 26em) {
+      section.movies > ul > li {
         width: 100%;
         margin-right: 0;
         float: none;
@@ -522,55 +514,66 @@ section.movies > ul > li {
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-      section.movies > ul > li:nth-child(-n+1) {
-        margin-top: 0 !important; } }
-section.movies .crop {
-  width: 100%;
-  position: relative;
-  height: 0;
-  padding-top: 56.25%;
-  margin-bottom: .3em;
-  overflow: hidden;
-  background: #f0f0f0;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-section.movies .play {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: url(../images/play.png) 50% 50% no-repeat;
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-  opacity: 0; }
-  section.movies .play:hover {
-    opacity: .8; }
-section.movies img {
-  position: absolute;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  max-height: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-section.movies .more {
-  position: absolute;
-  bottom: .5em;
-  right: .6em;
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  font-size: 0.8125em; }
+        box-sizing: border-box;
+        margin-top: 1em !important; }
+        section.movies > ul > li:nth-child(2n) {
+          width: 100%;
+          margin-right: 0;
+          float: none;
+          float: left;
+          -ms-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+        section.movies > ul > li:nth-child(-n+1) {
+          margin-top: 0 !important; } }
+  section.movies .crop {
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+    margin-bottom: .3em;
+    overflow: hidden;
+    background: #f0f0f0;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  section.movies .play {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../images/play.png) 50% 50% no-repeat;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    opacity: 0; }
+    section.movies .play:hover {
+      opacity: .8; }
+  section.movies img {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  section.movies .more {
+    position: absolute;
+    bottom: .5em;
+    right: .6em;
+    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 0.8125em;
+    color: white; }

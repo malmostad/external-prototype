@@ -1,4 +1,5 @@
 section.movies {
+  position: relative;
   h1 {
     font-size: emize(15);
     font-weight: bold;
@@ -97,5 +98,6 @@ section.movies {
     right: .6em;
     font-family: $sansSerif;
     font-size: emize(13);
+    color: white;
   }
 }
