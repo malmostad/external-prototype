@@ -36,7 +36,7 @@ section.news {
         @include columns(6, true, 4%);
       }
     }
-    @media (max-width: 30em) {
+    @media (max-width: 26em) {
       @include columns(12);
       &:nth-child(2n) {
         @include columns(12);
@@ -46,7 +46,7 @@ section.news {
       @media (max-width: 56em) { font-size: emize(14) }
       @media (max-width: 52em) { font-size: emize(18) }
       @media (max-width: 40em) { font-size: emize(16) }
-      @media (max-width: 30em) { font-size: emize(18) }
+      @media (max-width: 26em) { font-size: emize(18) }
       @media (max-width: 24em) { font-size: emize(16) }
     }
   }

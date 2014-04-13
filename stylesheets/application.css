@@ -303,7 +303,7 @@ section.news > ul > li {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box; } }
-  @media (max-width: 30em) {
+  @media (max-width: 26em) {
     section.news > ul > li {
       width: 100%;
       margin-right: 0;
@@ -331,7 +331,7 @@ section.news > ul > li {
   @media (max-width: 40em) {
     section.news > ul > li h2 {
       font-size: 1em; } }
-  @media (max-width: 30em) {
+  @media (max-width: 26em) {
     section.news > ul > li h2 {
       font-size: 1.125em; } }
   @media (max-width: 24em) {
