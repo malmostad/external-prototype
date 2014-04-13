@@ -52,11 +52,11 @@ nav.nav-page {
   }
   li.go-to {
     display: none;
-    padding: .2em .5em;
-    font-size: emize(11);
+    padding: .7em .4em .7em .4em;
+    font-size: emize(13);
     border-bottom: $border;
-    background: $backgroundDark;
-    color: white;
+    font-style: italic;
+    color: #666;
   }
 
   li a {
@@ -102,6 +102,8 @@ nav.nav-page {
       width: 12em;
       padding: .8em 1em 1em;
       color: white;
+      max-height: 6.5em;
+      overflow: hidden;
       h1 {
         font-size: emize(15);
         margin: 0 0 .3em;
@@ -115,7 +117,7 @@ nav.nav-page {
       z-index: 1;
       opacity: 0.5;
       background: black;
-      height: 9.81em;
+      height: 6.5em;
     }
   }
   ul * {
