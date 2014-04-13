@@ -5,12 +5,12 @@ section.main {
 }
 
 article.body-copy {
-  @include columns(8, false, 6%);
+  @include columns(8, false, 4%);
   margin-bottom: 1em;
 }
 
 nav.page-nav {
-  @include columns(4, true, 6%);
+  @include columns(4, true, 4%);
 }
 
 // One column grid
