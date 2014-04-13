@@ -8,26 +8,46 @@ section.news {
     margin: .6em 0 1em;
     padding: 0 .4em .4em;
   }
+  h2 {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: $serif;
+    font-size: emize(16);
+    font-weight: normal;
+    a {
+      color: black;
+    }
+    .date {
+      font-family: $sansSerif;
+      font-size: .75em;
+      padding-left: .3em;
+    }
+  }
   > ul > li {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     @include columns(3, false, 4%);
     &:last-child {
       @include columns(3, true, 4%);
     }
-    @media (max-width: 45em) and (min-width: 30em) {
+    @media (max-width: 52em) {
       @include columns(6, false, 4%);
       &:nth-child(2n) {
         @include columns(6, true, 4%);
       }
     }
-    @media (max-width: 29.9375em) {
+    @media (max-width: 30em) {
       @include columns(12);
       &:nth-child(2n) {
         @include columns(12);
       }
     }
-    > h2 {
-      font-weight: normal;
+    h2 {
+      @media (max-width: 56em) { font-size: emize(14) }
+      @media (max-width: 52em) { font-size: emize(18) }
+      @media (max-width: 40em) { font-size: emize(16) }
+      @media (max-width: 30em) { font-size: emize(18) }
+      @media (max-width: 24em) { font-size: emize(16) }
     }
   }
   li li {
@@ -35,25 +55,17 @@ section.news {
     margin-bottom: .6em;
   }
 
-  h2 {
-    margin: 0;
-    font-family: $sansSerif;
-    font-size: emize(13);
-    font-weight: normal;
-    a {
-      color: black;
-      span {
-        font-weight: normal;
-      }
-    }
+  li ul {
+    margin-top: -.2em;
   }
+
   .crop {
     display: block;
     width: 100%;
     position: relative;
     height: 0;
     padding-top: 56.25%;
-    margin-bottom: .2em;
+    margin-bottom: .3em;
     overflow: hidden;
     background: $backgroundLight;
     border: $borderDark;
@@ -61,6 +73,7 @@ section.news {
   }
   img {
     position: absolute;
+    z-index: 1;
     display: block;
     min-width: 100%;
     max-width: 100%;
