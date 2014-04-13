@@ -147,7 +147,14 @@ section.feedback {
     display: none; }
 
 nav.nav-page {
+  *zoom: 1;
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
+  nav.nav-page:before, nav.nav-page:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  nav.nav-page:after {
+    clear: both; }
   nav.nav-page > h1 {
     font-family: Georgia, "Droid Serif", "DejaVu Serif", "Bitstream Vera Serif", serif;
     font-weight: normal;

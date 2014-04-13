@@ -1,4 +1,5 @@
 nav.nav-page {
+  @include clearfix();
   > h1 {
     font-family: $serif;
     font-weight: normal;
@@ -50,13 +51,14 @@ nav.nav-page {
     color: black;
     margin: 0;
     line-height: 1.2;
+    // padding-right: 1.8em;
     // &::after {
     //   position: absolute;
     //   content: "\f054";
     //   font-family: $iconFont;
     //   font-size: 13px;
     //   color: #ccc;
-    //   top: 1em;
+    //   top: .9em;
     //   right: .4em;
     // }
 
