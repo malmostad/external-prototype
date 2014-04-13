@@ -19,11 +19,18 @@ nav.nav-page {
         &:nth-child(3n) {
           @include columns(4, true, 4%);
         }
+        &:nth-child(3n+4) {
+          clear: left;
+        }
       }
       @media (max-width: 51.99em) and (min-width: 30em) {
+        clear: none;
         @include columns(6, false, 4%);
         &:nth-child(2n) {
           @include columns(6, true, 4%);
+        }
+        &:nth-child(2n+3) {
+          clear: left;
         }
       }
       @media (max-width: 29.99em) {
@@ -44,7 +51,12 @@ nav.nav-page {
     padding: 0;
   }
   li.go-to {
+    display: none;
+    padding: .2em .5em;
     font-size: emize(11);
+    border-bottom: $border;
+    background: $backgroundDark;
+    color: white;
   }
 
   li a {
