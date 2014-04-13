@@ -207,18 +207,24 @@ nav.nav-page {
     font-size: 0.8125em; }
   nav.nav-page h2 {
     font-size: 0.9375em;
+    line-height: 1.2;
     font-weight: bold;
     margin: 0;
     padding: 0; }
   nav.nav-page li a {
+    position: relative;
     display: block;
-    padding: .6em .4em .6em;
     border-bottom: #b5b5b5 1px solid;
+    padding: .7em .4em .7em .4em;
     color: black;
-    margin: 0; }
+    margin: 0;
+    line-height: 1.2; }
     nav.nav-page li a:hover {
       background: #f0f0f0;
       text-decoration: none; }
+  nav.nav-page > ul > li > a {
+    padding-top: 0.46667em;
+    padding-bottom: 0.46667em; }
   nav.nav-page .banner {
     position: relative; }
     nav.nav-page .banner img {

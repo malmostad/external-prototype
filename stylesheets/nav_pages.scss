@@ -37,22 +37,39 @@ nav.nav-page {
 
   h2 {
     font-size: emize(15);
+    line-height: 1.2;
     font-weight: bold;
     margin: 0;
     padding: 0;
   }
   li a {
+    position: relative;
     display: block;
-    padding: .6em .4em .6em;
     border-bottom: $border;
+    padding: .7em .4em .7em .4em;
     color: black;
     margin: 0;
+    line-height: 1.2;
+    // &::after {
+    //   position: absolute;
+    //   content: "\f054";
+    //   font-family: $iconFont;
+    //   font-size: 13px;
+    //   color: #ccc;
+    //   top: 1em;
+    //   right: .4em;
+    // }
 
     &:hover {
       background: $backgroundLight;
       text-decoration: none;
     }
   }
+  > ul > li > a {
+    padding-top: emize(7, 15);
+    padding-bottom: emize(7, 15);
+  }
+
   .banner {
     position: relative;
     img {
