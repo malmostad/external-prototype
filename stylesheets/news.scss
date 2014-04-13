@@ -89,3 +89,18 @@ section.news {
     text-align: right;
   }
 }
+
+section.news.movies {
+  margin: -1em 0 0;
+  padding: .8em .8em;
+  background: $backgroundDarker;
+  color: white;
+  h2 a {
+    color: white;
+    font-family: $sansSerif;
+    font-size: emize(13);
+  }
+  li {
+    margin-bottom: 0;
+  }
+}

@@ -36,14 +36,23 @@ nav.page-nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box; } }
 .news, .feedback, .share, .contact-us {
-  width: 100%;
-  margin-right: 0;
-  float: none;
+  width: 65.33333%;
+  margin-right: 4%;
   float: left;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  @media (max-width: 46em) {
+    .news, .feedback, .share, .contact-us {
+      width: 100%;
+      margin-right: 0;
+      float: none;
+      float: left;
+      -ms-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; } }
 
 footer.bigfoot {
   width: 100%;
@@ -389,6 +398,18 @@ section.news .more {
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
   font-size: 0.8125em;
   text-align: right; }
+
+section.news.movies {
+  margin: -1em 0 0;
+  padding: .8em .8em;
+  background: #313131;
+  color: white; }
+  section.news.movies h2 a {
+    color: white;
+    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 0.8125em; }
+  section.news.movies li {
+    margin-bottom: 0; }
 
 nav.page-nav {
   margin: 0 0 2em;
