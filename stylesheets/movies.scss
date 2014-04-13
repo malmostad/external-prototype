@@ -76,9 +76,9 @@ section.movies {
     background: url(../images/play.png) 50% 50% no-repeat;
     @include transition(opacity 0.4s);
     opacity: 0;
-    &:hover {
-      opacity: .8;
-    }
+  }
+  a:hover .play {
+    opacity: .8;
   }
   img {
     position: absolute;

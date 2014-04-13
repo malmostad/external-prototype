@@ -568,8 +568,8 @@ section.movies {
     -o-transition: opacity 0.4s;
     transition: opacity 0.4s;
     opacity: 0; }
-    section.movies .play:hover {
-      opacity: .8; }
+  section.movies a:hover .play {
+    opacity: .8; }
   section.movies img {
     position: absolute;
     z-index: 1;
