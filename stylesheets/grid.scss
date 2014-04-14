@@ -15,11 +15,11 @@ nav.page-nav {
 
 // One column grid
 @media (max-width: 46em) {
-  section.main {
-    max-width: 32em;
-  }
   article.body-copy, nav.page-nav {
     @include columns(12);
+    max-width: 32em;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

@@ -23,9 +23,6 @@ nav.page-nav {
   box-sizing: border-box; }
 
 @media (max-width: 46em) {
-  section.main {
-    max-width: 32em; }
-
   article.body-copy, nav.page-nav {
     width: 100%;
     margin-right: 0;
@@ -34,7 +31,10 @@ nav.page-nav {
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; } }
+    box-sizing: border-box;
+    max-width: 32em;
+    margin-right: auto;
+    margin-left: auto; } }
 .feedback, .share, .contact-us {
   width: 65.33333%;
   margin-right: 4%;
@@ -569,28 +569,67 @@ section.movies {
     color: white; }
 
 .banner {
-  position: relative; }
+  position: relative;
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-top: 23%;
+  overflow: hidden;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   .banner img {
+    position: absolute;
+    z-index: 1;
+    display: block;
     width: 100%;
-    height: auto; }
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
   .banner div {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
+    max-height: 100%;
     top: 0;
     left: 2em;
+    bottom: 0;
     width: 12em;
     padding: .8em 1em 1em;
     color: white;
-    max-height: 6.5em;
     overflow: hidden; }
-    .banner div h1 {
-      font-size: 0.9375em;
-      margin: 0 0 .3em; }
-    .banner div p {
-      font-size: 0.8125em;
-      margin: 0; }
   .banner div.overlay {
-    z-index: 1;
+    z-index: 2;
     opacity: 0.5;
-    background: black;
-    height: 6.5em; }
+    background: black; }
+  .banner h1 {
+    font-size: 0.9375em;
+    margin: 0 0 .3em; }
+  .banner p {
+    font-size: 0.8125em;
+    margin: 0; }
+  @media (max-width: 48em) {
+    .banner div {
+      padding: .4em .6em;
+      top: auto;
+      left: 0;
+      max-width: 12em;
+      width: auto;
+      background: black;
+      opacity: 1; }
+    .banner h1 {
+      font-size: 0.8125em;
+      margin-bottom: 0; }
+    .banner p {
+      display: none; } }
+  @media (max-width: 36em) {
+    .banner {
+      display: none; } }
