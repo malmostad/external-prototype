@@ -700,10 +700,10 @@ section.movies {
     top: 0;
     bottom: 0;
     background: url(../images/play.png) 50% 50% no-repeat;
-    -webkit-transition: opacity 0.4s;
-    -moz-transition: opacity 0.4s;
-    -o-transition: opacity 0.4s;
-    transition: opacity 0.4s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
     opacity: 0; }
   section.movies a:hover .play {
     opacity: .8; }

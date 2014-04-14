@@ -74,7 +74,7 @@ section.movies {
     top: 0;
     bottom: 0;
     background: url(../images/play.png) 50% 50% no-repeat;
-    @include transition(opacity 0.4s);
+    @include transition(opacity 0.5s);
     opacity: 0;
   }
   a:hover .play {
