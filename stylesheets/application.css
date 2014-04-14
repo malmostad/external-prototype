@@ -350,10 +350,7 @@ nav.nav-page-with-summaries-alt-2 {
     line-height: 1.2;
     font-weight: bold;
     margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; }
+    padding: 0; }
   nav.nav-page-with-summaries-alt-2 a {
     position: relative;
     display: block;
@@ -367,7 +364,8 @@ nav.nav-page-with-summaries-alt-2 {
       text-decoration: none; }
   nav.nav-page-with-summaries-alt-2 p {
     font-size: 0.8125em;
-    line-height: 1.5; }
+    line-height: 1.5;
+    padding: 0 .4em; }
   nav.nav-page-with-summaries-alt-2 > ul {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     margin: 1.5em 0 0; }
