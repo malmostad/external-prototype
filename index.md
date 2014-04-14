@@ -22,9 +22,10 @@ permalink: /
   <h2>Navigeringssidor</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/nav-page-2/">Boxar. Banner, nyheter och film</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-1/">Boxar. Nyheter</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-3/">Listor. Banner, nyheter och film</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-2/">Med direktlänkar. Banner, nyheter och film</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-1/">Med direktlänkar. Nyheter</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-3/">Med sammanfattningar. Banner, nyheter och film</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-4/">Med sammanfattningar, alt 2. Banner, nyheter och film</a></li>
     </ul>
   </nav>
 </section>

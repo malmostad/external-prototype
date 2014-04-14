@@ -1,29 +1,26 @@
 nav.nav-page-with-summaries {
   @include clearfix();
   h1 {
-    font-family: $serif;
     font-weight: normal;
-    font-size: emize(32, 16);
+    font-size: emize(34, 16);
     line-height: 1.1;
     margin: .1em 0 .3em;
   }
   h2 {
-    font-family: $sansSerif;
-    font-size: emize(15);
+    font-weight: normal;
+    font-size: emize(24, 16);
     line-height: 1.2;
-    font-weight: bold;
     margin: 0 0 .2em;
-    padding: 0;
   }
   p {
     font-size: emize(16);
-    line-height: emize(20, 16);
+    line-height: emize(24, 16);
   }
   a {
     display: block;
     p {
       color: black;
-      font-size: emize(14);
+      font-size: emize(16);
     }
     &:hover {
       text-decoration: none;
@@ -44,7 +41,7 @@ nav.nav-page-with-summaries {
       &:nth-child(2n+3) {
         clear: left;
       }
-      @media (max-width: 38em) {
+      @media (max-width: 46em) {
         @include columns(12, true, 4%);
         clear: left;
         &:nth-child(2n) {
