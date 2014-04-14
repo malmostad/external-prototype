@@ -1,4 +1,4 @@
-nav.nav-page {
+nav.nav-page-with-direct-links {
   @include clearfix();
   > h1 {
     font-family: $serif;
@@ -8,8 +8,8 @@ nav.nav-page {
     margin: .1em 0 .3em;
   }
 
-  font-family: $sansSerif;
   > ul {
+    font-family: $sansSerif;
     margin: 1.5em 0 0;
     > li {
       margin-bottom: 2em;
@@ -64,7 +64,6 @@ nav.nav-page {
     display: block;
     border-bottom: $border;
     padding: .7em .4em .7em .4em;
-    color: black;
     margin: 0;
     line-height: 1.2;
     // padding-right: 1.8em;
@@ -82,6 +81,9 @@ nav.nav-page {
       background: $backgroundLight;
       text-decoration: none;
     }
+  }
+  li li a {
+    color: black;
   }
   > ul > li > a {
     padding-top: emize(7, 15);

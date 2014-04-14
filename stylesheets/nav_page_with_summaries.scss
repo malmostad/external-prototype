@@ -1,0 +1,56 @@
+nav.nav-page-with-summaries {
+  @include clearfix();
+  h1 {
+    font-family: $serif;
+    font-weight: normal;
+    font-size: emize(32, 16);
+    line-height: 1.1;
+    margin: .1em 0 .3em;
+  }
+  h2 {
+    font-family: $sansSerif;
+    font-size: emize(15);
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0 0 .2em;
+    padding: 0;
+  }
+  p {
+    font-size: emize(16);
+    line-height: emize(20, 16);
+  }
+  a {
+    display: block;
+    p {
+      color: black;
+      font-size: emize(14);
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:hover h2 {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    margin: 1.5em 0 0;
+    li {
+      margin-bottom: 1em;
+      @include columns(6, false, 4%);
+      &:nth-child(2n) {
+        @include columns(6, true, 4%);
+      }
+      &:nth-child(2n+3) {
+        clear: left;
+      }
+      @media (max-width: 38em) {
+        @include columns(12, true, 4%);
+        clear: left;
+        &:nth-child(2n) {
+          @include columns(12, true, 4%);
+        }
+      }
+    }
+  }
+}
