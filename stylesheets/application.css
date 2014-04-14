@@ -274,7 +274,7 @@ nav.nav-page-with-summaries {
     margin: .1em 0 .3em; }
   nav.nav-page-with-summaries h2 {
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.375em;
     line-height: 1.2;
     margin: 0 0 .2em; }
   nav.nav-page-with-summaries p {
@@ -353,14 +353,21 @@ nav.nav-page-with-summaries-alt-2 {
     padding: 0;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  nav.nav-page-with-summaries-alt-2 a {
+    position: relative;
+    display: block;
+    border-top: #b5b5b5 1px solid;
     border-bottom: #b5b5b5 1px solid;
-    margin: 0 0 .3em;
+    padding: .45em .4em .5em;
+    margin: 0 0 .4em;
     line-height: 1.2; }
+    nav.nav-page-with-summaries-alt-2 a:hover {
+      background: #f0f0f0;
+      text-decoration: none; }
   nav.nav-page-with-summaries-alt-2 p {
-    font-size: 0.9375em; }
-  nav.nav-page-with-summaries-alt-2 a:hover {
-    text-decoration: none; }
+    font-size: 0.8125em;
+    line-height: 1.5; }
   nav.nav-page-with-summaries-alt-2 > ul {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     margin: 1.5em 0 0; }

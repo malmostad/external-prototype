@@ -24,8 +24,8 @@ permalink: /
     <ul>
       <li><a href="{{ site.baseurl }}/nav-page-2/">Med direktlänkar. Banner, nyheter och film</a></li>
       <li><a href="{{ site.baseurl }}/nav-page-1/">Med direktlänkar. Nyheter</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-3/">Med sammanfattningar. Banner, nyheter och film</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-4/">Med sammanfattningar, alt 2. Banner, nyheter och film</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-4/">Med sammanfattningar, design som ovan</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-3/">Med sammanfattningar, artikeltypografi</a></li>
     </ul>
   </nav>
 </section>

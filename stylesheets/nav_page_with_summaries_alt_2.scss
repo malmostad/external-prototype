@@ -16,18 +16,23 @@ nav.nav-page-with-summaries-alt-2 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    border-bottom: $border;
-    margin: 0 0 .3em;
-    line-height: 1.2;
-  }
-  p {
-    font-size: emize(15);
   }
   a {
-    // color: black;
+    position: relative;
+    display: block;
+    border-top: $border;
+    border-bottom: $border;
+    padding: .45em .4em .5em;
+    margin: 0 0 .4em;
+    line-height: 1.2;
     &:hover {
+      background: $backgroundLight;
       text-decoration: none;
     }
+  }
+  p {
+    font-size: emize(13);
+    line-height: 1.5;
   }
 
   > ul {
