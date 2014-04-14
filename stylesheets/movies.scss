@@ -14,13 +14,13 @@ section.movies {
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: $sansSerif;
-    font-size: emize(11);
+    font-size: emize(13);
     font-weight: normal;
   }
   > ul {
     position: relative;
     @include clearfix();
-    padding: .8em .8em;
+    padding: .8em .8em 2em;
     background: $backgroundDarker;
     a {
       color: white;

@@ -283,8 +283,7 @@ nav.nav-page-with-summaries {
   nav.nav-page-with-summaries a {
     display: block; }
     nav.nav-page-with-summaries a p {
-      color: black;
-      font-size: 1em; }
+      color: black; }
     nav.nav-page-with-summaries a:hover {
       text-decoration: none; }
     nav.nav-page-with-summaries a:hover h2 {
@@ -292,7 +291,7 @@ nav.nav-page-with-summaries {
   nav.nav-page-with-summaries ul {
     margin: 1.5em 0 0; }
     nav.nav-page-with-summaries ul li {
-      margin-bottom: 1em;
+      margin-bottom: .5em;
       width: 48%;
       margin-right: 4%;
       float: left;
@@ -370,7 +369,7 @@ nav.nav-page-with-summaries-alt-2 {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     margin: 1.5em 0 0; }
     nav.nav-page-with-summaries-alt-2 > ul > li {
-      margin-bottom: 2em; }
+      margin-bottom: .5em; }
       @media (min-width: 52em) {
         nav.nav-page-with-summaries-alt-2 > ul > li {
           width: 30.66667%;
@@ -604,12 +603,12 @@ section.movies {
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.6875em;
+    font-size: 0.8125em;
     font-weight: normal; }
   section.movies > ul {
     position: relative;
     *zoom: 1;
-    padding: .8em .8em;
+    padding: .8em .8em 2em;
     background: #313131; }
     section.movies > ul:before, section.movies > ul:after {
       display: table;

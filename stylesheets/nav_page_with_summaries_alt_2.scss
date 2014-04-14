@@ -37,7 +37,7 @@ nav.nav-page-with-summaries-alt-2 {
     font-family: $sansSerif;
     margin: 1.5em 0 0;
     > li {
-      margin-bottom: 2em;
+      margin-bottom: .5em;
       @media (min-width: 52em) {
         @include columns(4, false, 4%);
         &:nth-child(3n) {
