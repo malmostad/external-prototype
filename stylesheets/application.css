@@ -549,7 +549,7 @@ section.movies {
   section.movies > ul {
     position: relative;
     *zoom: 1;
-    padding: .8em .8em 2em;
+    padding: .8em .8em 1em;
     background: #313131; }
     section.movies > ul:before, section.movies > ul:after {
       display: table;
@@ -561,23 +561,42 @@ section.movies {
       color: white;
       text-decoration: none; }
   section.movies > ul > li {
-    margin: 0;
-    width: 22%;
-    margin-right: 4%;
-    float: left;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    section.movies > ul > li:last-child {
-      width: 22%;
-      margin-right: 0;
-      float: left;
-      -ms-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box; }
-    @media (max-width: 48em) {
+    margin: 0 0 1em; }
+    @media (min-width: 52em) {
+      section.movies > ul > li {
+        width: 15.0%;
+        margin-right: 2%;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        section.movies > ul > li:last-child {
+          width: 15.0%;
+          margin-right: 0;
+          float: left;
+          -ms-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; } }
+    @media (min-width: 38em) and (max-width: 51.99em) {
+      section.movies > ul > li {
+        width: 31.33333%;
+        margin-right: 3%;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        section.movies > ul > li:nth-child(3n) {
+          width: 31.33333%;
+          margin-right: 0;
+          float: left;
+          -ms-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; } }
+    @media (min-width: 26em) and (max-width: 37.99em) {
       section.movies > ul > li {
         width: 48%;
         margin-right: 4%;
@@ -585,8 +604,7 @@ section.movies {
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        margin-top: 1em; }
+        box-sizing: border-box; }
         section.movies > ul > li:nth-child(2n) {
           width: 48%;
           margin-right: 0;
@@ -594,10 +612,8 @@ section.movies {
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
-          box-sizing: border-box; }
-        section.movies > ul > li:nth-child(-n+2) {
-          margin-top: 0; } }
-    @media (max-width: 26em) {
+          box-sizing: border-box; } }
+    @media (max-width: 25.99em) {
       section.movies > ul > li {
         width: 100%;
         margin-right: 0;
@@ -606,19 +622,7 @@ section.movies {
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        margin-top: 1em !important; }
-        section.movies > ul > li:nth-child(2n) {
-          width: 100%;
-          margin-right: 0;
-          float: none;
-          float: left;
-          -ms-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box; }
-        section.movies > ul > li:nth-child(-n+1) {
-          margin-top: 0 !important; } }
+        box-sizing: border-box; } }
   section.movies .crop {
     width: 100%;
     position: relative;
@@ -640,6 +644,7 @@ section.movies {
     top: 0;
     bottom: 0;
     background: url(../images/play.png) 50% 50% no-repeat;
+    background-size: 100%;
     -webkit-transition: opacity 0.5s;
     -moz-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
