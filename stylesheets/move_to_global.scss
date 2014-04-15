@@ -18,14 +18,6 @@ article.body-copy {
       height: emize(360);
     }
   }
-  .box-content {
-    p, li {
-      font-size: emize(14);
-    }
-    ul {
-      margin-left: 0;
-    }
-  }
   nav li {
     margin-bottom: .7em;
   }
@@ -44,7 +36,7 @@ article.body-copy {
   border: $border;
   @include radius(3px);
   font-family: $sansSerif;
-  font-size: emize(15);
+  font-size: emize(16);
   h1 {
     font-family: $sansSerif;
     font-size: emize(16);

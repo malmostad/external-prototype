@@ -2,7 +2,7 @@ section.movies {
   position: relative;
   h1 {
     display: none;
-    font-size: emize(15);
+    font-size: emize(16);
     font-weight: bold;
     line-height: 1;
     font-family: $sansSerif;
@@ -15,9 +15,9 @@ section.movies {
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: $sansSerif;
-    font-size: emize(11);
+    font-size: emize(12);
     @media (max-width: 51.99em) {
-      font-size: emize(13);
+      font-size: emize(14);
     }
     font-weight: normal;
   }
@@ -105,7 +105,7 @@ section.movies {
     bottom: .5em;
     right: .6em;
     font-family: $sansSerif;
-    font-size: emize(13);
+    font-size: emize(14);
     color: white;
   }
 }

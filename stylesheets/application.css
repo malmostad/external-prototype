@@ -82,10 +82,6 @@ article.body-copy .context-map {
   article.body-copy .context-map iframe {
     width: 100%;
     height: 22.5em; }
-article.body-copy .box-content p, article.body-copy .box-content li {
-  font-size: 0.875em; }
-article.body-copy .box-content ul {
-  margin-left: 0; }
 article.body-copy nav li {
   margin-bottom: .7em; }
 
@@ -102,7 +98,7 @@ article.body-copy nav li {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  font-size: 0.9375em; }
+  font-size: 1em; }
   .in-focus h1 {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 1em;
@@ -144,17 +140,17 @@ section.toc ul {
 section.contact-us {
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
   section.contact-us h1 {
-    font-size: 0.9375em;
+    font-size: 1em;
     border-bottom: #b5b5b5 1px solid;
     padding-bottom: .2em;
     margin: 2em 0 .4em; }
   section.contact-us h2 {
-    font-size: 0.8125em;
+    font-size: 0.875em;
     font-weight: bold;
     margin: 1em 0 0;
     padding: 0; }
   section.contact-us > div {
-    font-size: 0.8125em;
+    font-size: 0.875em;
     line-height: 1.7; }
   section.contact-us form {
     display: none; }
@@ -179,7 +175,7 @@ section.feedback {
   margin-top: 1em; }
   section.feedback h1 {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.9375em;
+    font-size: 1em;
     border-bottom: #b5b5b5 1px solid;
     padding-bottom: .2em;
     margin: 1em 0 .4em; }
@@ -259,9 +255,9 @@ nav.nav-page-with-direct-links {
           -moz-box-sizing: border-box;
           box-sizing: border-box; } }
   nav.nav-page-with-direct-links > ul > li li {
-    font-size: 0.8125em; }
+    font-size: 0.875em; }
   nav.nav-page-with-direct-links h2 {
-    font-size: 0.9375em;
+    font-size: 1em;
     line-height: 1.2;
     font-weight: bold;
     margin: 0;
@@ -300,17 +296,17 @@ nav.nav-page-with-summaries {
     clear: both; }
   nav.nav-page-with-summaries h1 {
     font-weight: normal;
-    font-size: 2.125em;
-    line-height: 1.1;
+    font-size: 2.25em;
+    line-height: 1.11111em;
     margin: .1em 0 .3em; }
   nav.nav-page-with-summaries h2 {
     font-weight: normal;
-    font-size: 1.375em;
-    line-height: 1.2;
+    font-size: 1.5em;
+    line-height: 1.20833em;
     margin: 0 0 .2em; }
   nav.nav-page-with-summaries p {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1.0625em;
+    line-height: 1.47059em; }
   nav.nav-page-with-summaries a {
     display: block; }
     nav.nav-page-with-summaries a p {
@@ -378,7 +374,7 @@ section.news {
     color: black; }
   section.news h1 {
     display: none;
-    font-size: 0.9375em;
+    font-size: 1em;
     font-weight: bold;
     line-height: 1;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
@@ -500,7 +496,7 @@ section.news {
     box-sizing: border-box; }
   section.news ul li.more {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.8125em;
+    font-size: 0.875em;
     text-align: right;
     margin-bottom: -1em; }
     section.news ul li.more a {
@@ -510,7 +506,7 @@ nav.page-nav {
   margin: 0 0 2em;
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
   nav.page-nav h1 {
-    font-size: 0.9375em;
+    font-size: 1em;
     font-weight: bold;
     line-height: 1;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
@@ -518,7 +514,7 @@ nav.page-nav {
     margin: .6em 0 0;
     padding: 0 .4em .4em; }
   nav.page-nav li a {
-    font-size: 0.8125em;
+    font-size: 0.875em;
     display: block;
     padding: .6em .4em .6em;
     border-bottom: #b5b5b5 1px solid;
@@ -532,7 +528,7 @@ section.movies {
   position: relative; }
   section.movies h1 {
     display: none;
-    font-size: 0.9375em;
+    font-size: 1em;
     font-weight: bold;
     line-height: 1;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
@@ -544,11 +540,11 @@ section.movies {
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.6875em;
+    font-size: 0.75em;
     font-weight: normal; }
     @media (max-width: 51.99em) {
       section.movies h2 {
-        font-size: 0.8125em; } }
+        font-size: 0.875em; } }
   section.movies > ul {
     position: relative;
     *zoom: 1;
@@ -686,7 +682,7 @@ section.movies {
     bottom: .5em;
     right: .6em;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.8125em;
+    font-size: 0.875em;
     color: white; }
 
 .banner {
@@ -733,10 +729,10 @@ section.movies {
     opacity: 0.5;
     background: black; }
   .banner h1 {
-    font-size: 0.9375em;
+    font-size: 1em;
     margin: 0 0 .1em; }
   .banner p {
-    font-size: 0.8125em;
+    font-size: 0.875em;
     margin: 0; }
   @media (max-width: 48em) {
     .banner div {
@@ -748,7 +744,7 @@ section.movies {
       background: black;
       opacity: 1; }
     .banner h1 {
-      font-size: 0.8125em;
+      font-size: 0.875em;
       margin-bottom: 0; }
     .banner p {
       display: none; } }

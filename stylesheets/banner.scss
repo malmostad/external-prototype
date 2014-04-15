@@ -40,11 +40,11 @@
     background: black;
   }
   h1 {
-    font-size: emize(15);
+    font-size: emize(16);
     margin: 0 0 .1em;
   }
   p {
-    font-size: emize(13);
+    font-size: emize(14);
     margin: 0;
   }
   @media (max-width: 48em) {
@@ -58,7 +58,7 @@
       opacity: 1;
     }
     h1 {
-      font-size: emize(13, 16);
+      font-size: emize(14, 16);
       margin-bottom: 0;
     }
     p {
