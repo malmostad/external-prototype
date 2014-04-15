@@ -232,13 +232,6 @@ nav.nav-page-with-direct-links {
     font-weight: bold;
     margin: 0;
     padding: 0; }
-  nav.nav-page-with-direct-links li.go-to {
-    display: none;
-    padding: .7em .4em .7em .4em;
-    font-size: 0.8125em;
-    border-bottom: #b5b5b5 1px solid;
-    font-style: italic;
-    color: #666; }
   nav.nav-page-with-direct-links li a {
     position: relative;
     display: block;

@@ -50,14 +50,6 @@ nav.nav-page-with-direct-links {
     margin: 0;
     padding: 0;
   }
-  li.go-to {
-    display: none;
-    padding: .7em .4em .7em .4em;
-    font-size: emize(13);
-    border-bottom: $border;
-    font-style: italic;
-    color: #666;
-  }
 
   li a {
     position: relative;
@@ -66,17 +58,6 @@ nav.nav-page-with-direct-links {
     padding: .7em .4em .7em .4em;
     margin: 0;
     line-height: 1.2;
-    // padding-right: 1.8em;
-    // &::after {
-    //   position: absolute;
-    //   content: "\f054";
-    //   font-family: $iconFont;
-    //   font-size: 13px;
-    //   color: #ccc;
-    //   top: .9em;
-    //   right: .4em;
-    // }
-
     &:hover {
       background: $backgroundLight;
       text-decoration: none;
