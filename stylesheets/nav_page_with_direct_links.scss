@@ -12,8 +12,9 @@ nav.nav-page-with-direct-links {
     font-family: $sansSerif;
     margin: 1.5em 0 0;
     > li {
-      margin-bottom: 2em;
-      border-top: $border;
+      margin-bottom: 3em;
+      border-top: black 1px solid;
+      border-bottom: black 1px solid;
       @media (min-width: 52em) {
         @include columns(4, false, 4%);
         &:nth-child(3n) {
@@ -63,6 +64,10 @@ nav.nav-page-with-direct-links {
       text-decoration: none;
     }
   }
+  ul ul li:last-child a {
+    border-bottom: none;
+  }
+
   li li a {
     color: black;
   }

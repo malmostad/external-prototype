@@ -173,8 +173,9 @@ nav.nav-page-with-direct-links {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     margin: 1.5em 0 0; }
     nav.nav-page-with-direct-links > ul > li {
-      margin-bottom: 2em;
-      border-top: #b5b5b5 1px solid; }
+      margin-bottom: 3em;
+      border-top: black 1px solid;
+      border-bottom: black 1px solid; }
       @media (min-width: 52em) {
         nav.nav-page-with-direct-links > ul > li {
           width: 30.66667%;
@@ -242,6 +243,8 @@ nav.nav-page-with-direct-links {
     nav.nav-page-with-direct-links li a:hover {
       background: #f0f0f0;
       text-decoration: none; }
+  nav.nav-page-with-direct-links ul ul li:last-child a {
+    border-bottom: none; }
   nav.nav-page-with-direct-links li li a {
     color: black; }
   nav.nav-page-with-direct-links > ul > li > a {
