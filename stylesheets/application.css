@@ -1,3 +1,4 @@
+@charset "UTF-8";
 section.main {
   margin: 1em auto;
   max-width: 50em;
@@ -245,6 +246,8 @@ nav.nav-page-with-direct-links {
       text-decoration: none; }
   nav.nav-page-with-direct-links ul ul li:last-child a {
     border-bottom: none; }
+  nav.nav-page-with-direct-links li.more a::after {
+    content: " …"; }
   nav.nav-page-with-direct-links li li a {
     color: black; }
   nav.nav-page-with-direct-links > ul > li > a {

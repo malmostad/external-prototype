@@ -67,6 +67,9 @@ nav.nav-page-with-direct-links {
   ul ul li:last-child a {
     border-bottom: none;
   }
+  li.more a::after {
+    content: " …"
+  }
 
   li li a {
     color: black;
