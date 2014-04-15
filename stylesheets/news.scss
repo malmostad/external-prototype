@@ -19,12 +19,11 @@ section.news {
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: $serif;
-    font-size: emize(16);
-    @media (max-width: 56em) { font-size: emize(14) }
-    @media (max-width: 48em) { font-size: emize(16) }
-    @media (max-width: 40em) { font-size: emize(14) }
-    @media (max-width: 26em) { font-size: emize(16) }
-    @media (max-width: 22em) { font-size: emize(14) }
+    font-size: emize(18);
+    @media (max-width: 58em) { font-size: emize(16) }
+    @media (max-width: 48em) { font-size: emize(18) }
+    @media (max-width: 40em) { font-size: emize(16) }
+    @media (max-width: 26em) { font-size: emize(18) }
     font-weight: normal;
     .date {
       font-family: $sansSerif;
