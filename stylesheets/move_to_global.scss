@@ -30,8 +30,72 @@ article.body-copy {
     margin-bottom: .7em;
   }
 }
-.btn.act-now {
-  margin: .7em 0 1.5em 0;
+.act-now-2 {
+  margin: 1.4em 0;
+  span::before {
+    padding-right: .1em;
+  }
+}
+
+.act-now {
+  a {
+    display: block;
+    margin: 1em 0;
+    padding: .4em .6em .45em;
+    border: 3px solid #43B02A;
+    @include radius(7px);
+    font-family: $sansSerif;
+    font-size: emize(24);
+    color: black;
+    background: white;
+    @include transition(all 0.3s);
+  }
+  a:hover {
+    background: #43B02A;
+    color: white;
+    text-decoration: none;
+  }
+  a:hover span::before {
+    color: white;
+  }
+  span::before {
+    @include transition(all 0.3s);
+    padding-right: .2em;
+    color: #43B02A;
+  }
+}
+
+.in-focus {
+  position: relative;
+  margin: 1em 0;
+  border: $border;
+  @include radius(3px);
+  font-family: $sansSerif;
+  font-size: emize(15);
+  h1 {
+    font-family: $sansSerif;
+    font-size: emize(16);
+    font-weight: bold;
+    margin: .6em emize(24) .2em;
+  }
+  p {
+    font-family: $sansSerif;
+    font-size: emize(14);
+    margin: 0 emize(24, 14);
+  }
+  p:last-child {
+    margin-bottom: 1em;
+  }
+  &:before {
+    position: absolute;
+    display: block;
+    background: #43B02A;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: emize(8);
+    content: "";
+  }
 }
 
 .share a {

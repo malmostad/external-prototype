@@ -89,8 +89,70 @@ article.body-copy .box-content ul {
 article.body-copy nav li {
   margin-bottom: .7em; }
 
-.btn.act-now {
-  margin: .7em 0 1.5em 0; }
+.act-now-2 {
+  margin: 1.4em 0; }
+  .act-now-2 span::before {
+    padding-right: .1em; }
+
+.act-now a {
+  display: block;
+  margin: 1em 0;
+  padding: .4em .6em .45em;
+  border: 3px solid #43B02A;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+  font-size: 1.5em;
+  color: black;
+  background: white;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+.act-now a:hover {
+  background: #43B02A;
+  color: white;
+  text-decoration: none; }
+.act-now a:hover span::before {
+  color: white; }
+.act-now span::before {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-right: .2em;
+  color: #43B02A; }
+
+.in-focus {
+  position: relative;
+  margin: 1em 0;
+  border: #b5b5b5 1px solid;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+  font-size: 0.9375em; }
+  .in-focus h1 {
+    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.6em 1.5em 0.2em; }
+  .in-focus p {
+    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 0.875em;
+    margin: 0 1.71429em; }
+  .in-focus p:last-child {
+    margin-bottom: 1em; }
+  .in-focus:before {
+    position: absolute;
+    display: block;
+    background: #43B02A;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0.5em;
+    content: ""; }
 
 .share a span {
   font-size: 1.4em;
