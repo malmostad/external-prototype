@@ -345,12 +345,13 @@ section.news {
   section.news a {
     color: black; }
   section.news h1 {
+    display: none;
     font-size: 0.9375em;
     font-weight: bold;
     line-height: 1;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     border-bottom: #b5b5b5 1px solid;
-    margin: .6em 0;
+    margin: 0 0 .6em 0;
     padding: 0 .4em .4em; }
   section.news h2 {
     margin: 0;
@@ -358,6 +359,7 @@ section.news {
     text-overflow: ellipsis;
     font-family: Georgia, "Droid Serif", "DejaVu Serif", "Bitstream Vera Serif", serif;
     font-size: 1.125em;
+    line-height: 1.3;
     font-weight: normal; }
     @media (max-width: 58em) {
       section.news h2 {
@@ -497,6 +499,7 @@ nav.page-nav {
 section.movies {
   position: relative; }
   section.movies h1 {
+    display: none;
     font-size: 0.9375em;
     font-weight: bold;
     line-height: 1;

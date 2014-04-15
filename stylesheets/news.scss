@@ -6,12 +6,13 @@ section.news {
     color: black;
   }
   h1 {
+    display: none;
     font-size: emize(15);
     font-weight: bold;
     line-height: 1;
     font-family: $sansSerif;
     border-bottom: $border;
-    margin: .6em 0;
+    margin: 0 0 .6em 0;
     padding: 0 .4em .4em;
   }
   h2 {
@@ -20,6 +21,7 @@ section.news {
     text-overflow: ellipsis;
     font-family: $serif;
     font-size: emize(18);
+    line-height: 1.3;
     @media (max-width: 58em) { font-size: emize(16) }
     @media (max-width: 48em) { font-size: emize(18) }
     @media (max-width: 40em) { font-size: emize(16) }
