@@ -30,38 +30,11 @@ article.body-copy {
     margin-bottom: .7em;
   }
 }
-.act-now-2 {
+
+.act-now {
   margin: 1.4em 0;
   span::before {
     padding-right: .1em;
-  }
-}
-
-.act-now {
-  a {
-    display: block;
-    margin: 1em 0;
-    padding: .4em .6em .45em;
-    border: 3px solid #43B02A;
-    @include radius(7px);
-    font-family: $sansSerif;
-    font-size: emize(24);
-    color: black;
-    background: white;
-    @include transition(all 0.3s);
-  }
-  a:hover {
-    background: #43B02A;
-    color: white;
-    text-decoration: none;
-  }
-  a:hover span::before {
-    color: white;
-  }
-  span::before {
-    @include transition(all 0.3s);
-    padding-right: .2em;
-    color: #43B02A;
   }
 }
 

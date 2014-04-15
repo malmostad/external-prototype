@@ -89,40 +89,10 @@ article.body-copy .box-content ul {
 article.body-copy nav li {
   margin-bottom: .7em; }
 
-.act-now-2 {
+.act-now {
   margin: 1.4em 0; }
-  .act-now-2 span::before {
+  .act-now span::before {
     padding-right: .1em; }
-
-.act-now a {
-  display: block;
-  margin: 1em 0;
-  padding: .4em .6em .45em;
-  border: 3px solid #43B02A;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-  font-size: 1.5em;
-  color: black;
-  background: white;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
-.act-now a:hover {
-  background: #43B02A;
-  color: white;
-  text-decoration: none; }
-.act-now a:hover span::before {
-  color: white; }
-.act-now span::before {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  padding-right: .2em;
-  color: #43B02A; }
 
 .in-focus {
   position: relative;
