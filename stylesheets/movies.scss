@@ -15,7 +15,10 @@ section.movies {
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: $sansSerif;
-    font-size: emize(13);
+    font-size: emize(11);
+    @media (max-width: 51.99em) {
+      font-size: emize(13);
+    }
     font-weight: normal;
   }
   > ul {
@@ -30,11 +33,9 @@ section.movies {
   }
   > ul > li {
     margin: 0 0 1em;
-    @media (min-width: 52em) {
-      @include columns(2, false);
-      &:last-child {
-        @include columns(2, true);
-      }
+    @include columns(2, false);
+    &:last-child {
+      @include columns(2, true);
     }
     @media (min-width: 38em) and (max-width: 51.99em) {
       @include columns(4, false, 3%);
@@ -50,6 +51,9 @@ section.movies {
     }
     @media (max-width: 25.99em) {
       @include columns(12);
+      &:last-child {
+        @include columns(12, true);
+      }
     }
   }
 
@@ -73,6 +77,9 @@ section.movies {
     bottom: 0;
     background: url(../images/play.png) 50% 50% no-repeat;
     background-size: 100%;
+    @media (max-width: 25.99em) {
+      background-size: 75%;
+    }
     @include transition(opacity 0.5s);
     opacity: 0;
   }

@@ -544,8 +544,11 @@ section.movies {
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.8125em;
+    font-size: 0.6875em;
     font-weight: normal; }
+    @media (max-width: 51.99em) {
+      section.movies h2 {
+        font-size: 0.8125em; } }
   section.movies > ul {
     position: relative;
     *zoom: 1;
@@ -561,24 +564,22 @@ section.movies {
       color: white;
       text-decoration: none; }
   section.movies > ul > li {
-    margin: 0 0 1em; }
-    @media (min-width: 52em) {
-      section.movies > ul > li {
-        width: 15.0%;
-        margin-right: 2%;
-        float: left;
-        -ms-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-        section.movies > ul > li:last-child {
-          width: 15.0%;
-          margin-right: 0;
-          float: left;
-          -ms-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box; } }
+    margin: 0 0 1em;
+    width: 15.0%;
+    margin-right: 2%;
+    float: left;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    section.movies > ul > li:last-child {
+      width: 15.0%;
+      margin-right: 0;
+      float: left;
+      -ms-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
     @media (min-width: 38em) and (max-width: 51.99em) {
       section.movies > ul > li {
         width: 31.33333%;
@@ -622,7 +623,16 @@ section.movies {
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; } }
+        box-sizing: border-box; }
+        section.movies > ul > li:last-child {
+          width: 100%;
+          margin-right: 0;
+          float: none;
+          float: left;
+          -ms-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; } }
   section.movies .crop {
     width: 100%;
     position: relative;
@@ -650,6 +660,9 @@ section.movies {
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
     opacity: 0; }
+    @media (max-width: 25.99em) {
+      section.movies .play {
+        background-size: 75%; } }
   section.movies a:hover .play {
     opacity: .8; }
   section.movies img {
