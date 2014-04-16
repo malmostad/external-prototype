@@ -59,8 +59,8 @@ section.movies {
       opacity: .85;
     }
   }
-
   .crop {
+    @include box-sizing(border-box);
     width: 100%;
     position: relative;
     height: 0;
@@ -68,8 +68,15 @@ section.movies {
     margin-bottom: .3em;
     overflow: hidden;
     background: $backgroundLight;
-    @include box-sizing(border-box);
+    border: 1px solid black;
   }
+  .city-council {
+    .crop {
+      border: 1px solid white;
+    }
+  }
+
+
   .play {
     position: absolute;
     z-index: 2;
@@ -99,8 +106,6 @@ section.movies {
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
-    border: 1px solid black;
     @include box-sizing(border-box);
   }
   .more {

@@ -634,6 +634,10 @@ section.movies {
     section.movies ul li:hover img {
       opacity: .85; }
   section.movies .crop {
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
     position: relative;
     height: 0;
@@ -641,10 +645,9 @@ section.movies {
     margin-bottom: .3em;
     overflow: hidden;
     background: #f0f0f0;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+    border: 1px solid black; }
+  section.movies .city-council .crop {
+    border: 1px solid white; }
   section.movies .play {
     position: absolute;
     z-index: 2;
@@ -675,8 +678,6 @@ section.movies {
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
-    border: 1px solid black;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
