@@ -26,7 +26,7 @@ section.news {
     .date {
       font-family: $sansSerif;
       font-size: .75em;
-      padding-left: .3em;
+      // padding-left: .3em;
     }
   }
 
@@ -47,6 +47,9 @@ section.news {
       &:nth-child(2n) {
         @include columns(12);
       }
+    }
+    &:hover img {
+      opacity: .85;
     }
   }
   li li {
