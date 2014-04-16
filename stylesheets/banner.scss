@@ -10,18 +10,16 @@
   @include box-sizing(border-box);
 
   &:hover {
-    img {
-      opacity: .9;
-    }
     div {
       border-left: $border;
       border-right: $border;
     }
     div.overlay {
-      opacity: .7;
+      opacity: 1;
     }
   }
   img {
+    @include box-sizing(border-box);
     position: absolute;
     z-index: 1;
     display: block;
@@ -32,7 +30,7 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    @include box-sizing(border-box);
+    @include transition(all 0.3s);
   }
   div {
     position: absolute;
@@ -47,6 +45,7 @@
     overflow: hidden;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
+    @include transition(all 0.3s);
   }
   div.overlay {
     z-index: 2;

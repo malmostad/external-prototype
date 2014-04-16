@@ -55,9 +55,6 @@ section.movies {
         @include columns(12, true);
       }
     }
-    &:hover img {
-      opacity: .85;
-    }
   }
   .crop {
     @include box-sizing(border-box);
@@ -97,6 +94,7 @@ section.movies {
     opacity: .9;
   }
   img {
+    @include box-sizing(border-box);
     position: absolute;
     z-index: 1;
     display: block;
@@ -106,7 +104,6 @@ section.movies {
     right: 0;
     top: 0;
     bottom: 0;
-    @include box-sizing(border-box);
   }
   .more {
     position: absolute;

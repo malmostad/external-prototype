@@ -26,7 +26,6 @@ section.news {
     .date {
       font-family: $sansSerif;
       font-size: .75em;
-      // padding-left: .3em;
     }
   }
 
@@ -76,6 +75,7 @@ section.news {
     @include box-sizing(border-box);
   }
   img {
+    @include box-sizing(border-box);
     position: absolute;
     z-index: 1;
     display: block;
@@ -86,7 +86,7 @@ section.news {
     top: 0;
     bottom: 0;
     margin: auto;
-    @include box-sizing(border-box);
+    @include transition(opacity 0.3s);
   }
   .more {
     text-align: right;
