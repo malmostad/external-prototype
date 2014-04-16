@@ -1,14 +1,23 @@
 section.movies {
   position: relative;
+  @include clearfix();
+  padding: .5em .8em 0;
+  background: $backgroundDarker;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   h1 {
-    display: none;
+    display: block;
     font-size: emize(16);
     font-weight: bold;
     line-height: 1;
     font-family: $sansSerif;
     border-bottom: $border;
     margin: 0 0 .6em 0;
-    padding: 0 .4em .4em;
+    padding: 0 .4em .3em;
+    color: white;
   }
   h2 {
     margin: 0;
@@ -21,21 +30,12 @@ section.movies {
     }
     font-weight: normal;
   }
-  > ul {
-    position: relative;
-    @include clearfix();
-    padding: .8em .8em 1em;
-    background: $backgroundDarker;
-    a {
-      color: white;
-      text-decoration: none;
-    }
-  }
-  > ul > li {
-    margin: 0 0 1em;
+  ul li {
+    margin-bottom: 1.2em;
     @include columns(2, false);
     &:last-child {
       @include columns(2, true);
+      margin-bottom: 2em;
     }
     @media (min-width: 38em) and (max-width: 51.99em) {
       @include columns(4, false, 3%);
@@ -103,9 +103,15 @@ section.movies {
   .more {
     position: absolute;
     bottom: .5em;
-    right: .6em;
+    right: 1em;
     font-family: $sansSerif;
     font-size: emize(14);
     color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+    &::after {
+      // content: " …"
+    }
   }
 }

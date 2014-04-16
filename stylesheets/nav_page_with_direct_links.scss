@@ -9,12 +9,13 @@ nav.nav-page-with-direct-links {
   }
 
   > ul {
+    @include clearfix();
     font-family: $sansSerif;
-    margin: 1.5em 0 0;
+    margin: 1.5em 0 .5em;
     > li {
-      margin-bottom: 3em;
-      border-top: black 1px solid;
-      border-bottom: black 1px solid;
+      margin-bottom: 1.5em;
+      border-top: black 3px solid;
+      border-bottom: $borderColor 0px solid;
       @media (min-width: 52em) {
         @include columns(4, false, 4%);
         &:nth-child(3n) {
@@ -63,9 +64,6 @@ nav.nav-page-with-direct-links {
       background: $backgroundLight;
       text-decoration: none;
     }
-  }
-  ul ul li:last-child a {
-    border-bottom: none;
   }
   li.more a::after {
     content: " …"

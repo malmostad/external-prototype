@@ -199,12 +199,19 @@ nav.nav-page-with-direct-links {
     line-height: 1.1;
     margin: .1em 0 .3em; }
   nav.nav-page-with-direct-links > ul {
+    *zoom: 1;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    margin: 1.5em 0 0; }
+    margin: 1.5em 0 .5em; }
+    nav.nav-page-with-direct-links > ul:before, nav.nav-page-with-direct-links > ul:after {
+      display: table;
+      content: "";
+      line-height: 0; }
+    nav.nav-page-with-direct-links > ul:after {
+      clear: both; }
     nav.nav-page-with-direct-links > ul > li {
-      margin-bottom: 3em;
-      border-top: black 1px solid;
-      border-bottom: black 1px solid; }
+      margin-bottom: 1.5em;
+      border-top: black 3px solid;
+      border-bottom: #b5b5b5 0px solid; }
       @media (min-width: 52em) {
         nav.nav-page-with-direct-links > ul > li {
           width: 30.66667%;
@@ -272,8 +279,6 @@ nav.nav-page-with-direct-links {
     nav.nav-page-with-direct-links li a:hover {
       background: #f0f0f0;
       text-decoration: none; }
-  nav.nav-page-with-direct-links ul ul li:last-child a {
-    border-bottom: none; }
   nav.nav-page-with-direct-links li.more a::after {
     content: " …"; }
   nav.nav-page-with-direct-links li li a {
@@ -359,7 +364,6 @@ nav.nav-page-with-summaries {
 
 section.news {
   *zoom: 1;
-  width: 100%;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -370,17 +374,15 @@ section.news {
     line-height: 0; }
   section.news:after {
     clear: both; }
-  section.news a {
-    color: black; }
   section.news h1 {
-    display: none;
+    display: block;
     font-size: 1em;
     font-weight: bold;
     line-height: 1;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     border-bottom: #b5b5b5 1px solid;
-    margin: 0 0 .6em 0;
-    padding: 0 .4em .4em; }
+    margin: 0 0 .6em;
+    padding: 0 .4em .3em; }
   section.news h2 {
     margin: 0;
     overflow: hidden;
@@ -406,16 +408,16 @@ section.news {
       font-size: .75em;
       padding-left: .3em; }
   section.news > ul > li {
-    margin-bottom: 2em;
-    width: 22%;
-    margin-right: 4%;
+    margin-bottom: 1.5em;
+    width: 22.75%;
+    margin-right: 3%;
     float: left;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
     section.news > ul > li:last-child {
-      width: 22%;
+      width: 22.75%;
       margin-right: 0;
       float: left;
       -ms-box-sizing: border-box;
@@ -424,15 +426,15 @@ section.news {
       box-sizing: border-box; }
     @media (max-width: 48em) {
       section.news > ul > li {
-        width: 48%;
-        margin-right: 4%;
+        width: 48.5%;
+        margin-right: 3%;
         float: left;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box; }
         section.news > ul > li:nth-child(2n) {
-          width: 48%;
+          width: 48.5%;
           margin-right: 0;
           float: left;
           -ms-box-sizing: border-box;
@@ -459,12 +461,11 @@ section.news {
           -moz-box-sizing: border-box;
           box-sizing: border-box; } }
   section.news li li {
-    display: block;
     margin-bottom: .6em; }
-    section.news li li:last-child {
-      margin-bottom: .6em; }
   section.news li ul {
     margin-top: -.2em; }
+  section.news li a {
+    color: black; }
   section.news .crop {
     display: block;
     width: 100%;
@@ -494,13 +495,13 @@ section.news {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  section.news ul li.more {
-    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    font-size: 0.875em;
+  section.news .more {
     text-align: right;
-    margin-bottom: -1em; }
-    section.news ul li.more a {
-      color: black; }
+    margin-bottom: -.5em; }
+    section.news .more a {
+      font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+      font-size: 0.875em;
+      color: #007896; }
 
 nav.page-nav {
   margin: 0 0 2em;
@@ -525,16 +526,29 @@ nav.page-nav {
       text-decoration: none; }
 
 section.movies {
-  position: relative; }
+  position: relative;
+  *zoom: 1;
+  padding: .5em .8em 0;
+  background: #313131; }
+  section.movies:before, section.movies:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  section.movies:after {
+    clear: both; }
+  section.movies a {
+    color: white;
+    text-decoration: none; }
   section.movies h1 {
-    display: none;
+    display: block;
     font-size: 1em;
     font-weight: bold;
     line-height: 1;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     border-bottom: #b5b5b5 1px solid;
     margin: 0 0 .6em 0;
-    padding: 0 .4em .4em; }
+    padding: 0 .4em .3em;
+    color: white; }
   section.movies h2 {
     margin: 0;
     overflow: hidden;
@@ -545,22 +559,8 @@ section.movies {
     @media (max-width: 51.99em) {
       section.movies h2 {
         font-size: 0.875em; } }
-  section.movies > ul {
-    position: relative;
-    *zoom: 1;
-    padding: .8em .8em 1em;
-    background: #313131; }
-    section.movies > ul:before, section.movies > ul:after {
-      display: table;
-      content: "";
-      line-height: 0; }
-    section.movies > ul:after {
-      clear: both; }
-    section.movies > ul a {
-      color: white;
-      text-decoration: none; }
-  section.movies > ul > li {
-    margin: 0 0 1em;
+  section.movies ul li {
+    margin-bottom: 1.2em;
     width: 15.0%;
     margin-right: 2%;
     float: left;
@@ -568,16 +568,17 @@ section.movies {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    section.movies > ul > li:last-child {
+    section.movies ul li:last-child {
       width: 15.0%;
       margin-right: 0;
       float: left;
       -ms-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      margin-bottom: 2em; }
     @media (min-width: 38em) and (max-width: 51.99em) {
-      section.movies > ul > li {
+      section.movies ul li {
         width: 31.33333%;
         margin-right: 3%;
         float: left;
@@ -585,7 +586,7 @@ section.movies {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box; }
-        section.movies > ul > li:nth-child(3n) {
+        section.movies ul li:nth-child(3n) {
           width: 31.33333%;
           margin-right: 0;
           float: left;
@@ -594,7 +595,7 @@ section.movies {
           -moz-box-sizing: border-box;
           box-sizing: border-box; } }
     @media (min-width: 26em) and (max-width: 37.99em) {
-      section.movies > ul > li {
+      section.movies ul li {
         width: 48%;
         margin-right: 4%;
         float: left;
@@ -602,7 +603,7 @@ section.movies {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box; }
-        section.movies > ul > li:nth-child(2n) {
+        section.movies ul li:nth-child(2n) {
           width: 48%;
           margin-right: 0;
           float: left;
@@ -611,7 +612,7 @@ section.movies {
           -moz-box-sizing: border-box;
           box-sizing: border-box; } }
     @media (max-width: 25.99em) {
-      section.movies > ul > li {
+      section.movies ul li {
         width: 100%;
         margin-right: 0;
         float: none;
@@ -620,7 +621,7 @@ section.movies {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box; }
-        section.movies > ul > li:last-child {
+        section.movies ul li:last-child {
           width: 100%;
           margin-right: 0;
           float: none;
@@ -680,10 +681,12 @@ section.movies {
   section.movies .more {
     position: absolute;
     bottom: .5em;
-    right: .6em;
+    right: 1em;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 0.875em;
     color: white; }
+    section.movies .more:hover {
+      text-decoration: underline; }
 
 .banner {
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;

@@ -1,19 +1,15 @@
 section.news {
   @include clearfix();
-  width: 100%;
   @include box-sizing(border-box);
-  a {
-    color: black;
-  }
   h1 {
-    display: none;
+    display: block;
     font-size: emize(16);
     font-weight: bold;
     line-height: 1;
     font-family: $sansSerif;
     border-bottom: $border;
-    margin: 0 0 .6em 0;
-    padding: 0 .4em .4em;
+    margin: 0 0 .6em;
+    padding: 0 .4em .3em;
   }
   h2 {
     margin: 0;
@@ -33,16 +29,17 @@ section.news {
       padding-left: .3em;
     }
   }
+
   > ul > li {
-    margin-bottom: 2em;
-    @include columns(3, false, 4%);
+    margin-bottom: 1.5em;
+    @include columns(3, false, 3%);
     &:last-child {
-      @include columns(3, true, 4%);
+      @include columns(3, true, 3%);
     }
     @media (max-width: 48em) {
-      @include columns(6, false, 4%);
+      @include columns(6, false, 3%);
       &:nth-child(2n) {
-        @include columns(6, true, 4%);
+        @include columns(6, true, 3%);
       }
     }
     @media (max-width: 26em) {
@@ -53,15 +50,14 @@ section.news {
     }
   }
   li li {
-    display: block;
     margin-bottom: .6em;
-    &:last-child {
-      margin-bottom: .6em;
-    }
   }
 
   li ul {
     margin-top: -.2em;
+  }
+  li a {
+    color: black;
   }
 
   .crop {
@@ -89,13 +85,16 @@ section.news {
     margin: auto;
     @include box-sizing(border-box);
   }
-  ul li.more {
-    font-family: $sansSerif;
-    font-size: emize(14);
+  .more {
     text-align: right;
-    margin-bottom: -1em;
+    margin-bottom: -.5em;
     a {
-      color: black;
+      font-family: $sansSerif;
+      font-size: emize(14);
+      color: $linkColor;
+      &::after {
+        // content: " …";
+      }
     }
   }
 }
