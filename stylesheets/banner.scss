@@ -13,6 +13,10 @@
     img {
       opacity: .9;
     }
+    div {
+      border-left: $border;
+      border-right: $border;
+    }
     div.overlay {
       opacity: .7;
     }
@@ -41,6 +45,8 @@
     padding: .8em 1em 1em;
     color: white;
     overflow: hidden;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
   }
   div.overlay {
     z-index: 2;

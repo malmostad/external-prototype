@@ -707,6 +707,9 @@ section.movies {
   box-sizing: border-box; }
   .banner:hover img {
     opacity: .9; }
+  .banner:hover div {
+    border-left: #b5b5b5 1px solid;
+    border-right: #b5b5b5 1px solid; }
   .banner:hover div.overlay {
     opacity: .7; }
   .banner img {
@@ -734,7 +737,9 @@ section.movies {
     width: 13em;
     padding: .8em 1em 1em;
     color: white;
-    overflow: hidden; }
+    overflow: hidden;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent; }
   .banner div.overlay {
     z-index: 2;
     opacity: 0.5;
