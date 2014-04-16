@@ -495,11 +495,7 @@ section.news {
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
-    -webkit-transition: opacity 0.3s;
-    -moz-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s; }
+    margin: auto; }
   section.news .more {
     text-align: right;
     margin-bottom: -.5em; }
@@ -695,6 +691,10 @@ section.movies {
       text-decoration: underline; }
 
 .banner {
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
   position: relative;
   display: block;
@@ -702,11 +702,7 @@ section.movies {
   position: relative;
   height: 0;
   padding-top: 23%;
-  overflow: hidden;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  overflow: hidden; }
   .banner:hover div {
     border-left: #b5b5b5 1px solid;
     border-right: #b5b5b5 1px solid; }
@@ -726,11 +722,7 @@ section.movies {
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    margin: auto; }
   .banner div {
     position: absolute;
     z-index: 3;
@@ -743,11 +735,7 @@ section.movies {
     color: white;
     overflow: hidden;
     border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    border-right: 1px solid transparent; }
   .banner div.overlay {
     z-index: 2;
     opacity: 0.5;

@@ -86,7 +86,6 @@ section.news {
     top: 0;
     bottom: 0;
     margin: auto;
-    @include transition(opacity 0.3s);
   }
   .more {
     text-align: right;
