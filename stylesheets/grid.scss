@@ -1,6 +1,6 @@
 section.main {
   margin: 1em auto;
-  max-width: 50em;
+  max-width: 53em;
   padding: 0 1em;
 }
 
@@ -14,9 +14,9 @@ nav.page-nav {
 }
 
 // One column grid
-@media (max-width: 46em) {
+@media (max-width: 48em) {
   section.main {
-    max-width: 32em;
+    max-width: 34em;
   }
   article.body-copy, nav.page-nav {
     @include columns(12);
@@ -25,7 +25,7 @@ nav.page-nav {
 
 .feedback, .share, .contact-us {
   @include columns(8, false, 4%);
-  @media (max-width: 46em) {
+  @media (max-width: 48em) {
     @include columns(12);
   }
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 section.main {
   margin: 1em auto;
-  max-width: 50em;
+  max-width: 53em;
   padding: 0 1em; }
 
 article.body-copy {
@@ -23,9 +23,9 @@ nav.page-nav {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media (max-width: 46em) {
+@media (max-width: 48em) {
   section.main {
-    max-width: 32em; }
+    max-width: 34em; }
 
   article.body-copy, nav.page-nav {
     width: 100%;
@@ -44,7 +44,7 @@ nav.page-nav {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  @media (max-width: 46em) {
+  @media (max-width: 48em) {
     .feedback, .share, .contact-us {
       width: 100%;
       margin-right: 0;
@@ -336,7 +336,7 @@ nav.nav-page-with-summaries {
         box-sizing: border-box; }
       nav.nav-page-with-summaries ul li:nth-child(2n+3) {
         clear: left; }
-      @media (max-width: 46em) {
+      @media (max-width: 48em) {
         nav.nav-page-with-summaries ul li {
           width: 100%;
           margin-right: 0;

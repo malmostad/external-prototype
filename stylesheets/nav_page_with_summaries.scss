@@ -40,7 +40,7 @@ nav.nav-page-with-summaries {
       &:nth-child(2n+3) {
         clear: left;
       }
-      @media (max-width: 46em) {
+      @media (max-width: 48em) {
         @include columns(12, true, 4%);
         clear: left;
         &:nth-child(2n) {
