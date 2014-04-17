@@ -68,7 +68,7 @@ article.body-copy {
 
 .share a {
   span {
-    font-size: 1.4em;
+    font-size: emize(14);
     margin-right: .3em;
     &.icon-twitter, &.icon-twitter-sign {
       color: #55acee;
@@ -83,7 +83,7 @@ article.body-copy {
       color: #dd4b39;
     }
   }
-  &:hover {
+  &:hover span {
     text-decoration: none;
   }
 }

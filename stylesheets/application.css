@@ -1,8 +1,19 @@
 @charset "UTF-8";
-section.main {
+.wrap {
+  *zoom: 1;
   margin: 1em auto;
   max-width: 53em;
   padding: 0 1em; }
+  .wrap:before, .wrap:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  .wrap:after {
+    clear: both; }
+
+footer.bigfoot > div {
+  margin: 1em auto;
+  max-width: 53em; }
 
 article.body-copy {
   width: 65.33333%;
@@ -24,7 +35,10 @@ nav.page-nav {
   box-sizing: border-box; }
 
 @media (max-width: 48em) {
-  section.main {
+  .wrap {
+    max-width: 34em; }
+
+  footer.bigfoot > div {
     max-width: 34em; }
 
   article.body-copy, nav.page-nav {
@@ -54,18 +68,6 @@ nav.page-nav {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; } }
-
-footer.bigfoot {
-  width: 100%;
-  margin-right: 0;
-  float: none;
-  float: left;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 2em 0 0;
-  min-height: 25em; }
 
 article.body-copy img.full {
   width: 100%;
@@ -126,7 +128,7 @@ article.body-copy nav li {
     content: ""; }
 
 .share a span {
-  font-size: 1.4em;
+  font-size: 0.875em;
   margin-right: .3em; }
   .share a span.icon-twitter, .share a span.icon-twitter-sign {
     color: #55acee; }
@@ -136,7 +138,7 @@ article.body-copy nav li {
     color: #4C66A4; }
   .share a span.icon-google-plus, .share a span.icon-google-plus {
     color: #dd4b39; }
-.share a:hover {
+.share a:hover span {
   text-decoration: none; }
 
 section.toc ul {
@@ -387,7 +389,7 @@ section.news {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     border-bottom: #b5b5b5 1px solid;
     margin: 0 0 .6em;
-    padding: 0 .4em .3em; }
+    padding: 0 0 .3em; }
   section.news h2 {
     margin: 0;
     overflow: hidden;
@@ -553,7 +555,7 @@ section.movies {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     border-bottom: #b5b5b5 1px solid;
     margin: 0 0 .6em 0;
-    padding: 0 .4em .3em;
+    padding: 0 0 .3em;
     color: white; }
   section.movies h2 {
     margin: 0;
@@ -769,35 +771,56 @@ section.movies {
     .banner {
       display: none; } }
 
-footer.bigfoot section.news {
-  width: 23.5%;
-  margin-right: 2%;
-  float: left;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-footer.bigfoot section.events {
-  width: 23.5%;
-  margin-right: 2%;
-  float: left;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-footer.bigfoot section.social {
-  width: 23.5%;
-  margin-right: 2%;
-  float: left;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-footer.bigfoot section.more {
-  width: 23.5%;
-  margin-right: 2%;
-  float: left;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+footer.bigfoot {
+  margin: 2em 0 0;
+  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
+  footer.bigfoot nav.news, footer.bigfoot nav.influence {
+    width: 23.5%;
+    margin-right: 2%;
+    float: left;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  footer.bigfoot nav.events {
+    width: 23.5%;
+    margin-right: 2%;
+    float: left;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  footer.bigfoot nav.social {
+    width: 23.5%;
+    margin-right: 2%;
+    float: left;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  footer.bigfoot nav.more {
+    width: 23.5%;
+    margin-right: 0;
+    float: left;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  footer.bigfoot h1 {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+    border-bottom: #b5b5b5 1px solid;
+    margin: 0 0 .6em 0;
+    padding: 0 0em .3em;
+    color: white; }
+  footer.bigfoot li a {
+    display: block;
+    font-size: 0.875em;
+    padding-bottom: .8em; }
+  footer.bigfoot nav.social span {
+    display: inline-block;
+    width: 2em; }
+  footer.bigfoot a:hover span {
+    text-decoration: none; }

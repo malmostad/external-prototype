@@ -4,7 +4,7 @@
     <meta charset='utf-8'/>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
     <title>{{ page.title }}</title>
-    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+    <!--[if IE]><meta content='IE=edge' http-equiv='X-UA-Compatible'/><![endif]-->
     <meta content='noindex, nofollow' name='robots'/>
     <!--[if lte IE 8]><script src='{{ site.cdn_url }}/html5shiv-printshiv.js' type='text/javascript'></script><![endif]-->
     <link href='{{ site.cdn_url }}/malmo.css' media='all' rel='stylesheet' type='text/css'/>
@@ -12,7 +12,6 @@
     <!--[if lte IE 7]>
     <link href='{{ site.cdn_url }}/legacy/ie7.css' media='all' rel='stylesheet' type='text/css'/><![endif]-->
     <link rel='icon' type='image/x-icon' href='{{ site.cdn_url }}/favicon.ico'/>
-
     <meta name='twitter:card' content='summary'/>
     <meta name='twitter:site' content='@malmostad‎'/>
     <meta name='twitter:domain' content='malmo.se'/>
@@ -27,13 +26,11 @@
     <meta property='og:image' content='{{ site.domain }}{{ site.baseurl }}/images/komodo.jpg'/>
   </head>
   <body>
-    <section class='main'>
+    <div class='wrap'>
       {{ content }}
-    </section>
+    </div>
     {% include bigfoot.html %}
     <script src='{{ site.cdn_url }}/malmo.js'></script>
     <script src='{{ site.baseurl }}/javascripts/application.js'></script>
-    <script src="//use.typekit.net/hrs3bnw.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
   </body>
 </html>

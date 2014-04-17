@@ -1,37 +1,83 @@
 <footer class="bigfoot">
-  <nav class="news">
-    <h1>Nyheter</h1>
-    <ul>
-      <li>
-        <a href="#"></a>
-      </li>
-    </ul>
-  </nav>
+  <div>
+    {% if page.permalink == "/" %}
+      <nav class="influence">
+        <h1>Var med och påverka</h1>
+        <ul>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
+      </nav>
+    {% else %}
+      <nav class="news">
+        <h1>Nyheter</h1>
+        <ul>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
+      </nav>
+    {% endif %}
 
-  <nav class="events">
-    <h1>Händer idag i Malmö</h1>
-    <ul>
-      <li>
-        <a href="#"></a>
-      </li>
-    </ul>
-  </nav>
+    <nav class="events">
+      <h1>Det händer idag</h1>
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </nav>
 
-  <nav class="social">
-    <h1>Besök oss gärna på</h1>
-    <ul>
-      <li>
-        <a href="#"></a>
-      </li>
-    </ul>
-  </nav>
+    <nav class="social">
+      <h1>Besök oss gärna på</h1>
+      <ul>
+        <li>
+          <a href="#"><span class="icon-facebook-sign icon-large"></span>Malmö stad</a>
+        </li>
+        <li>
+          <a href="#"><span class="icon-facebook-sign icon-large"></span>Jobba i Malmö stad</a>
+        </li>
+        <li>
+          <a href="#"><span class="icon-twitter-sign icon-large"></span>@malmostad</a>
+        </li>
+        <li>
+          <a href="#"><span class="icon-comments-alt icon-large"></span>Våra bloggar</a>
+        </li>
+        <li>
+          <a href="#"><span class="icon-comments icon-large"></span>Här finns vi också</a>
+        </li>
+      </ul>
+    </nav>
 
-  <nav class="more">
-    <h1>Mer på malmo.se</h1>
-    <ul>
-      <li>
-        <a href="#"></a>
-      </li>
-    </ul>
-  </nav>
+    <nav class="more">
+      <h1>Mer på malmo.se</h1>
+      <ul>
+        <li>
+          <a href="#">Felanmäla något i staden</a>
+        </li>
+        <li>
+          <a href="#">Föreningsstöd</a>
+        </li>
+        <li>
+          <a href="#">Göra ett studiebesök</a>
+        </li>
+        <li>
+          <a href="#">Hitta bostad</a>
+        </li>
+        <li>
+          <a href="#">Ny i Malmö</a>
+        </li>
+        <li>
+          <a href="#">RSS</a>
+        </li>
+        <li>
+          <a href="#">Var med och påverka</a>
+        </li>
+        <li>
+          <a href="#">A–Ö</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </footer>

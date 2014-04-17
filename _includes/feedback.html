@@ -2,14 +2,13 @@
   <button type="button" class="btn btn-small trigger">Lämna synpunkter</button>
   <form action="{{ site.baseurl }}/" method="post" class="malmo-form">
     <h1>Lämna synpunkter</h1>
-    <section>
+    <div>
       <div class="control-group">
         <div class="help">Hur väl gav sidan svar på det du undrade över?</div>
-          <label class="radio"><input type="radio" name="rating" value="Mycket bra"/>Mycket väl</label>
-          <label class="radio"><input type="radio" name="rating" value="Bra"/>Väl</label>
-          <label class="radio"><input type="radio" name="rating" value="Dålig"/>Inte så väl</label>
-          <label class="radio"><input type="radio" name="rating" value="Mycket dålig"/>Inte alls</label>
-        </div>
+        <label class="radio"><input type="radio" name="rating" value="Mycket bra"/>Mycket väl</label>
+        <label class="radio"><input type="radio" name="rating" value="Bra"/>Väl</label>
+        <label class="radio"><input type="radio" name="rating" value="Dålig"/>Inte så väl</label>
+        <label class="radio"><input type="radio" name="rating" value="Mycket dålig"/>Inte alls</label>
       </div>
 
       <div class="control-group">
@@ -24,6 +23,6 @@
           <input type="submit" value="Skicka in dina synpunkter" class="btn btn-primary"/>
         </div>
       </div>
-    </section>
+    </div>
   </form>
 </section>
