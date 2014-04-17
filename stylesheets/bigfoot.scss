@@ -1,0 +1,14 @@
+footer.bigfoot {
+  section.news {
+    @include columns(3);
+  }
+  section.events {
+    @include columns(3);
+  }
+  section.social {
+    @include columns(3);
+  }
+  section.more {
+    @include columns(3);
+  }
+}

@@ -768,3 +768,36 @@ section.movies {
   @media (max-width: 36em) {
     .banner {
       display: none; } }
+
+footer.bigfoot section.news {
+  width: 23.5%;
+  margin-right: 2%;
+  float: left;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+footer.bigfoot section.events {
+  width: 23.5%;
+  margin-right: 2%;
+  float: left;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+footer.bigfoot section.social {
+  width: 23.5%;
+  margin-right: 2%;
+  float: left;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+footer.bigfoot section.more {
+  width: 23.5%;
+  margin-right: 2%;
+  float: left;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
