@@ -17,9 +17,9 @@ permalink: /
       <li><a href="{{ site.baseurl }}/body-copy-6/">Inline video</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-7/">Videolänk</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-8/">Visa på karta i text</a></li>
-      <li><a href="{{ site.baseurl }}/body-copy-12/">Fokusyta, info rubrik</a></li>
-      <li><a href="{{ site.baseurl }}/body-copy-13/">Fokusyta, info rubrik och text</a></li>
-      <li><a href="{{ site.baseurl }}/body-copy-11/">Fokusyta, agera</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-12/">"Fokusyta info", rubrik</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-13/">"Fokusyta info", rubrik och text</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-11/">"Fokusyta agera"</a></li>
     </ul>
   </nav>
   <h2>Navigeringssidor</h2>
