@@ -33,6 +33,7 @@ article.body-copy {
 .in-focus {
   position: relative;
   margin: 1em 0;
+  padding: 1em 1.5em;
   border: $border;
   @include radius(3px);
   font-family: $sansSerif;
@@ -41,20 +42,22 @@ article.body-copy {
     font-family: $sansSerif;
     font-size: emize(16);
     font-weight: bold;
-    margin: .6em emize(24) .2em;
+    margin: 0;
+  }
+  h1+p {
+    margin-top: .3em;
   }
   p {
     font-family: $sansSerif;
     font-size: emize(14);
-    margin: 0 emize(24, 14);
-  }
-  p:last-child {
-    margin-bottom: 1em;
+    margin: 0;
+    padding: 0;
   }
   &:before {
     position: absolute;
     display: block;
     background: #43B02A;
+    @include radius(3px 0 0 3px);
     top: 0;
     bottom: 0;
     left: 0;

@@ -93,6 +93,7 @@ article.body-copy nav li {
 .in-focus {
   position: relative;
   margin: 1em 0;
+  padding: 1em 1.5em;
   border: #b5b5b5 1px solid;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -103,17 +104,21 @@ article.body-copy nav li {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 1em;
     font-weight: bold;
-    margin: 0.6em 1.5em 0.2em; }
+    margin: 0; }
+  .in-focus h1 + p {
+    margin-top: .3em; }
   .in-focus p {
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 0.875em;
-    margin: 0 1.71429em; }
-  .in-focus p:last-child {
-    margin-bottom: 1em; }
+    margin: 0;
+    padding: 0; }
   .in-focus:before {
     position: absolute;
     display: block;
     background: #43B02A;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
     top: 0;
     bottom: 0;
     left: 0;
