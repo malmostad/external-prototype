@@ -133,7 +133,7 @@ article.body-copy nav li {
     content: ""; }
 
 .share a span {
-  font-size: 0.875em;
+  font-size: 1.4em;
   margin-right: .3em; }
   .share a span.icon-twitter, .share a span.icon-twitter-sign {
     color: #55acee; }
@@ -837,7 +837,8 @@ footer.bigfoot {
     font-size: 0.85714em; }
   footer.bigfoot nav.social span {
     display: inline-block;
-    width: 2em; }
+    width: 1em;
+    margin-right: 1em; }
   footer.bigfoot a:hover span {
     text-decoration: none; }
   footer.bigfoot address {

@@ -1,6 +1,10 @@
 footer.bigfoot {
   margin: 2em 0 0;
   font-family: $sansSerif;
+  // background: $backgroundLightHover;
+  // *, a {
+  //   color: black !important;
+  // }
 
   div.cols nav {
     margin-bottom: 1.5em;
@@ -61,7 +65,8 @@ footer.bigfoot {
     // }
     span {
       display: inline-block;
-      width: 2em;
+      width: 1em;
+      margin-right: 1em;
     }
   }
   a:hover span {
