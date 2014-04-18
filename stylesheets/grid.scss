@@ -5,9 +5,12 @@
   padding: 0 1em;
 }
 
-footer.bigfoot > div {
-  margin: 1em auto;
-  max-width: 53em;
+footer.bigfoot {
+  > div, > address, > nav.about {
+    @include clearfix();
+    margin: 1em auto;
+    max-width: 53em;
+  }
 }
 
 article.body-copy {

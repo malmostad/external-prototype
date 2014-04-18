@@ -11,9 +11,16 @@
   .wrap:after {
     clear: both; }
 
-footer.bigfoot > div {
+footer.bigfoot > div, footer.bigfoot > address, footer.bigfoot > nav.about {
+  *zoom: 1;
   margin: 1em auto;
   max-width: 53em; }
+  footer.bigfoot > div:before, footer.bigfoot > div:after, footer.bigfoot > address:before, footer.bigfoot > address:after, footer.bigfoot > nav.about:before, footer.bigfoot > nav.about:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  footer.bigfoot > div:after, footer.bigfoot > address:after, footer.bigfoot > nav.about:after {
+    clear: both; }
 
 article.body-copy {
   width: 65.33333%;
@@ -45,7 +52,6 @@ nav.page-nav {
     width: 100%;
     margin-right: 0;
     float: none;
-    float: left;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -63,7 +69,6 @@ nav.page-nav {
       width: 100%;
       margin-right: 0;
       float: none;
-      float: left;
       -ms-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -263,7 +268,6 @@ nav.nav-page-with-direct-links {
           width: 100%;
           margin-right: 0;
           float: none;
-          float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -353,7 +357,6 @@ nav.nav-page-with-summaries {
           width: 100%;
           margin-right: 0;
           float: none;
-          float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -363,7 +366,6 @@ nav.nav-page-with-summaries {
             width: 100%;
             margin-right: 0;
             float: none;
-            float: left;
             -ms-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -452,7 +454,6 @@ section.news {
         width: 100%;
         margin-right: 0;
         float: none;
-        float: left;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -461,7 +462,6 @@ section.news {
           width: 100%;
           margin-right: 0;
           float: none;
-          float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -624,7 +624,6 @@ section.movies {
         width: 100%;
         margin-right: 0;
         float: none;
-        float: left;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -633,7 +632,6 @@ section.movies {
           width: 100%;
           margin-right: 0;
           float: none;
-          float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -774,38 +772,51 @@ section.movies {
 footer.bigfoot {
   margin: 2em 0 0;
   font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
-  footer.bigfoot nav.news, footer.bigfoot nav.influence {
-    width: 23.5%;
-    margin-right: 2%;
+  footer.bigfoot div.cols nav {
+    margin-bottom: 1.5em;
+    width: 22.75%;
+    margin-right: 3%;
     float: left;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  footer.bigfoot nav.events {
-    width: 23.5%;
-    margin-right: 2%;
-    float: left;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-  footer.bigfoot nav.social {
-    width: 23.5%;
-    margin-right: 2%;
-    float: left;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-  footer.bigfoot nav.more {
-    width: 23.5%;
-    margin-right: 0;
-    float: left;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+    footer.bigfoot div.cols nav:last-child {
+      width: 22.75%;
+      margin-right: 0;
+      float: left;
+      -ms-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    @media (max-width: 50em) {
+      footer.bigfoot div.cols nav:nth-child(2n+1) {
+        clear: left;
+        width: 49%;
+        margin-right: 2%;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      footer.bigfoot div.cols nav:nth-child(2n) {
+        clear: none;
+        width: 49%;
+        margin-right: 0;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; } }
+    @media (max-width: 32em) {
+      footer.bigfoot div.cols nav:nth-child(n+0) {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; } }
   footer.bigfoot h1 {
     display: block;
     font-size: 1em;
@@ -818,9 +829,20 @@ footer.bigfoot {
   footer.bigfoot li a {
     display: block;
     font-size: 0.875em;
-    padding-bottom: .8em; }
+    line-height: 1.4;
+    padding-bottom: 1.2em; }
+  footer.bigfoot nav.influence span, footer.bigfoot nav.events span {
+    display: block;
+    margin-top: .2em;
+    font-size: 0.85714em; }
   footer.bigfoot nav.social span {
     display: inline-block;
     width: 2em; }
   footer.bigfoot a:hover span {
     text-decoration: none; }
+  footer.bigfoot address {
+    font-style: normal; }
+    footer.bigfoot address > div {
+      font-size: 0.875em;
+      display: block;
+      margin-right: 2em; }
