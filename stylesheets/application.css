@@ -867,3 +867,18 @@ footer.bigfoot .etc {
         display: block; }
         footer.bigfoot .etc nav.about li a {
           margin: 0 0 1em; } }
+
+footer.bigfoot.light {
+  background: #f0f0f0;
+  border-top: black 3px solid;
+  color: black; }
+  footer.bigfoot.light a, footer.bigfoot.light div.cols h1 {
+    color: black; }
+  footer.bigfoot.light .etc {
+    background: #e3e3e3; }
+  footer.bigfoot.light nav.social .icon-twitter, footer.bigfoot.light nav.social .icon-twitter-sign {
+    color: #55acee; }
+  footer.bigfoot.light nav.social .icon-facebook, footer.bigfoot.light nav.social .icon-facebook-sign {
+    color: #4C66A4; }
+  footer.bigfoot.light nav.social .icon-google-plus, footer.bigfoot.light nav.social .icon-google-plus {
+    color: #dd4b39; }

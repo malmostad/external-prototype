@@ -112,3 +112,26 @@ footer.bigfoot {
     }
   }
 }
+
+footer.bigfoot.light {
+  background: $backgroundLight;
+  border-top: black 3px solid;
+  color: black;
+  a, div.cols h1 {
+    color: black;
+  }
+  .etc {
+    background: $backgroundLightHover;
+  }
+  nav.social {
+    .icon-twitter, .icon-twitter-sign {
+      color: #55acee;
+    }
+    .icon-facebook, .icon-facebook-sign {
+      color: #4C66A4;
+    }
+    .icon-google-plus, .icon-google-plus {
+      color: #dd4b39;
+    }
+  }
+}
