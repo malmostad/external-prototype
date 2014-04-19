@@ -1,84 +1,116 @@
 footer.bigfoot {
-  margin: 2em 0 0;
-  font-family: $sansSerif;
-  // background: $backgroundLightHover;
-  // *, a {
-  //   color: black !important;
-  // }
+  div.cols {
+    padding: 1.5em 1em 0;
+    nav {
+      margin-bottom: 2em;
+      @include columns(3, false, 4%);
+      &:last-child {
+        @include columns(3, true, 4%);
+      }
+      @media (max-width: 50em) {
+        &:nth-child(2n+1) {
+          clear: left;
+          @include columns(6, false, 4%);
+        }
+        &:nth-child(2n) {
+          clear: none;
+          @include columns(6, true, 4%);
+        }
+      }
+      @media (max-width: 32em) {
+        @include clearfix();
+        &:nth-child(n+0) {
+          @include columns(12);
+        }
+      }
+    }
 
-  div.cols nav {
-    margin-bottom: 1.5em;
-    @include columns(3, false, 3%);
-    &:last-child {
-      @include columns(3, true, 3%);
-    }
-    @media (max-width: 50em) {
-      &:nth-child(2n+1) {
-        clear: left;
-        @include columns(6, false);
-      }
-      &:nth-child(2n) {
-        clear: none;
-        @include columns(6, true);
-      }
-    }
-    @media (max-width: 32em) {
-      &:nth-child(n+0) {
-        @include columns(12);
-      }
-    }
-  }
-
-  h1 {
-    display: block;
-    font-size: emize(16);
-    font-weight: bold;
-    line-height: 1;
-    border-bottom: $border;
-    margin: 0 0 .6em 0;
-    padding: 0 0em .3em;
-    color: white;
-  }
-  li a {
-    display: block;
-    font-size: emize(14);
-    line-height: 1.4;
-    padding-bottom: 1.2em;
-  }
-  nav.influence, nav.events {
-    span {
+    h1 {
       display: block;
-      margin-top: .2em;
-      font-size: emize(12, 14);
+      font-size: emize(16);
+      font-weight: bold;
+      line-height: 1;
+      border-bottom: $border;
+      margin: 0 0 .6em 0;
+      padding: 0 0em .3em;
+      color: white;
     }
-  }
+    li a {
+      display: block;
+      font-size: emize(14);
+      line-height: 1.45em;
+      margin-bottom: 1.45em;
+    }
+    nav.influence, nav.events {
+      span {
+        display: block;
+        font-style: italic;
+      }
+    }
 
-  nav.social {
-    // .icon-twitter, .icon-twitter-sign {
-    //   color: #55acee;
-    // }
-    // .icon-facebook, .icon-facebook-sign {
-    //   color: #4C66A4;
-    // }
-    // .icon-google-plus, .icon-google-plus {
-    //   color: #dd4b39;
-    // }
-    span {
-      display: inline-block;
-      width: 1em;
-      margin-right: 1em;
+    nav.social {
+      // .icon-twitter, .icon-twitter-sign {
+      //   color: #55acee;
+      // }
+      // .icon-facebook, .icon-facebook-sign {
+      //   color: #4C66A4;
+      // }
+      // .icon-google-plus, .icon-google-plus {
+      //   color: #dd4b39;
+      // }
+      span {
+        display: inline-block;
+        width: 1em;
+        margin-right: 1em;
+      }
     }
   }
   a:hover span {
     text-decoration: none;
   }
 
-  address {
-    font-style: normal;
-    > div {
+  .etc {
+    padding: 1em 1em 2em;
+    background: #222;
+    address, nav.about {
+      margin: 0 auto 1em;
+      font-style: normal;
+      text-align: center;
+      > div {
+        display: inline-block;
+        margin: 0 1.5em 0 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0;
+        a {
+          margin: 0 1.5em 0 0;
+        }
+      }
+    }
+    address > div,
+    nav.about li a {
       font-size: emize(14);
-      display: block;
-      margin-right: 2em;
+      line-height: emize(21, 14);
+    }
+    @media (max-width: 32em) {
+      address {
+        text-align: left;
+        margin-bottom: 2em;
+        > div {
+          display: block;
+          margin: 0;
+        }
+      }
+      nav.about {
+        text-align: left;
+        li {
+          display: block;
+          a {
+            margin: 0 0 1em;
+          }
+        }
+      }
     }
   }
 }

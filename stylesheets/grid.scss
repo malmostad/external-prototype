@@ -6,10 +6,14 @@
 }
 
 footer.bigfoot {
-  > div, > address, > nav.about {
+  > div.cols, > address, div.about {
     @include clearfix();
-    margin: 1em auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 53em;
+    @media (max-width: 48em) {
+      max-width: 34em;
+    }
   }
 }
 
@@ -25,9 +29,6 @@ nav.page-nav {
 // One column grid
 @media (max-width: 48em) {
   .wrap {
-    max-width: 34em;
-  }
-  footer.bigfoot > div {
     max-width: 34em;
   }
   article.body-copy, nav.page-nav {
