@@ -1,5 +1,11 @@
 nav.nav-page-with-direct-links {
   @include clearfix();
+  &.start {
+    margin-top: 1em;
+    @media (max-width: 36em) {
+      margin-top: -.5em;
+    }
+  }
   > h1 {
     font-family: $serif;
     font-weight: normal;
@@ -15,28 +21,24 @@ nav.nav-page-with-direct-links {
     > li {
       margin-bottom: 1.5em;
       border-top: black 3px solid;
-      border-bottom: $borderColor 0px solid;
       @media (min-width: 52em) {
         @include columns(4, false, 4%);
         &:nth-child(3n) {
           @include columns(4, true, 4%);
         }
-        &:nth-child(3n+4) {
-          clear: left;
-        }
       }
       @media (max-width: 51.99em) and (min-width: 30em) {
-        clear: none;
-        @include columns(6, false, 4%);
+        &:nth-child(2n+1) {
+          @include columns(6, false, 4%);
+        }
         &:nth-child(2n) {
           @include columns(6, true, 4%);
         }
-        &:nth-child(2n+3) {
-          clear: left;
-        }
       }
       @media (max-width: 29.99em) {
-        @include columns(12);
+        &:nth-child(n+0) {
+          @include columns(12);
+        }
       }
     }
   }
@@ -47,7 +49,7 @@ nav.nav-page-with-direct-links {
 
   h2 {
     font-size: emize(16);
-    line-height: 1.2;
+    line-height: emize(20, 16);
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -57,9 +59,9 @@ nav.nav-page-with-direct-links {
     position: relative;
     display: block;
     border-bottom: $border;
-    padding: .7em .4em .7em .4em;
+    padding: emize(9, 14) .4em;
     margin: 0;
-    line-height: 1.2;
+    line-height: emize(20, 16);
     &:hover {
       background: $backgroundLight;
       text-decoration: none;

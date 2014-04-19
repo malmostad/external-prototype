@@ -28,6 +28,8 @@ permalink: /
       <li><a href="{{ site.baseurl }}/nav-page-2/">Med direktlänkar + banner, nyheter och film</a></li>
       <li><a href="{{ site.baseurl }}/nav-page-1/">Med direktlänkar + nyheter</a></li>
       <li><a href="{{ site.baseurl }}/nav-page-3/">Med sammanfattningar</a></li>
+      <li><a href="{{ site.baseurl }}/start-page-1/">Startsida</a></li>
+      <li><a href="{{ site.baseurl }}/start-page-2/">Startsida, sammanslagen</a></li>
     </ul>
   </nav>
 </section>

@@ -17,7 +17,7 @@ section.news {
       }
     }
     @media (max-width: 26em) {
-      &:nth-child(n+0) {
+      &:nth-child(n) {
         @include columns(12);
       }
     }
