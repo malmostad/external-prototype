@@ -384,6 +384,49 @@ section.news {
     line-height: 0; }
   section.news:after {
     clear: both; }
+  section.news > ul > li {
+    margin-bottom: 1.5em;
+    width: 22.75%;
+    margin-right: 3%;
+    float: left;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    section.news > ul > li:last-child {
+      width: 22.75%;
+      margin-right: 0;
+      float: left;
+      -ms-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    @media (max-width: 48em) {
+      section.news > ul > li:nth-child(2n+1) {
+        width: 48.5%;
+        margin-right: 3%;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      section.news > ul > li:nth-child(2n) {
+        width: 48.5%;
+        margin-right: 0;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; } }
+    @media (max-width: 26em) {
+      section.news > ul > li:nth-child(n+0) {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; } }
   section.news h1 {
     display: block;
     font-size: 1em;
@@ -416,59 +459,8 @@ section.news {
     section.news h2 .date {
       font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
       font-size: .75em; }
-  section.news > ul > li {
-    margin-bottom: 1.5em;
-    width: 22.75%;
-    margin-right: 3%;
-    float: left;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    section.news > ul > li:last-child {
-      width: 22.75%;
-      margin-right: 0;
-      float: left;
-      -ms-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box; }
-    @media (max-width: 48em) {
-      section.news > ul > li {
-        width: 48.5%;
-        margin-right: 3%;
-        float: left;
-        -ms-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-        section.news > ul > li:nth-child(2n) {
-          width: 48.5%;
-          margin-right: 0;
-          float: left;
-          -ms-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box; } }
-    @media (max-width: 26em) {
-      section.news > ul > li {
-        width: 100%;
-        margin-right: 0;
-        float: none;
-        -ms-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-        section.news > ul > li:nth-child(2n) {
-          width: 100%;
-          margin-right: 0;
-          float: none;
-          -ms-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box; } }
-    section.news > ul > li:hover img {
-      opacity: .85; }
+  section.news > ul > li:hover img {
+    opacity: .85; }
   section.news li li {
     margin-bottom: .6em; }
   section.news li ul {
@@ -545,6 +537,75 @@ section.movies {
     line-height: 0; }
   section.movies:after {
     clear: both; }
+  section.movies ul li {
+    margin-bottom: 1.2em;
+    width: 15.0%;
+    margin-right: 2%;
+    float: left;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    section.movies ul li:last-child {
+      width: 15.0%;
+      margin-right: 0;
+      float: left;
+      -ms-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-bottom: 2em; }
+    @media (min-width: 38em) and (max-width: 51.99em) {
+      section.movies ul li:nth-child(3n+1) {
+        width: 31.33333%;
+        margin-right: 3%;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      section.movies ul li:nth-child(3n+2), section.movies ul li:nth-child(3n+2) {
+        width: 31.33333%;
+        margin-right: 3%;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      section.movies ul li:nth-child(3n) {
+        width: 31.33333%;
+        margin-right: 0;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; } }
+    @media (min-width: 26em) and (max-width: 37.99em) {
+      section.movies ul li:nth-child(2n+1) {
+        width: 48%;
+        margin-right: 4%;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      section.movies ul li:nth-child(2n) {
+        width: 48%;
+        margin-right: 0;
+        float: left;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; } }
+    @media (max-width: 25.99em) {
+      section.movies ul li:nth-child(n+0) {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; } }
   section.movies a {
     color: white;
     text-decoration: none; }
@@ -568,75 +629,6 @@ section.movies {
     @media (max-width: 51.99em) {
       section.movies h2 {
         font-size: 0.875em; } }
-  section.movies ul li {
-    margin-bottom: 1.2em;
-    width: 15.0%;
-    margin-right: 2%;
-    float: left;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    section.movies ul li:last-child {
-      width: 15.0%;
-      margin-right: 0;
-      float: left;
-      -ms-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      margin-bottom: 2em; }
-    @media (min-width: 38em) and (max-width: 51.99em) {
-      section.movies ul li {
-        width: 31.33333%;
-        margin-right: 3%;
-        float: left;
-        -ms-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-        section.movies ul li:nth-child(3n) {
-          width: 31.33333%;
-          margin-right: 0;
-          float: left;
-          -ms-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box; } }
-    @media (min-width: 26em) and (max-width: 37.99em) {
-      section.movies ul li {
-        width: 48%;
-        margin-right: 4%;
-        float: left;
-        -ms-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-        section.movies ul li:nth-child(2n) {
-          width: 48%;
-          margin-right: 0;
-          float: left;
-          -ms-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box; } }
-    @media (max-width: 25.99em) {
-      section.movies ul li {
-        width: 100%;
-        margin-right: 0;
-        float: none;
-        -ms-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; }
-        section.movies ul li:last-child {
-          width: 100%;
-          margin-right: 0;
-          float: none;
-          -ms-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box; } }
   section.movies .crop {
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -650,8 +642,6 @@ section.movies {
     overflow: hidden;
     background: #f0f0f0;
     border: 1px solid black; }
-  section.movies .city-council .crop {
-    border: 1px solid white; }
   section.movies .play {
     position: absolute;
     z-index: 2;
@@ -791,7 +781,6 @@ footer.bigfoot div.cols {
       box-sizing: border-box; }
     @media (max-width: 50em) {
       footer.bigfoot div.cols nav:nth-child(2n+1) {
-        clear: left;
         width: 48%;
         margin-right: 4%;
         float: left;
@@ -800,7 +789,6 @@ footer.bigfoot div.cols {
         -moz-box-sizing: border-box;
         box-sizing: border-box; }
       footer.bigfoot div.cols nav:nth-child(2n) {
-        clear: none;
         width: 48%;
         margin-right: 0;
         float: left;

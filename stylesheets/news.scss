@@ -1,6 +1,28 @@
 section.news {
   @include clearfix();
   @include box-sizing(border-box);
+
+  > ul > li {
+    margin-bottom: 1.5em;
+    @include columns(3, false, 3%);
+    &:last-child {
+      @include columns(3, true, 3%);
+    }
+    @media (max-width: 48em) {
+      &:nth-child(2n+1) {
+        @include columns(6, false, 3%);
+      }
+      &:nth-child(2n) {
+        @include columns(6, true, 3%);
+      }
+    }
+    @media (max-width: 26em) {
+      &:nth-child(n+0) {
+        @include columns(12);
+      }
+    }
+  }
+
   h1 {
     display: block;
     font-size: emize(16);
@@ -29,28 +51,10 @@ section.news {
     }
   }
 
-  > ul > li {
-    margin-bottom: 1.5em;
-    @include columns(3, false, 3%);
-    &:last-child {
-      @include columns(3, true, 3%);
-    }
-    @media (max-width: 48em) {
-      @include columns(6, false, 3%);
-      &:nth-child(2n) {
-        @include columns(6, true, 3%);
-      }
-    }
-    @media (max-width: 26em) {
-      @include columns(12);
-      &:nth-child(2n) {
-        @include columns(12);
-      }
-    }
-    &:hover img {
-      opacity: .85;
-    }
+  > ul > li:hover img {
+    opacity: .85;
   }
+
   li li {
     margin-bottom: .6em;
   }

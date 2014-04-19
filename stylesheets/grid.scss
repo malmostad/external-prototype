@@ -26,7 +26,6 @@ nav.page-nav {
   @include columns(4, true, 4%);
 }
 
-// One column grid
 @media (max-width: 48em) {
   .wrap {
     max-width: 34em;
