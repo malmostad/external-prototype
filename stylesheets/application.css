@@ -763,7 +763,7 @@ section.movies {
 footer.bigfoot div.cols {
   padding: 1.5em 1em 0; }
   footer.bigfoot div.cols nav {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     width: 22%;
     margin-right: 4%;
     float: left;
@@ -837,7 +837,7 @@ footer.bigfoot div.cols {
 footer.bigfoot a:hover span {
   text-decoration: none; }
 footer.bigfoot .etc {
-  padding: 1em 1em 2em;
+  padding: 1em 1em 1em;
   background: #222; }
   footer.bigfoot .etc address, footer.bigfoot .etc nav.about {
     margin: 0 auto 1em;

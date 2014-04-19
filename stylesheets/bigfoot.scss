@@ -2,7 +2,7 @@ footer.bigfoot {
   div.cols {
     padding: 1.5em 1em 0;
     nav {
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
       @include columns(3, false, 4%);
       &:last-child {
         @include columns(3, true, 4%);
@@ -68,7 +68,7 @@ footer.bigfoot {
   }
 
   .etc {
-    padding: 1em 1em 2em;
+    padding: 1em 1em 1em;
     background: #222;
     address, nav.about {
       margin: 0 auto 1em;
