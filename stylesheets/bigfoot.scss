@@ -31,13 +31,13 @@ footer.bigfoot {
       border-bottom: $border;
       margin: 0 0 .6em 0;
       padding: 0 0em .3em;
-      color: white;
     }
     li a {
       display: block;
       font-size: emize(14);
-      line-height: 1.45em;
-      margin-bottom: 1.45em;
+      line-height: 1.4;
+      margin-bottom: 1em;
+      color: black;
     }
     nav.influence, nav.events {
       span {
@@ -47,15 +47,15 @@ footer.bigfoot {
     }
 
     nav.social {
-      // .icon-twitter, .icon-twitter-sign {
-      //   color: #55acee;
-      // }
-      // .icon-facebook, .icon-facebook-sign {
-      //   color: #4C66A4;
-      // }
-      // .icon-google-plus, .icon-google-plus {
-      //   color: #dd4b39;
-      // }
+      .icon-twitter, .icon-twitter-sign {
+        color: #55acee;
+      }
+      .icon-facebook, .icon-facebook-sign {
+        color: #4C66A4;
+      }
+      .icon-google-plus, .icon-google-plus {
+        color: #dd4b39;
+      }
       span {
         display: inline-block;
         width: 1em;
@@ -69,7 +69,7 @@ footer.bigfoot {
 
   .etc {
     padding: 1em 1em 1em;
-    background: #222;
+    background: $backgroundLightHover;
     address, nav.about {
       margin: 0 auto 1em;
       font-style: normal;
@@ -105,33 +105,11 @@ footer.bigfoot {
         li {
           display: block;
           a {
+            color: $linkColor;
             margin: 0 0 1em;
           }
         }
       }
-    }
-  }
-}
-
-footer.bigfoot.light {
-  background: $backgroundLight;
-  border-top: black 3px solid;
-  color: black;
-  a, div.cols h1 {
-    color: black;
-  }
-  .etc {
-    background: $backgroundLightHover;
-  }
-  nav.social {
-    .icon-twitter, .icon-twitter-sign {
-      color: #55acee;
-    }
-    .icon-facebook, .icon-facebook-sign {
-      color: #4C66A4;
-    }
-    .icon-google-plus, .icon-google-plus {
-      color: #dd4b39;
     }
   }
 }

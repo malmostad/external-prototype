@@ -288,7 +288,7 @@ nav.nav-page-with-direct-links {
     margin: 0;
     line-height: 1.25em; }
     nav.nav-page-with-direct-links li a:hover {
-      background: #f0f0f0;
+      background: whitesmoke;
       text-decoration: none; }
   nav.nav-page-with-direct-links li.more a::after {
     content: " …"; }
@@ -474,7 +474,7 @@ section.news {
     padding-top: 56.25%;
     margin-bottom: .3em;
     overflow: hidden;
-    background: #f0f0f0;
+    background: whitesmoke;
     border: #828282 1px solid;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -522,7 +522,7 @@ nav.page-nav {
     color: black;
     margin: 0; }
     nav.page-nav li a:hover {
-      background: #f0f0f0;
+      background: whitesmoke;
       text-decoration: none; }
 
 section.movies {
@@ -639,7 +639,7 @@ section.movies {
     padding-top: 56.25%;
     margin-bottom: .3em;
     overflow: hidden;
-    background: #f0f0f0;
+    background: whitesmoke;
     border: 1px solid black; }
   section.movies .play {
     position: absolute;
@@ -819,16 +819,22 @@ footer.bigfoot div.cols {
     line-height: 1;
     border-bottom: #b5b5b5 1px solid;
     margin: 0 0 .6em 0;
-    padding: 0 0em .3em;
-    color: white; }
+    padding: 0 0em .3em; }
   footer.bigfoot div.cols li a {
     display: block;
     font-size: 0.875em;
-    line-height: 1.45em;
-    margin-bottom: 1.45em; }
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: black; }
   footer.bigfoot div.cols nav.influence span, footer.bigfoot div.cols nav.events span {
     display: block;
     font-style: italic; }
+  footer.bigfoot div.cols nav.social .icon-twitter, footer.bigfoot div.cols nav.social .icon-twitter-sign {
+    color: #55acee; }
+  footer.bigfoot div.cols nav.social .icon-facebook, footer.bigfoot div.cols nav.social .icon-facebook-sign {
+    color: #4C66A4; }
+  footer.bigfoot div.cols nav.social .icon-google-plus, footer.bigfoot div.cols nav.social .icon-google-plus {
+    color: #dd4b39; }
   footer.bigfoot div.cols nav.social span {
     display: inline-block;
     width: 1em;
@@ -837,7 +843,7 @@ footer.bigfoot a:hover span {
   text-decoration: none; }
 footer.bigfoot .etc {
   padding: 1em 1em 1em;
-  background: #222; }
+  background: #e8e8e8; }
   footer.bigfoot .etc address, footer.bigfoot .etc nav.about {
     margin: 0 auto 1em;
     font-style: normal;
@@ -866,19 +872,5 @@ footer.bigfoot .etc {
       footer.bigfoot .etc nav.about li {
         display: block; }
         footer.bigfoot .etc nav.about li a {
+          color: #007896;
           margin: 0 0 1em; } }
-
-footer.bigfoot.light {
-  background: #f0f0f0;
-  border-top: black 3px solid;
-  color: black; }
-  footer.bigfoot.light a, footer.bigfoot.light div.cols h1 {
-    color: black; }
-  footer.bigfoot.light .etc {
-    background: #e3e3e3; }
-  footer.bigfoot.light nav.social .icon-twitter, footer.bigfoot.light nav.social .icon-twitter-sign {
-    color: #55acee; }
-  footer.bigfoot.light nav.social .icon-facebook, footer.bigfoot.light nav.social .icon-facebook-sign {
-    color: #4C66A4; }
-  footer.bigfoot.light nav.social .icon-google-plus, footer.bigfoot.light nav.social .icon-google-plus {
-    color: #dd4b39; }
