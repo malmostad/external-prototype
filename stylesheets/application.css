@@ -754,7 +754,9 @@ section.movies {
       font-size: 0.875em;
       margin-bottom: 0; }
     .banner p {
-      display: none; } }
+      display: none; }
+    .banner:hover div {
+      border-color: transparent; } }
   @media (max-width: 36em) {
     .banner {
       display: none; } }

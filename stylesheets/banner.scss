@@ -75,6 +75,11 @@
     p {
       display: none;
     }
+    &:hover {
+      div {
+        border-color: transparent;
+      }
+    }
   }
   @media (max-width: 36em) {
     display: none;
