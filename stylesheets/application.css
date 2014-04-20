@@ -824,8 +824,7 @@ footer.bigfoot div.cols {
     display: block;
     font-size: 0.875em;
     line-height: 1.4;
-    margin-bottom: 1em;
-    color: black; }
+    margin-bottom: 1em; }
   footer.bigfoot div.cols nav.influence span, footer.bigfoot div.cols nav.events span {
     display: block;
     font-style: italic; }
@@ -873,5 +872,4 @@ footer.bigfoot .etc {
       footer.bigfoot .etc nav.about li {
         display: block; }
         footer.bigfoot .etc nav.about li a {
-          color: #007896;
           margin: 0 0 1em; } }
