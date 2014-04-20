@@ -843,7 +843,8 @@ footer.bigfoot a:hover span {
   text-decoration: none; }
 footer.bigfoot .etc {
   padding: 1em 1em 1em;
-  background: #e8e8e8; }
+  background: #e8e8e8;
+  border-top: 1px solid #888888; }
   footer.bigfoot .etc address, footer.bigfoot .etc nav.about {
     margin: 0 auto 1em;
     font-style: normal;

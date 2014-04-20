@@ -70,6 +70,7 @@ footer.bigfoot {
   .etc {
     padding: 1em 1em 1em;
     background: $backgroundLightHover;
+    border-top: 1px solid $backgroundDark;
     address, nav.about {
       margin: 0 auto 1em;
       font-style: normal;
