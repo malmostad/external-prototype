@@ -70,16 +70,16 @@ article.body-copy {
   span {
     font-size: 1.4em;
     margin-right: .3em;
-    &.icon-twitter, &.icon-twitter-sign {
+    &.fa-twitter, &.fa-twitter-square {
       color: #55acee;
     }
-    &.icon-twitter {
+    &.fa-twitter {
       font-size: 1.5em;
     }
-    &.icon-facebook, &.icon-facebook-sign {
+    &.fa-facebook, &.fa-facebook-square {
       color: #4C66A4;
     }
-    &.icon-google-plus, &.icon-google-plus {
+    &.fa-google-plus, &.fa-google-plus {
       color: #dd4b39;
     }
   }
