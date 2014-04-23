@@ -96,7 +96,7 @@ article.body-copy nav li {
 .act-now {
   margin: 1.4em 0; }
   .act-now span::before {
-    padding-right: .1em; }
+    padding-right: .3em; }
 
 .in-focus {
   position: relative;
