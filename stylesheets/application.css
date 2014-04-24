@@ -2,7 +2,7 @@
 .wrap {
   *zoom: 1;
   margin: 1em auto;
-  max-width: 53em;
+  max-width: 55em;
   padding: 0 1em; }
   .wrap:before, .wrap:after {
     display: table;
@@ -15,7 +15,7 @@ footer.bigfoot > div.cols, footer.bigfoot > address, footer.bigfoot div.about {
   *zoom: 1;
   margin-left: auto;
   margin-right: auto;
-  max-width: 53em; }
+  max-width: 55em; }
   footer.bigfoot > div.cols:before, footer.bigfoot > div.cols:after, footer.bigfoot > address:before, footer.bigfoot > address:after, footer.bigfoot div.about:before, footer.bigfoot div.about:after {
     display: table;
     content: "";
@@ -725,7 +725,7 @@ section.movies {
     top: 0;
     left: 2.2em;
     bottom: 0;
-    width: 13em;
+    width: 15em;
     padding: .8em 1em 1em;
     color: white;
     overflow: hidden;
