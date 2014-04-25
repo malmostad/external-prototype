@@ -7,34 +7,34 @@
   <div>E-post: <span class="email">vagledningscentrum@malmo.se</span></div>
   <div>Tel: <span class="tel">040-34 49 95</span></div>
 
-  <form action="{{ site.baseurl }}/" method="post" class="malmo-form form-horizontal">
+  <form action="{{ site.baseurl }}/" method="post" class="form-horizontal">
     <h1>Skriv till oss</h1>
     <section>
-      <div class="control-group">
+      <div class="form-group">
         <label for="name" class="control-label">Namn:*</label>
         <div class="controls">
-          <input class="input-block-level" type="text" id="name" name="name" placeholder="Ditt för och efternamn"/>
+          <input class="form-control" type="text" id="name" name="name" placeholder="Ditt för och efternamn"/>
         </div>
       </div>
 
-      <div class="control-group">
+      <div class="form-group">
         <label for="email" class="control-label">E-post:</label>
         <div class="controls">
-          <input class="input-block-level" type="email" id="email" name="email" placeholder="Din e-postadress"/>
+          <input class="form-control" type="email" id="email" name="email" placeholder="Din e-postadress"/>
         </div>
       </div>
 
-      <div class="control-group">
+      <div class="form-group">
         <label for="phone" class="control-label">Telefon dagtid:</label>
         <div class="controls">
-          <input class="input-block-level" type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer inklusive riktnummer"/>
+          <input class="form-control" type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer inklusive riktnummer"/>
         </div>
       </div>
 
-      <div class="control-group">
+      <div class="form-group">
         <label for="subject" class="control-label">Meddelandet avser:</label>
         <div class="controls">
-          <select id="subject">
+          <select id="subject" class="form-control">
             <option label="select" value=""></option>
             <option>Felanmälan</option>
             <option>Fråga</option>
@@ -43,14 +43,14 @@
         </div>
       </div>
 
-      <div class="control-group">
+      <div class="form-group">
         <label for="message" class="control-label">Meddelande:</label>
         <div class="controls">
-          <textarea id="message" name="message" rows="8" class="input-block-level" placeholder=""></textarea>
+          <textarea id="message" name="message" rows="8" class="form-control" placeholder=""></textarea>
         </div>
       </div>
 
-      <div class="control-group">
+      <div class="form-group">
         <div class="controls">
           <input type="submit" value="Skicka in ditt meddelande" class="btn btn-primary"/>
         </div>

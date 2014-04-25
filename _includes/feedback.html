@@ -1,24 +1,32 @@
-<section class="feedback malmo-form">
+<section class="feedback">
   <button type="button" class="btn btn-default trigger">Lämna synpunkter</button>
-  <form action="{{ site.baseurl }}/" method="post" class="malmo-form">
+  <form action="{{ site.baseurl }}/" method="post" class="form-horizontal">
     <h1>Lämna synpunkter</h1>
     <div>
-      <div class="control-group">
-        <div class="help">Hur väl gav sidan svar på det du undrade över?</div>
-        <label class="radio"><input type="radio" name="rating" value="Mycket bra"/>Mycket väl</label>
-        <label class="radio"><input type="radio" name="rating" value="Bra"/>Väl</label>
-        <label class="radio"><input type="radio" name="rating" value="Dålig"/>Inte så väl</label>
-        <label class="radio"><input type="radio" name="rating" value="Mycket dålig"/>Inte alls</label>
-      </div>
-
-      <div class="control-group">
-        <label for="comment" class="control-label">Hur kan vi förbättra informationen?</label>
-        <div class="controls">
-          <textarea id="comment" name="comment" rows="8" class="input-block-level" placeholder=""></textarea>
+      <div class="form-group">
+        <p class="help-block">Hur väl gav sidan svar på det du undrade över?</p>
+        <div class="radio">
+          <label><input type="radio" name="rating" value="Mycket bra"/>Mycket väl</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="rating" value="Bra"/>Väl</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="rating" value="Dålig"/>Inte så väl</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="rating" value="Mycket dålig"/>Inte alls</label>
         </div>
       </div>
 
-      <div class="control-group">
+      <div class="form-group">
+        <label for="comment" class="control-label">Hur kan vi förbättra informationen?</label>
+        <div class="controls">
+          <textarea id="comment" name="comment" rows="8" class="form-control" placeholder=""></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
         <div class="controls">
           <input type="submit" value="Skicka in dina synpunkter" class="btn btn-primary"/>
         </div>
