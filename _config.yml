@@ -8,7 +8,6 @@ domain: http://webapps07.malmo.se
 baseurl: /juni2014
 # cdn_url: //assets.malmo.se/external/3.0-evolve
 cdn_url: //www.local.malmo.se:3001/assets
-cdn_url: //161.52.82.110:3001/assets
 permalink: /:categories/:title
 relative_permalinks: false
 
