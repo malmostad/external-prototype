@@ -165,6 +165,8 @@ section.contact-us {
   section.contact-us > div {
     font-size: 0.875em;
     line-height: 1.7; }
+  section.contact-us form {
+    display: none; }
   section.contact-us .contact-us-map {
     display: none;
     width: 100%;
