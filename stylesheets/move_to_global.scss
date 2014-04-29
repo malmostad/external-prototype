@@ -1,71 +1,3 @@
-article.body-copy {
-  img.full {
-    width: 100%;
-    height: auto;
-    margin: 0 0 1em;
-  }
-  .inline-video {
-    width: 100%;
-  }
-  .context-map {
-    display: none;
-    width: 100%;
-    height: emize(360);
-    margin: 1em 0;
-    border: $border;
-    iframe {
-      width: 100%;
-      height: emize(360);
-    }
-  }
-  nav li {
-    margin-bottom: .7em;
-  }
-}
-
-.act-now {
-  margin: 1.4em 0;
-  span::before {
-    padding-right: .3em;
-  }
-}
-
-.in-focus {
-  position: relative;
-  margin: 1em 0;
-  padding: 1em 1.5em;
-  border: $border;
-  @include radius(3px);
-  font-family: $sansSerif;
-  font-size: emize(16);
-  h1 {
-    font-family: $sansSerif;
-    font-size: emize(16);
-    font-weight: bold;
-    margin: 0;
-  }
-  h1+p {
-    margin-top: .3em;
-  }
-  p {
-    font-family: $sansSerif;
-    font-size: emize(14);
-    margin: 0;
-    padding: 0;
-  }
-  &:before {
-    position: absolute;
-    display: block;
-    background: #43B02A;
-    @include radius(3px 0 0 3px);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: emize(8);
-    content: "";
-  }
-}
-
 .share a {
   span {
     font-size: 1.4em;
@@ -88,6 +20,11 @@ article.body-copy {
   }
 }
 
-section.toc ul {
-  margin-left: 0;
+article.body-copy {
+  nav li {
+    margin-bottom: .7em;
+  }
+  section.toc ul {
+    margin-left: 0;
+  }
 }
