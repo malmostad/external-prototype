@@ -75,20 +75,6 @@ nav.page-nav {
       -moz-box-sizing: border-box;
       box-sizing: border-box; } }
 
-.share a span {
-  font-size: 1.4em;
-  margin-right: .3em; }
-  .share a span.fa-twitter, .share a span.fa-twitter-square {
-    color: #55acee; }
-  .share a span.fa-twitter {
-    font-size: 1.5em; }
-  .share a span.fa-facebook, .share a span.fa-facebook-square {
-    color: #4C66A4; }
-  .share a span.fa-google-plus, .share a span.fa-google-plus-square {
-    color: #dd4b39; }
-.share a:hover span {
-  text-decoration: none; }
-
 article.body-copy nav li {
   margin-bottom: .7em; }
 article.body-copy section.toc ul {
