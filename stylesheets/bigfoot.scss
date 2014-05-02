@@ -1,4 +1,13 @@
 footer.bigfoot {
+  @include clearfix();
+  border-top: $backgroundDark 3px solid;
+  background: $backgroundLight;
+  margin: 2em 0 0;
+  font-family: $sansSerif;
+  a {
+    color: black;
+  }
+
   div.cols {
     padding: 1.5em 1em 0;
     nav {
@@ -64,49 +73,5 @@ footer.bigfoot {
   }
   a:hover span {
     text-decoration: none;
-  }
-
-  .etc {
-    padding: 1em 1em 1em;
-    background: $backgroundLightHover;
-    border-top: 1px solid $backgroundDark;
-    address, nav.about {
-      margin: 0 auto 1em;
-      font-style: normal;
-      text-align: center;
-      > div {
-        display: inline-block;
-        margin: 0 1.5em 0 0;
-      }
-      li {
-        display: inline-block;
-        margin: 0;
-        a {
-          margin: 0 1.5em 0 0;
-        }
-      }
-    }
-    address > div,
-    nav.about li a {
-      font-size: emize(14);
-      line-height: emize(21, 14);
-    }
-    @media (max-width: 32em) {
-      address {
-        text-align: left;
-        margin-bottom: 2em;
-        > div {
-          display: block;
-          margin: 0;
-        }
-      }
-      nav.about {
-        text-align: left;
-        li {
-          display: block;
-          margin: 0 0 1em;
-        }
-      }
-    }
   }
 }
