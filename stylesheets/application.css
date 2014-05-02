@@ -21,7 +21,7 @@ article.body-copy {
   box-sizing: border-box;
   margin-bottom: 1em; }
 
-nav.content {
+nav.content, nav.secondary {
   width: 30.66667%;
   margin-right: 0;
   float: left;
@@ -34,7 +34,7 @@ nav.content {
   .wrap {
     max-width: 34em; }
 
-  article.body-copy, nav.content {
+  article.body-copy, nav.content, nav.secondary {
     width: 100%;
     margin-right: 0;
     float: none;
