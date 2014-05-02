@@ -10,15 +10,15 @@ $ ->
       scrollTop: $("section.feedback").offset().top - 45
     , 100
 
-  $("section.contact-us .write-to-us").click (event) ->
+  $("aside.contact-us .write-to-us").click (event) ->
     event.preventDefault()
     $(@).hide()
-    $("section.contact-us form").slideDown(100)
+    $("aside.contact-us form").slideDown(100)
     $('html, body').animate
-      scrollTop: $("section.contact-us form").offset().top - 35
+      scrollTop: $("aside.contact-us form").offset().top - 35
     , 100
 
-  $("section.feedback form, section.contact-us form").submit (event) ->
+  $(".feedback form, aside.contact-us form").submit (event) ->
     event.preventDefault()
     if window.confirm('Vill du se design av svarstexter till användaren?')
       document.location='http://malmostad.github.io/wag/messages/'

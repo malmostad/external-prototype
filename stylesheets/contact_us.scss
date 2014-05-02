@@ -1,17 +1,5 @@
-section.contact-us {
-  font-family: $sansSerif;
-  h1 {
-    font-size: emize(16);
-    border-bottom: $border;
-    padding-bottom: .2em;
-    margin: 2em 0 .4em;
-  }
-  h2 {
-    font-size: emize(14);
-    font-weight: bold;
-    margin: 1em 0 0;
-    padding: 0;
-  }
+.contact-us {
+  margin-top: 1em;
   > div {
     font-size: emize(14);
     line-height: 1.7;
