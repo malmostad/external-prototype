@@ -62,7 +62,8 @@ nav.page-nav {
 
 article.body-copy nav li {
   margin-bottom: .7em; }
-article.body-copy section.toc ul {
+
+section.toc ul {
   margin-left: 0; }
 
 section.contact-us {
