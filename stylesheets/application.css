@@ -21,7 +21,7 @@ article.body-copy {
   box-sizing: border-box;
   margin-bottom: 1em; }
 
-nav.page-nav {
+nav.content {
   width: 30.66667%;
   margin-right: 0;
   float: left;
@@ -34,7 +34,7 @@ nav.page-nav {
   .wrap {
     max-width: 34em; }
 
-  article.body-copy, nav.page-nav {
+  article.body-copy, nav.content {
     width: 100%;
     margin-right: 0;
     float: none;
@@ -418,28 +418,6 @@ section.news {
       font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
       font-size: 0.875em;
       color: #007896; }
-
-nav.page-nav {
-  margin: 0 0 2em;
-  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif; }
-  nav.page-nav h1 {
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 1;
-    font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    border-bottom: #b5b5b5 1px solid;
-    margin: .6em 0 0;
-    padding: 0 .4em .4em; }
-  nav.page-nav li a {
-    font-size: 0.875em;
-    display: block;
-    padding: .6em .4em .6em;
-    border-bottom: #b5b5b5 1px solid;
-    color: black;
-    margin: 0; }
-    nav.page-nav li a:hover {
-      background: whitesmoke;
-      text-decoration: none; }
 
 section.movies {
   position: relative;
