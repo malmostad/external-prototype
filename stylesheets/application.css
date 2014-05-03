@@ -60,34 +60,6 @@ nav.content, nav.basic {
       -moz-box-sizing: border-box;
       box-sizing: border-box; } }
 
-article.body-copy nav li {
-  margin-bottom: .7em; }
-
-section.toc ul {
-  margin-left: 0; }
-
-.contact-us {
-  margin-top: 1em; }
-  .contact-us > div {
-    font-size: 0.875em;
-    line-height: 1.7; }
-  .contact-us form {
-    display: none; }
-  .contact-us .contact-us-map {
-    display: none;
-    width: 100%;
-    height: 40em;
-    margin: 1em 0;
-    border: #b5b5b5 1px solid; }
-    .contact-us .contact-us-map iframe {
-      width: 100%;
-      height: 40em; }
-    @media (max-width: 40em) {
-      .contact-us .contact-us-map {
-        height: 30em; }
-        .contact-us .contact-us-map iframe {
-          height: 30em; } }
-
 aside.feedback {
   margin-top: 1em; }
   aside.feedback form h1 {
@@ -638,3 +610,9 @@ section.movies {
   @media (max-width: 36em) {
     .banner {
       display: none; } }
+
+article.body-copy nav li {
+  margin-bottom: .7em; }
+
+section.toc ul {
+  margin-left: 0; }
