@@ -1,5 +1,8 @@
 .contact-us {
   margin-top: 1em;
+  h1 {
+    padding-left: 0 !important;
+  }
   > div {
     font-size: emize(14);
     line-height: 1.7;
@@ -23,8 +26,5 @@
         height: 30em;
       }
     }
-  }
-  .fa-phone {
-    color: $linkColor;
   }
 }

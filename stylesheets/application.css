@@ -68,6 +68,8 @@ section.toc ul {
 
 .contact-us {
   margin-top: 1em; }
+  .contact-us h1 {
+    padding-left: 0 !important; }
   .contact-us > div {
     font-size: 0.875em;
     line-height: 1.7; }
@@ -87,8 +89,6 @@ section.toc ul {
         height: 30em; }
         .contact-us .contact-us-map iframe {
           height: 30em; } }
-  .contact-us .fa-phone {
-    color: #007896; }
 
 section.feedback {
   margin-top: 1em; }
