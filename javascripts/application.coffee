@@ -3,11 +3,11 @@
 
 $ ->
   # Dummy stuff
-  $("section.feedback .trigger").click ->
+  $("aside.feedback .trigger").click ->
     $(@).hide()
-    $("section.feedback form").slideDown(100)
+    $("aside.feedback form").slideDown(100)
     $('html, body').animate
-      scrollTop: $("section.feedback").offset().top - 45
+      scrollTop: $("aside.feedback").offset().top - 45
     , 100
 
   $("aside.contact-us .write-to-us").click (event) ->

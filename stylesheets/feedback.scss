@@ -1,11 +1,7 @@
-section.feedback {
+aside.feedback {
   margin-top: 1em;
-  h1 {
-    font-family: $sansSerif;
-    font-size: emize(16);
-    border-bottom: $border;
-    padding-bottom: .2em;
-    margin: 1em 0 .4em;
+  form h1 {
+    font-size: emize(16, 14);
   }
   .trigger {
     margin: 1em 0;
