@@ -10,7 +10,7 @@ article.body-copy {
   margin-bottom: 1em;
 }
 
-nav.content, nav.secondary {
+nav.content, nav.basic {
   @include columns(4, true, 4%);
 }
 
@@ -18,7 +18,7 @@ nav.content, nav.secondary {
   .wrap {
     max-width: 34em;
   }
-  article.body-copy, nav.content, nav.secondary {
+  article.body-copy, nav.content, nav.basic {
     @include columns(12);
   }
 }
