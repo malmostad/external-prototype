@@ -330,8 +330,6 @@ section.news {
     section.news h2 .date {
       font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
       font-size: .75em; }
-  section.news > ul > li:hover img {
-    opacity: .85; }
   section.news li li {
     margin-bottom: .6em; }
   section.news li ul {
