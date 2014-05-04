@@ -1,14 +1,14 @@
 @charset "UTF-8";
-.wrap {
+.wrapper {
   *zoom: 1;
   margin: 1em auto;
   max-width: 55em;
   padding: 0 1em; }
-  .wrap:before, .wrap:after {
+  .wrapper:before, .wrapper:after {
     display: table;
     content: "";
     line-height: 0; }
-  .wrap:after {
+  .wrapper:after {
     clear: both; }
 
 article.body-copy {
@@ -31,7 +31,7 @@ nav.content, nav.basic {
   box-sizing: border-box; }
 
 @media (max-width: 48em) {
-  .wrap {
+  .wrapper {
     max-width: 34em; }
 
   article.body-copy, nav.content, nav.basic {
