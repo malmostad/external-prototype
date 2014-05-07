@@ -2,6 +2,11 @@ section.news {
   @include clearfix();
   @include box-sizing(border-box);
 
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
   > ul > li {
     margin-bottom: 1.5em;
     @include columns(3, false, 3%);

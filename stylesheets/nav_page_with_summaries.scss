@@ -31,6 +31,8 @@ nav.nav-page-with-summaries {
 
   ul {
     margin: 1.5em 0 0;
+    padding: 0;
+    list-style: none;
     li {
       margin-bottom: .5em;
       @include columns(6, false, 4%);

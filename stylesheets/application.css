@@ -91,13 +91,18 @@ nav.nav-page-with-direct-links {
   nav.nav-page-with-direct-links > ul {
     *zoom: 1;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
-    margin: 1.5em 0 .5em; }
+    margin: 1.5em 0 .5em;
+    padding: 0;
+    list-style: none; }
     nav.nav-page-with-direct-links > ul:before, nav.nav-page-with-direct-links > ul:after {
       display: table;
       content: "";
       line-height: 0; }
     nav.nav-page-with-direct-links > ul:after {
       clear: both; }
+    nav.nav-page-with-direct-links > ul ul {
+      margin: 0;
+      padding: 0; }
     nav.nav-page-with-direct-links > ul > li {
       margin-bottom: 1.5em;
       border-top: black 3px solid; }
@@ -204,7 +209,9 @@ nav.nav-page-with-summaries {
     nav.nav-page-with-summaries a:hover h2 {
       text-decoration: underline; }
   nav.nav-page-with-summaries ul {
-    margin: 1.5em 0 0; }
+    margin: 1.5em 0 0;
+    padding: 0;
+    list-style: none; }
     nav.nav-page-with-summaries ul li {
       margin-bottom: .5em;
       width: 48%;
@@ -255,6 +262,10 @@ section.news {
     line-height: 0; }
   section.news:after {
     clear: both; }
+  section.news ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
   section.news > ul > li {
     margin-bottom: 1.5em;
     width: 22.75%;
@@ -384,6 +395,10 @@ section.movies {
     line-height: 0; }
   section.movies:after {
     clear: both; }
+  section.movies ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
   section.movies ul li {
     margin-bottom: 1.2em;
     width: 15.0%;
