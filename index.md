@@ -3,6 +3,14 @@ layout: default
 title: Prototyp för extern webb
 permalink: /
 ---
+
+<nav class="breadcrumbs">
+  <ol>
+    <li><a href="{{ site.baseurl }}/">Start</a></li>
+    <li>Prototypvyer</li>
+  </ol>
+</nav>
+
 <section class="body-copy toc">
   <h1>Prototypvyer</h1>
   <h2>Innehållssidor</h2>
@@ -14,8 +22,6 @@ permalink: /
       <li><a href="{{ site.baseurl }}/body-copy-3/">Hz-skrollad tabell</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-4/">Formulär</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-5/">Agera</a></li>
-      <li><a href="{{ site.baseurl }}/body-copy-6/">Inline video</a></li>
-      <li><a href="{{ site.baseurl }}/body-copy-7/">Videolänk</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-8/">Visa på karta i text</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-12/">"Fokusyta info", rubrik</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-13/">"Fokusyta info", rubrik och text</a></li>
