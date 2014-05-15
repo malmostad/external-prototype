@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Boxar
+title:  Box
 permalink: /body-copy-14/
 ---
 
@@ -18,14 +18,14 @@ permalink: /body-copy-14/
       <p>Box with help and context menu.</p>
       <p>Suitable for dashboard usage.</p>
     </div>
-    <button href="#" class="toggle-instructions" title="Show instructions">?</button>
+    <button type="button" class="toggle-instructions" title="Show instructions">?</button>
 
     <div class="dropdown box-menu">
-      <button type="button" class="dropdown-toggle" data-toggle="dropdown" href="#" id="feeds-news-menu" role="button" title="Adapt this box"></button>
-      <menu aria-labelledby="feeds-news-menu" aria-hidden="true" class="dropdown-menu" role="menu">
-        <li><a href="#">Manage these feeds...</a></li>
-        <li><a href="#" data-confirm="Reset all feeds?" data-method="put">Reset feeds</a></li>
-        <li><a href="#">Configure...</a></li>
+      <button type="button" class="dropdown-toggle" data-toggle="dropdown" id="feeds-news-menu" title="Adapt this box"></button>
+      <menu class="dropdown-menu" aria-labelledby="feeds-news-menu" aria-hidden="true" role="menu">
+        <li><a href="./" role="menuitem" tabindex="-1">Manage these feeds...</a></li>
+        <li><a href="./" role="menuitem" tabindex="-1" data-confirm="Reset all feeds?" data-method="put">Reset feeds</a></li>
+        <li><a href="./" role="menuitem" tabindex="-1">Configure...</a></li>
       </menu>
     </div>
   </section>

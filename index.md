@@ -26,6 +26,7 @@ permalink: /
       <li><a href="{{ site.baseurl }}/body-copy-12/">"Fokusyta info", rubrik</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-13/">"Fokusyta info", rubrik och text</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-11/">"Fokusyta agera"</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-14/">Box</a></li>
     </ul>
   </nav>
   <h2>Navigeringssidor</h2>
