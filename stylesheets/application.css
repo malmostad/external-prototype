@@ -21,7 +21,8 @@ article.body-copy {
   box-sizing: border-box;
   margin-bottom: 1em; }
 
-nav.content, nav.basic {
+nav.content,
+nav.basic {
   width: 30.66667%;
   margin-right: 0;
   float: left;
@@ -34,7 +35,9 @@ nav.content, nav.basic {
   .wrapper {
     max-width: 34em; }
 
-  article.body-copy, nav.content, nav.basic {
+  article.body-copy,
+  nav.content,
+  nav.basic {
     width: 100%;
     margin-right: 0;
     float: none;
@@ -42,7 +45,9 @@ nav.content, nav.basic {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; } }
-.feedback, .share, .contact-us {
+.feedback,
+.m-share,
+.contact-us {
   width: 65.33333%;
   margin-right: 4%;
   float: left;
@@ -51,7 +56,9 @@ nav.content, nav.basic {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   @media (max-width: 48em) {
-    .feedback, .share, .contact-us {
+    .feedback,
+    .m-share,
+    .contact-us {
       width: 100%;
       margin-right: 0;
       float: none;
@@ -59,6 +66,9 @@ nav.content, nav.basic {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; } }
+
+.m-share {
+  margin-bottom: .5em; }
 
 aside.feedback {
   margin-top: 1em; }
