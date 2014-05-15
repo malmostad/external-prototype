@@ -1,0 +1,65 @@
+---
+layout: default
+title:  Boxar
+permalink: /body-copy-14/
+---
+
+{% include breadcrumbs.html %}
+
+<article class="body-copy" role="main">
+  <h1>Boxar</h1>
+
+  <section class="box" contextmenu="feeds-news-menu" id="feeds-news">
+    <h1 class="box-title">My Intranet News</h1>
+    <div class="box-instructions">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing ...</p>
+    </div>
+    <div class="box-content body-copy">
+      <p>Box with help and context menu.</p>
+      <p>Suitable for dashboard usage.</p>
+    </div>
+    <button href="#" class="toggle-instructions" title="Show instructions">?</button>
+
+    <div class="dropdown box-menu">
+      <button type="button" class="dropdown-toggle" data-toggle="dropdown" href="#" id="feeds-news-menu" role="button" title="Adapt this box"></button>
+      <menu aria-labelledby="feeds-news-menu" aria-hidden="true" class="dropdown-menu" role="menu">
+        <li><a href="#">Manage these feeds...</a></li>
+        <li><a href="#" data-confirm="Reset all feeds?" data-method="put">Reset feeds</a></li>
+        <li><a href="#">Configure...</a></li>
+      </menu>
+    </div>
+  </section>
+
+
+  <section class="box light facts">
+    <h1 class="box-title">Fakta</h1>
+    <div class="box-content">
+      <p>
+        Cu ius primis laboramus persecuti. Graece
+        håbemus scåevola eæm ut. Cu solet inciderint vel, eos denique ålbucius
+        petentium te. Homero vidisse civibus no seå.
+      </p>
+      <p>
+      Duo åd magnä ænimæl sälutændi. Fastidii torquatos eäm ei, meå cu
+        ubique salutandi iudicäbit solet inciderint vel, eos denique ålbucius
+      </p>
+    </div>
+  </section>
+
+  <section class="box light read-more">
+    <h1 class="box-title">Läs mer</h1>
+    <div class="box-content">
+      <ul>
+        <li><a href="http://www.malmo.se/">Skolmatsedel</a></li>
+        <li><a href="http://www.malmo.se/">Hälsovårdmyndigheten</a></li>
+        <li><a href="http://www.malmo.se/">Näringslära</a></li>
+      </ul>
+    </div>
+  </section>
+</article>
+
+{% include content_nav.html %}
+
+{% include share.html %}
+{% include contact-us.html %}
+{% include feedback.html %}
