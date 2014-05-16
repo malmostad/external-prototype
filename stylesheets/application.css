@@ -11,7 +11,9 @@
   .wrapper:after {
     clear: both; }
 
+section.body-copy,
 article.body-copy {
+  clear: both;
   width: 65.33333%;
   margin-right: 4%;
   float: left;

@@ -5,7 +5,9 @@
   padding: 0 1em;
 }
 
+section.body-copy,
 article.body-copy {
+  clear: both;
   @include columns(8, false, 4%);
   margin-bottom: 1em;
 }
