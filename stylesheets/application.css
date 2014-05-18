@@ -1,4 +1,54 @@
 @charset "UTF-8";
+h1.body-copy {
+  font-weight: normal;
+  font-size: 2.25em;
+  line-height: 1.11111em;
+  margin: 0 0 .3em; }
+  @media (max-width: 26em) {
+    h1.body-copy {
+      font-size: 1.75em; } }
+
+h2.body-copy {
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.20833em;
+  margin: 1.5em 0 .2em; }
+  @media (max-width: 26em) {
+    h2.body-copy {
+      font-size: 1.375em; } }
+
+h3.body-copy {
+  font-weight: bold;
+  font-size: 1.0625em;
+  line-height: 1.47059em;
+  margin: 1.5em 0 0; }
+
+h4.body-copy {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.0625em;
+  line-height: 1.47059em;
+  margin: 1.5em 0 0; }
+
+p.body-copy {
+  font-size: 1.0625em;
+  line-height: 1.47059em; }
+
+p.preamble-body-copy {
+  font-weight: bold;
+  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.3125em; }
+
+h1.aside {
+  font-size: 1em;
+  font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  border-bottom: #b5b5b5 1px solid;
+  margin: 0 0 .3em;
+  padding: 0 0 .2em; }
+
 .wrapper {
   *zoom: 1;
   margin: 1em auto;
@@ -41,8 +91,10 @@ nav.basic {
   nav.content,
   nav.basic {
     width: 100%;
+    margin-right: 2%;
     margin-right: 0;
     float: none;
+    float: left;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -62,8 +114,10 @@ nav.basic {
     .m-share,
     .contact-us {
       width: 100%;
+      margin-right: 2%;
       margin-right: 0;
       float: none;
+      float: left;
       -ms-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -155,8 +209,10 @@ nav.nav-page-with-direct-links {
       @media (max-width: 29.99em) {
         nav.nav-page-with-direct-links > ul > li:nth-child(n+0) {
           width: 100%;
+          margin-right: 2%;
           margin-right: 0;
           float: none;
+          float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -247,7 +303,9 @@ nav.nav-page-with-summaries {
         nav.nav-page-with-summaries ul li {
           width: 100%;
           margin-right: 0;
+          margin-right: 0;
           float: none;
+          float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -256,7 +314,9 @@ nav.nav-page-with-summaries {
           nav.nav-page-with-summaries ul li:nth-child(2n) {
             width: 100%;
             margin-right: 0;
+            margin-right: 0;
             float: none;
+            float: left;
             -ms-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -315,8 +375,10 @@ section.news {
     @media (max-width: 26em) {
       section.news > ul > li:nth-child(n) {
         width: 100%;
+        margin-right: 2%;
         margin-right: 0;
         float: none;
+        float: left;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -475,7 +537,9 @@ section.movies {
       section.movies ul li:nth-child(n+0) {
         width: 100%;
         margin-right: 0;
+        margin-right: 0;
         float: none;
+        float: left;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
