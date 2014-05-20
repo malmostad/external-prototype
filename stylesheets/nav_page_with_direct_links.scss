@@ -23,6 +23,7 @@ nav.nav-page-with-direct-links {
     ul {
       margin: 0;
       padding: 0;
+      list-style: none;
     }
     > li {
       margin-bottom: 1.5em;
@@ -61,11 +62,15 @@ nav.nav-page-with-direct-links {
     padding: 0;
   }
 
+  > ul > li > a {
+    padding-top: emize(9, 16);
+    padding-bottom: emize(9, 16);
+  }
   li a {
     position: relative;
     display: block;
     border-bottom: $border;
-    padding: emize(8, 14) .4em;
+    padding: emize(11, 14) .4em emize(10, 14);
     margin: 0;
     line-height: emize(20, 16);
     &:hover {
@@ -77,12 +82,12 @@ nav.nav-page-with-direct-links {
     content: ' …'
   }
 
+  li li {
+    padding: 0;
+    margin: 0;
+  }
   li li a {
     color: #000;
-  }
-  > ul > li > a {
-    padding-top: emize(7, 15);
-    padding-bottom: emize(7, 15);
   }
   ul * {
     white-space: nowrap;
