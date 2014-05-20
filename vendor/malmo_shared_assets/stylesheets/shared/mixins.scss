@@ -1,4 +1,4 @@
-// Used for an n column grid system. Supports RWD without specific class names.
+// Used for the 12 column grid system. Supports RWD without specific non-semantic class names.
 // Use it to make a block span over a given number of columns.
 //    $span is the number of columns that the block should span over.
 //    $last specifies if the column is the last in the row, no gutter to the right then.
@@ -10,17 +10,33 @@
   width: percentage($span / $total-columns) - (($total-columns / $span - 1) * $gutter / ($total-columns / $span));
 
   // No gutter to the right if the column is last in a row
-  @if not $last and $span != $total-columns {
+  @if not $last {
     margin-right: $gutter;
   } @else {
     margin-right: 0;
   }
   @if $span == $total-columns {
+    margin-right: 0;
     float: none;
-  } @else {
-    float: left;
   }
+
+  float: left;
   @include box-sizing(border-box);
+}
+
+// Use with a media query to disable the hz mode below a breakpoint
+@mixin form-force-vertical() {
+  .mf-v4 form.basic .form-group {
+    .control-label {
+      display: block;
+      width: 100%;
+    }
+    .controls {
+      width: 100%;
+      margin-left: 0;
+      clear: both;
+    }
+  }
 }
 
 @mixin radius($values) {
@@ -66,27 +82,12 @@
   box-sizing: $boxmodel;
 }
 
-// Use with a media query to disable the hz mode below a breakpoint
-@mixin form-force-vertical() {
-  .form-horizontal {
-    .control-label {
-      display: block;
-      width: 100%;
-    }
-    .controls {
-      width: 100%;
-      margin-left: 0;
-      clear: both;
-    }
-  }
-}
-
 @mixin rotate($deg) {
-  -webkit-transform: rotate(#{$deg}deg);
-  -moz-transform: rotate(#{$deg}deg);
-  -ms-transform: rotate(#{$deg}deg);
-  -o-transform: rotate(#{$deg}deg);
-  transform: rotate(#{$deg}deg);
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
 }
 
 @mixin clearfix() {
@@ -94,7 +95,7 @@
   &:before,
   &:after {
     display: table;
-    content: "";
+    content: '';
     line-height: 0;
   }
   &:after {

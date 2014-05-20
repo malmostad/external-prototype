@@ -6,7 +6,7 @@
   padding: 0 1em; }
   .wrapper:before, .wrapper:after {
     display: table;
-    content: "";
+    content: '';
     line-height: 0; }
   .wrapper:after {
     clear: both; }
@@ -41,8 +41,10 @@ nav.basic {
   nav.content,
   nav.basic {
     width: 100%;
+    margin-right: 2%;
     margin-right: 0;
     float: none;
+    float: left;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -62,8 +64,10 @@ nav.basic {
     .m-share,
     .contact-us {
       width: 100%;
+      margin-right: 2%;
       margin-right: 0;
       float: none;
+      float: left;
       -ms-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -85,7 +89,7 @@ nav.nav-page-with-direct-links {
   *zoom: 1; }
   nav.nav-page-with-direct-links:before, nav.nav-page-with-direct-links:after {
     display: table;
-    content: "";
+    content: '';
     line-height: 0; }
   nav.nav-page-with-direct-links:after {
     clear: both; }
@@ -108,7 +112,7 @@ nav.nav-page-with-direct-links {
     list-style: none; }
     nav.nav-page-with-direct-links > ul:before, nav.nav-page-with-direct-links > ul:after {
       display: table;
-      content: "";
+      content: '';
       line-height: 0; }
     nav.nav-page-with-direct-links > ul:after {
       clear: both; }
@@ -117,7 +121,7 @@ nav.nav-page-with-direct-links {
       padding: 0; }
     nav.nav-page-with-direct-links > ul > li {
       margin-bottom: 1.5em;
-      border-top: black 3px solid; }
+      border-top: #000 3px solid; }
       @media (min-width: 52em) {
         nav.nav-page-with-direct-links > ul > li {
           width: 30.66667%;
@@ -155,8 +159,10 @@ nav.nav-page-with-direct-links {
       @media (max-width: 29.99em) {
         nav.nav-page-with-direct-links > ul > li:nth-child(n+0) {
           width: 100%;
+          margin-right: 2%;
           margin-right: 0;
           float: none;
+          float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -182,7 +188,7 @@ nav.nav-page-with-direct-links {
   nav.nav-page-with-direct-links li.more a::after {
     content: " …"; }
   nav.nav-page-with-direct-links li li a {
-    color: black; }
+    color: #000; }
   nav.nav-page-with-direct-links > ul > li > a {
     padding-top: 0.46667em;
     padding-bottom: 0.46667em; }
@@ -195,7 +201,7 @@ nav.nav-page-with-summaries {
   *zoom: 1; }
   nav.nav-page-with-summaries:before, nav.nav-page-with-summaries:after {
     display: table;
-    content: "";
+    content: '';
     line-height: 0; }
   nav.nav-page-with-summaries:after {
     clear: both; }
@@ -215,7 +221,7 @@ nav.nav-page-with-summaries {
   nav.nav-page-with-summaries a {
     display: block; }
     nav.nav-page-with-summaries a p {
-      color: black; }
+      color: #000; }
     nav.nav-page-with-summaries a:hover {
       text-decoration: none; }
     nav.nav-page-with-summaries a:hover h2 {
@@ -247,7 +253,9 @@ nav.nav-page-with-summaries {
         nav.nav-page-with-summaries ul li {
           width: 100%;
           margin-right: 0;
+          margin-right: 0;
           float: none;
+          float: left;
           -ms-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -256,7 +264,9 @@ nav.nav-page-with-summaries {
           nav.nav-page-with-summaries ul li:nth-child(2n) {
             width: 100%;
             margin-right: 0;
+            margin-right: 0;
             float: none;
+            float: left;
             -ms-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -270,7 +280,7 @@ section.news {
   box-sizing: border-box; }
   section.news:before, section.news:after {
     display: table;
-    content: "";
+    content: '';
     line-height: 0; }
   section.news:after {
     clear: both; }
@@ -315,8 +325,10 @@ section.news {
     @media (max-width: 26em) {
       section.news > ul > li:nth-child(n) {
         width: 100%;
+        margin-right: 2%;
         margin-right: 0;
         float: none;
+        float: left;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -358,7 +370,7 @@ section.news {
   section.news li ul {
     margin-top: -.2em; }
   section.news li a {
-    color: black; }
+    color: #000; }
   section.news .crop {
     display: block;
     width: 100%;
@@ -403,7 +415,7 @@ section.movies {
   background: #313131; }
   section.movies:before, section.movies:after {
     display: table;
-    content: "";
+    content: '';
     line-height: 0; }
   section.movies:after {
     clear: both; }
@@ -475,13 +487,15 @@ section.movies {
       section.movies ul li:nth-child(n+0) {
         width: 100%;
         margin-right: 0;
+        margin-right: 0;
         float: none;
+        float: left;
         -ms-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box; } }
   section.movies a {
-    color: white;
+    color: #fff;
     text-decoration: none; }
   section.movies h1 {
     display: block;
@@ -492,7 +506,7 @@ section.movies {
     border-bottom: #b5b5b5 1px solid;
     margin: 0 0 .6em 0;
     padding: 0 0 .3em;
-    color: white; }
+    color: #fff; }
   section.movies h2 {
     margin: 0;
     overflow: hidden;
@@ -515,7 +529,7 @@ section.movies {
     margin-bottom: .3em;
     overflow: hidden;
     background: whitesmoke;
-    border: 1px solid black; }
+    border: 1px solid #000; }
   section.movies .play {
     position: absolute;
     z-index: 2;
@@ -556,7 +570,7 @@ section.movies {
     right: 1em;
     font-family: "OpenSans", "Droid Sans", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 0.875em;
-    color: white; }
+    color: #fff; }
     section.movies .more:hover {
       text-decoration: underline; }
 
@@ -569,7 +583,6 @@ section.movies {
   position: relative;
   display: block;
   width: 100%;
-  position: relative;
   height: 0;
   padding-top: 23%;
   overflow: hidden; }
@@ -602,14 +615,14 @@ section.movies {
     bottom: 0;
     width: 15em;
     padding: .8em 1em 1em;
-    color: white;
+    color: #fff;
     overflow: hidden;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent; }
   .banner div.overlay {
     z-index: 2;
-    opacity: 0.5;
-    background: black; }
+    opacity: .5;
+    background: #000; }
   .banner h1 {
     font-size: 1em;
     margin: 0 0 .1em; }
@@ -623,7 +636,7 @@ section.movies {
       left: 0;
       max-width: 12em;
       width: auto;
-      background: black;
+      background: #000;
       opacity: 1; }
     .banner h1 {
       font-size: 0.875em;

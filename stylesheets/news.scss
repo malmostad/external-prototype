@@ -33,7 +33,7 @@ section.news {
     font-size: emize(16);
     font-weight: bold;
     line-height: 1;
-    font-family: $sansSerif;
+    font-family: $sans-serif;
     border-bottom: $border;
     margin: 0 0 .6em;
     padding: 0 0 .3em;
@@ -51,7 +51,7 @@ section.news {
     @media (max-width: 26em) { font-size: emize(18) }
     font-weight: normal;
     .date {
-      font-family: $sansSerif;
+      font-family: $sans-serif;
       font-size: .75em;
     }
   }
@@ -64,7 +64,7 @@ section.news {
     margin-top: -.2em;
   }
   li a {
-    color: black;
+    color: #000;
   }
 
   .crop {
@@ -75,8 +75,8 @@ section.news {
     padding-top: 56.25%;
     margin-bottom: .3em;
     overflow: hidden;
-    background: $backgroundLight;
-    border: $borderDark;
+    background: $background-light;
+    border: $border-dark;
     @include box-sizing(border-box);
   }
   img {
@@ -96,11 +96,11 @@ section.news {
     text-align: right;
     margin-bottom: -.5em;
     a {
-      font-family: $sansSerif;
+      font-family: $sans-serif;
       font-size: emize(14);
-      color: $linkColor;
+      color: $link-color;
       &::after {
-        // content: " …";
+        // content: ' …';
       }
     }
   }

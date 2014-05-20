@@ -16,7 +16,7 @@ nav.nav-page-with-direct-links {
 
   > ul {
     @include clearfix();
-    font-family: $sansSerif;
+    font-family: $sans-serif;
     margin: 1.5em 0 .5em;
     padding: 0;
     list-style: none;
@@ -26,7 +26,7 @@ nav.nav-page-with-direct-links {
     }
     > li {
       margin-bottom: 1.5em;
-      border-top: black 3px solid;
+      border-top: #000 3px solid;
       @media (min-width: 52em) {
         @include columns(4, false, 4%);
         &:nth-child(3n) {
@@ -69,16 +69,16 @@ nav.nav-page-with-direct-links {
     margin: 0;
     line-height: emize(20, 16);
     &:hover {
-      background: $backgroundLight;
+      background: $background-light;
       text-decoration: none;
     }
   }
   li.more a::after {
-    content: " …"
+    content: ' …'
   }
 
   li li a {
-    color: black;
+    color: #000;
   }
   > ul > li > a {
     padding-top: emize(7, 15);
