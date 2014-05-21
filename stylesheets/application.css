@@ -86,7 +86,8 @@ aside.feedback {
     display: none; }
 
 nav.nav-page-with-direct-links {
-  *zoom: 1; }
+  *zoom: 1;
+  clear: left; }
   nav.nav-page-with-direct-links:before, nav.nav-page-with-direct-links:after {
     display: table;
     content: '';
@@ -202,7 +203,8 @@ nav.nav-page-with-direct-links {
     text-overflow: ellipsis; }
 
 nav.nav-page-with-summaries {
-  *zoom: 1; }
+  *zoom: 1;
+  clear: left; }
   nav.nav-page-with-summaries:before, nav.nav-page-with-summaries:after {
     display: table;
     content: '';

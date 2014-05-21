@@ -1,5 +1,6 @@
 nav.nav-page-with-summaries {
   @include clearfix();
+  clear: left;
   h1 {
     font-weight: normal;
     font-size: emize(36);
