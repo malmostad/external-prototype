@@ -79,6 +79,7 @@ nav.basic {
 aside.feedback {
   margin-top: 1em; }
   aside.feedback form h1 {
+    margin-top: 1em;
     font-size: 1.14286em; }
   aside.feedback .trigger {
     margin: 1em 0; }
