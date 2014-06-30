@@ -38,4 +38,11 @@ permalink: /
       <li><a href="{{ site.baseurl }}/start-page-2/">Startsida, sammanslagen</a></li>
     </ul>
   </nav>
+  <h2>Bildtester</h2>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}/images-2/">Elever</a></li>
+      <li><a href="{{ site.baseurl }}/images-1/">Cykel</a></li>
+    </ul>
+  </nav>
 </section>
