@@ -41,8 +41,10 @@ permalink: /
   <h2>Bildtester</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/images-2/">Elever</a></li>
-      <li><a href="{{ site.baseurl }}/images-1/">Cykel</a></li>
+      <li><a href="{{ site.baseurl }}/images-1/">Elever 600px</a></li>
+      <li><a href="{{ site.baseurl }}/images-2/">Elever 554px desktopoptimerad</a></li>
+      <li><a href="{{ site.baseurl }}/images-3/">Elever 1108px desktopoptimerad, retinaoptimerad, hårdkomprimmerad</a></li>
+      <li><a href="{{ site.baseurl }}/images-4/">Cykel</a></li>
     </ul>
   </nav>
 </section>
