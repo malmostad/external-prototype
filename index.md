@@ -16,7 +16,7 @@ permalink: /
   <h2>Innehållssidor</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/body-copy-2/">Huvudbild</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-2/">Primär- och sekundärbilder</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-1/">Listor</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-9/">Fakta och läs mer</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-3/">Hz-skrollad tabell</a></li>
