@@ -667,7 +667,7 @@ section.movies {
       display: none; } }
 
 section.library-search {
-  margin: 1.5em 0 2.5em; }
+  margin: 1.3em 0 2em; }
   section.library-search label.control-label {
     width: 6em !important; }
   section.library-search select.form-control {
@@ -675,6 +675,12 @@ section.library-search {
     min-width: 12em; }
   section.library-search .input-group {
     margin-bottom: .5em; }
+  section.library-search .account {
+    display: block;
+    font-family: "OpenSans", "Droid Sans", "Verdana", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 0.875em;
+    color: #000;
+    margin-top: .8em; }
   @media (max-width: 48em) {
     section.library-search button span {
       display: none; } }

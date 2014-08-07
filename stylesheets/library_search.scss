@@ -1,18 +1,25 @@
 section.library-search {
-  margin: 1.5em 0 2.5em ;
+  margin: 1.3em 0 2em ;
 
   label.control-label {
     width: 6em !important;
   }
 
   select.form-control {
-    // display: none;
     width: auto;
     min-width: 12em;
   }
 
   .input-group {
     margin-bottom: .5em;
+  }
+
+  .account {
+    display: block;
+    font-family: $sans-serif;
+    font-size: emize(14);
+    color: #000;
+    margin-top: .8em;
   }
 
   @media (max-width: 48em) {

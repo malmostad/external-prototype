@@ -1,23 +1,13 @@
 <section class="library-search">
   <form action="http://malmo.stadsbibliotek.org/search*swe/" method="get" name="search" class="basic">
-    <div class="form-group sr-only">
-      <label class="control-label" for="malin-searchtype">Sökalternativ:</label>
-      <select class="form-control" name="malin-searchtype" id="malin-searchtype">
-        <option value="X" selected="selected">Valfria ord</option>
-        <option value="t">Titel</option>
-        <option value="a">Namn</option>
-        <option value="d">Ämnesord</option>
-        <option value="m">Hyllplats</option>
-        <option value="c">Klassifikation</option>
-        <option value="i">ISBN/ISSN</option>
-      </select>
-    </div>
     <div class="input-group">
+      <input type="hidden" name="malin-searchtype" value="X"/>
       <label class="sr-only control-label" for="malin-search-word">Sök i katalogen:</label>
-      <input placeholder="Skriv titel, författar eller ämne" class="form-control input-lg" type="text" name="searcharg" id="malin-search-word" maxlength="75" value=""/>
+      <input placeholder="Skriv titel, författar eller ämne etc." class="form-control input-lg" type="text" name="searcharg" id="malin-search-word" maxlength="75" value=""/>
       <span class="input-group-btn">
-        <button class="btn btn-default btn-lg" name="SUBMIT" type="submit">Sök <span>i katalogen</span></button>
+        <button class="btn btn-default btn-lg" type="submit">Sök <span>i katalogen</span></button>
       </span>
     </div>
   </form>
+  <a class="account" href="https://malmo.stadsbibliotek.org/patroninfo*swe">Logga in till ditt bibliotekskonto</a>
 </section>
