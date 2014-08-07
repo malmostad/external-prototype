@@ -38,6 +38,13 @@ permalink: /
       <li><a href="{{ site.baseurl }}/start-page-2/">Startsida, sammanslagen</a></li>
     </ul>
   </nav>
+  <h2>Bibliotekssök</h2>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}/nav-page-library-1/">Med sök, direktlänkar, nyheter och film</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-library-2/">Med banner, sök, direktlänkar, nyheter och film</a></li>
+    </ul>
+  </nav>
   <h2>Bildtester</h2>
   <nav>
     <ul>
