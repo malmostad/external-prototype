@@ -41,8 +41,10 @@ permalink: /
   <h2>Bibliotekssök</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/nav-page-library-1/">Med sök, direktlänkar, nyheter och film</a></li>
-      <li><a href="{{ site.baseurl }}/nav-page-library-2/">Med banner, sök, direktlänkar, nyheter och film</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-library-1/">Med sök</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-library-2/">Med sök och banner</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-library-3/">Med sök och val av bibliotek</a></li>
+      <li><a href="{{ site.baseurl }}/nav-page-library-4/">Med sök och val av bibliotek och banner</a></li>
     </ul>
   </nav>
   <h2>Bildtester</h2>

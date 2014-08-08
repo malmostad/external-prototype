@@ -5,11 +5,6 @@ section.library-search {
     width: 6em !important;
   }
 
-  select.form-control {
-    width: auto;
-    min-width: 12em;
-  }
-
   .input-group {
     margin-bottom: .5em;
   }
@@ -22,9 +17,29 @@ section.library-search {
     margin-top: .8em;
   }
 
+  .form-group {
+    select.library {
+      float: left;
+      width: auto;
+      min-width: 12em;
+      margin-right: 2em;
+    }
+    .account {
+      font-size: emize(14, 14);
+      margin-top: .4em
+    }
+  }
   @media (max-width: 48em) {
     button span {
       display: none;
+    }
+  }
+  @media (max-width: 32em) {
+    .form-group {
+      select.library {
+        float: none;
+        margin-bottom: .6em;
+      }
     }
   }
 }

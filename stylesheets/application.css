@@ -670,9 +670,6 @@ section.library-search {
   margin: 1.3em 0 2em; }
   section.library-search label.control-label {
     width: 6em !important; }
-  section.library-search select.form-control {
-    width: auto;
-    min-width: 12em; }
   section.library-search .input-group {
     margin-bottom: .5em; }
   section.library-search .account {
@@ -681,9 +678,21 @@ section.library-search {
     font-size: 0.875em;
     color: #000;
     margin-top: .8em; }
+  section.library-search .form-group select.library {
+    float: left;
+    width: auto;
+    min-width: 12em;
+    margin-right: 2em; }
+  section.library-search .form-group .account {
+    font-size: 1em;
+    margin-top: 0.4em; }
   @media (max-width: 48em) {
     section.library-search button span {
       display: none; } }
+  @media (max-width: 32em) {
+    section.library-search .form-group select.library {
+      float: none;
+      margin-bottom: .6em; } }
 
 article.body-copy nav li {
   margin-bottom: .7em; }
