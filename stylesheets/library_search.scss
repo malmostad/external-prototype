@@ -2,7 +2,6 @@ section.library-search {
   margin: 1.3em 0 2em ;
 
   label.control-label {
-    width: 6em !important;
   }
 
   .input-group {
@@ -10,7 +9,7 @@ section.library-search {
   }
 
   .account {
-    display: block;
+    display: inline-block;
     font-family: $sans-serif;
     font-size: emize(14);
     color: #000;
@@ -21,7 +20,7 @@ section.library-search {
     select.library {
       float: left;
       width: auto;
-      min-width: 12em;
+      min-width: 16em;
       margin-right: 2em;
     }
     .account {
@@ -34,7 +33,7 @@ section.library-search {
       display: none;
     }
   }
-  @media (max-width: 32em) {
+  @media (max-width: 34em) {
     .form-group {
       select.library {
         float: none;

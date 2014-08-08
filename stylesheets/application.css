@@ -668,12 +668,10 @@ section.movies {
 
 section.library-search {
   margin: 1.3em 0 2em; }
-  section.library-search label.control-label {
-    width: 6em !important; }
   section.library-search .input-group {
     margin-bottom: .5em; }
   section.library-search .account {
-    display: block;
+    display: inline-block;
     font-family: "OpenSans", "Droid Sans", "Verdana", "DejaVu Sans", "Bitstream Vera Sans", sans-serif;
     font-size: 0.875em;
     color: #000;
@@ -681,7 +679,7 @@ section.library-search {
   section.library-search .form-group select.library {
     float: left;
     width: auto;
-    min-width: 12em;
+    min-width: 16em;
     margin-right: 2em; }
   section.library-search .form-group .account {
     font-size: 1em;
@@ -689,7 +687,7 @@ section.library-search {
   @media (max-width: 48em) {
     section.library-search button span {
       display: none; } }
-  @media (max-width: 32em) {
+  @media (max-width: 34em) {
     section.library-search .form-group select.library {
       float: none;
       margin-bottom: .6em; } }
