@@ -7,6 +7,9 @@ section.library-search {
   .input-group {
     margin-bottom: .5em;
     *width: 90%;
+    .btn-lg {
+      height: 46px; // Bugfix for Bootstrap
+    }
   }
 
   .account {
