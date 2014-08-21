@@ -22,6 +22,7 @@ permalink: /
       <li><a href="{{ site.baseurl }}/body-copy-3/">Hz-skrollad tabell</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-4/">Formulär</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-8/">Visa på karta i text</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-17/">Visa tema-karta</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-12/">"Fokusyta info", rubrik</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-13/">"Fokusyta info", rubrik och text</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-11/">"Fokusyta agera"</a></li>
