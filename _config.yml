@@ -1,5 +1,4 @@
 # jekyll serve --baseurl "" --watch
-# coffee -c -w javascripts/application.coffee
 name: Juni 2014
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, .gitignore, README.md, COPYING, build.sh]

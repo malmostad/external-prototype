@@ -1,6 +1,5 @@
-# Dev: coffee -c -w javascripts/application.coffee
-# Before pushing to Github: ./build.sh
-
+---
+---
 $ ->
   # Dummy stuff
   $("aside.feedback .trigger").click ->
