@@ -28,6 +28,7 @@ permalink: /
       <li><a href="{{ site.baseurl }}/body-copy-11/">"Fokusyta agera"</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-15/">Viktigt meddelande</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-16/">Just nu</a></li>
+      <li><a href="{{ site.baseurl }}/survey/">Med enkät</a></li>
     </ul>
   </nav>
   <h2>Navigeringssidor</h2>
