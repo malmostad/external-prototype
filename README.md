@@ -1,4 +1,4 @@
-# Juni 2014
+# External Prototype
 
 Mobile first prototypes for external web content. Developed with Jekyll 2 using asset pipeline.
 
@@ -9,7 +9,7 @@ Mobile first prototypes for external web content. Developed with Jekyll 2 using 
 ## Setup
     $ bundle install
 
-## Build Site
+## Build site
     jekyll build
 
 
