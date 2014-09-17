@@ -16,7 +16,7 @@ Mobile first prototypes for external web content. Developed with Jekyll 2 using 
 ## Run locally on port 4000
     jekyll serve --baseurl "" --watch
 
-## Upgrade The Shared Assets
+## Upgrade the shared assets
 See the instructions in our [shared assets](https://github.com/malmostad/shared_assets) repository.
 
 ## License
