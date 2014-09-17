@@ -3,11 +3,11 @@
 Mobile first prototypes for external web content. Developed with Jekyll 2 using asset pipeline.
 
 ## Dependencies
-* Ruby with bundler
+* Ruby with Bundler
 * Global Assets from http://assets.malmo.se/external/v4-staging
 
 ## Setup
-Run `bundle install`
+  $ `bundle install`
 
 ## Build Site
     jekyll build
