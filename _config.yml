@@ -1,5 +1,5 @@
 # jekyll serve --baseurl "" --watch
-name: Juni 2014
+name: External Prototype
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, .gitignore, README.md, COPYING, build.sh]
 domain: http://webapps07.malmo.se
