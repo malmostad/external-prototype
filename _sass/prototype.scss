@@ -6,3 +6,9 @@ article.body-copy {
 section.toc ul {
   margin-left: 0;
 }
+
+body.prototype::after {
+  content: 'Prototype';
+  padding-left: 5.5em;
+  padding-right: 5.5em;
+}
