@@ -4,7 +4,6 @@ Mobile first prototypes for external web content. Developed with Jekyll 2 using 
 
 ## Dependencies
 * Ruby with Bundler
-* Global Assets from http://assets.malmo.se/external/v4-staging
 * Shared Assets from https://github.com/malmostad/shared_assets
 
 ## Setup
