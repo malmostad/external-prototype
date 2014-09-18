@@ -12,13 +12,9 @@ jQuery ($) ->
   # Define runSurvey as a global variable and set it to true to run the survey
   if typeof runSurvey isnt "undefined" and runSurvey
     userTracking = sessionTracking = null
-    console.log "run survey"
 
-    #
-    # Welection criteria from user selection for the survey
+    # Selection criteria from user selection for the survey
     # Based on what the user did with the survey in the past and the slection frequenzy
-    # See also the initial doc at the top
-    #
 
     # Configurable time intervals in msec
     slack =
@@ -31,8 +27,6 @@ jQuery ($) ->
     # Open survey in modal lightbox and take care of user events
     initSurvey = ->
       surveyName = 'Survey malmo.se'
-      dialogWidth = 600
-      dialogLeft = $(window).width() / 2 - dialogWidth / 2
 
       # Switch between pages in the survey
       showSlide = (slide) ->
@@ -85,24 +79,7 @@ jQuery ($) ->
 
       # Attach survey markup
       $survey = $(markup)
-      $('body').append $survey
-
-      # Create survey dialog, show first survey slide (page)
-      $survey.dialog
-        width: dialogWidth
-        height: 400
-        position: [dialogLeft, 50]
-        resizable: false
-        draggable: true
-        modal: true
-        dialogClass: 'survey-dialog'
-        title: 'Användarundersökning'
-        hide: 'fadeOut'
-        show: 'fadeIn'
-        zIndex: 10000
-        close: false
-        open: ->
-          showSlide 1
+      $('div.wrapper').first().prepend $survey
 
       # User want to take the survey
       $("#survey-action-ok").on 'click', (event) ->
@@ -210,78 +187,78 @@ jQuery ($) ->
     readCookies()
     # Should we show the survey or not?
 
+    markup = '<div id="survey">
+      <form id="survey-form" action="/" method="get">
+        <div class="survey-page page-1">
+            <div>
+            <h1>Vi behöver din åsikt!</h1>
+              <p>För att vi ska kunna göra malmo.se bättre behöver vi din åsikt. Det enda du behöver göra är att svara på två frågor. Det tar mindre än 15 sekunder.</p>
+              <div id="survey-actions">
+                <button id="survey-action-ok">Ja gärna!</button>
+                <button id="survey-action-snooze">Vänta lite...</button>
+                <button id="survey-action-no">Nej, inte idag</button>
+              </div>
+            </div>
+        </div>
+        <div class="survey-page page-2">
+          <h1>Din åsikt</h1>
+          <p>Välj ett alternativ för varje fråga.</p>
+          <label for="role">I vilken roll besöker du malmo.se idag? </label>
+          <select id="role" name="roll">
+            <option></option>
+            <option value="enkat-bo-malmo">Bor i Malmö</option>
+            <option value="enkat-bo-skane">Bor i annan skånsk kommun</option>
+            <option value="enkat-flytta">Funderar på att flytta till Malmö</option>
+            <option value="enkat-arbetar-malmo">Arbetar i Malmö</option>
+            <option value="enkat-anstalld">Anställd av Malmö stad</option>
+            <option value="enkat-offentlig">Arbetar i offentlig förvaltning</option>
+            <option value="enkat-journalist">Journalist</option>
+            <option value="enkat-turist">Turist/besökare</option>
+            <option value="enkat-studerar">Studerar</option>
+            <option value="enkat-företagare">Företagare/näringsidkare</option>
+            <option value="enkat-jobbsokande">Jobbsökande</option>
+            <option value="enkat-annan-roll">Annat</option>
+          </select>
+
+          <label for="purpose">Vad vill du göra på malmo.se just detta besök?</label>
+          <select id="purpose" name="syfte">
+            <option></option>
+            <option value="enkat-tjanst">Använda en tjänst, t.ex. hämta blankett, boka loppis, låna bok</option>
+            <option value="enkat-kontakt">Hitta kontaktuppgifter</option>
+            <option value="enkat-jobb">Hitta lediga jobb</option>
+            <option value="enkat-verksamhet">Läsa information om viss verksamhet</option>
+            <option value="enkat-nyheter">Läsa om nyheter och aktuella händelser</option>
+            <option value="enkat-annat-syfte">Annat</option>
+
+          </select>
+
+          <label for="nojdhet">Hur nöjd är du med ditt besök på malmo.se idag?</label>
+          <select id="nojdhet" name="nojdhet">
+            <option></option>
+            <option value="5">5 – Mycket nöjd</option>
+            <option value="4">4</option>
+            <option value="3">3 – Varken nöjd eller missnöjd</option>
+            <option value="2">2</option>
+            <option value="1">1 – Mycket missnöjd</option>
+          </select>
+          <div id="survey-actions">
+            <button id="survey-action-send">Skicka in</button>
+          </div>
+        </div>
+        <div class="survey-page page-3">
+          <h1>Tack för dina svar!</h1>
+          <p>Dina svar kommer att användas för att göra malmo.se bättre!</p>
+          <div id="survey-actions">
+            <button id="survey-action-done">Stäng</button>
+          </div>
+        </div>
+      </form>
+    </div>'
+
     # The user is already selected, is the session old enough and is the snooze, if any, time over?
-    if alreadySelected() and sessionOldEnough() and not snoozedRecently()
+    if debugSurvey || alreadySelected() and sessionOldEnough() and not snoozedRecently()
       initSurvey()
 
     # The session is new, check if the user should have the survey
     else if not sessionTracking.selected
       qualifyUserForSurvey()
-
-    markup = '<div id="survey">
-    <form id="survey-form" action="/" method="get">
-      <div class="survey-page page-1">
-          <div>
-          <h1>Vi behöver din åsikt!</h1>
-            <p>För att vi ska kunna göra malmo.se bättre behöver vi din åsikt. Det enda du behöver göra är att svara på två frågor. Det tar mindre än 15 sekunder.</p>
-            <div id="survey-actions">
-              <button id="survey-action-ok">Ja gärna!</button>
-              <button id="survey-action-snooze">Vänta lite...</button>
-              <button id="survey-action-no">Nej, inte idag</button>
-            </div>
-          </div>
-      </div>
-      <div class="survey-page page-2">
-        <h1>Din åsikt</h1>
-        <p>Välj ett alternativ för varje fråga.</p>
-        <label for="role">I vilken roll besöker du malmo.se idag? </label>
-        <select id="role" name="roll">
-          <option></option>
-          <option value="enkat-bo-malmo">Bor i Malmö</option>
-          <option value="enkat-bo-skane">Bor i annan skånsk kommun</option>
-          <option value="enkat-flytta">Funderar på att flytta till Malmö</option>
-          <option value="enkat-arbetar-malmo">Arbetar i Malmö</option>
-          <option value="enkat-anstalld">Anställd av Malmö stad</option>
-          <option value="enkat-offentlig">Arbetar i offentlig förvaltning</option>
-          <option value="enkat-journalist">Journalist</option>
-          <option value="enkat-turist">Turist/besökare</option>
-          <option value="enkat-studerar">Studerar</option>
-          <option value="enkat-företagare">Företagare/näringsidkare</option>
-          <option value="enkat-jobbsokande">Jobbsökande</option>
-          <option value="enkat-annan-roll">Annat</option>
-        </select>
-
-        <label for="purpose">Vad vill du göra på malmo.se just detta besök?</label>
-        <select id="purpose" name="syfte">
-          <option></option>
-          <option value="enkat-tjanst">Använda en tjänst, t.ex. hämta blankett, boka loppis, låna bok</option>
-          <option value="enkat-kontakt">Hitta kontaktuppgifter</option>
-          <option value="enkat-jobb">Hitta lediga jobb</option>
-          <option value="enkat-verksamhet">Läsa information om viss verksamhet</option>
-          <option value="enkat-nyheter">Läsa om nyheter och aktuella händelser</option>
-          <option value="enkat-annat-syfte">Annat</option>
-
-        </select>
-
-        <label for="nojdhet">Hur nöjd är du med ditt besök på malmo.se idag?</label>
-        <select id="nojdhet" name="nojdhet">
-          <option></option>
-          <option value="5">5 – Mycket nöjd</option>
-          <option value="4">4</option>
-          <option value="3">3 – Varken nöjd eller missnöjd</option>
-          <option value="2">2</option>
-          <option value="1">1 – Mycket missnöjd</option>
-        </select>
-        <div id="survey-actions">
-          <button id="survey-action-send">Skicka in</button>
-        </div>
-      </div>
-      <div class="survey-page page-3">
-        <h1>Tack för dina svar!</h1>
-        <p>Dina svar kommer att användas för att göra malmo.se bättre!</p>
-        <div id="survey-actions">
-          <button id="survey-action-done">Stäng</button>
-        </div>
-      </div>
-    </form>
-    </div>'
