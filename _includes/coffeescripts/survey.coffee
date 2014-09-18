@@ -60,7 +60,7 @@ jQuery ($) ->
 
       # Collect data from survey form
       collectFormData = (formValues) ->
-        answered_before = if userTracking.answered then "No" else $.datepicker.formatDate('yy-mm-dd', new Date(userTracking.answered))
+        answered_before = if userTracking.answered then "No" else $.fn.datepicker.DPGlobal.formatDate(new Date(userTracking.answered), "yyyy-mm-dd", "en")
 
         # Add aditional data
         formValues.push
@@ -68,7 +68,7 @@ jQuery ($) ->
           value: answered_before
         formValues.push
           name: "answered_date"
-          value: $.datepicker.formatDate('yy-mm-dd', new Date())
+          value: $.fn.datepicker.DPGlobal.formatDate(new Date(), "yyyy-mm-dd", "en")
 
         pushToGA(formValues)
         # Update cookies
@@ -79,7 +79,7 @@ jQuery ($) ->
 
       # Attach survey markup
       $survey = $(markup)
-      $('div.wrapper').first().prepend $survey
+      $('body > div.wrapper').first().prepend $survey
 
       # User want to take the survey
       $("#survey-action-ok").on 'click', (event) ->
@@ -187,20 +187,20 @@ jQuery ($) ->
     readCookies()
     # Should we show the survey or not?
 
-    markup = '<div id="survey">
+    debugMode = typeof debugSurvey isnt 'undefined' and debugSurvey
+
+    markup = '<section id="survey" class="box">
+      <h1 class="box-title">Vi behöver din åsikt!</h1>
       <form id="survey-form" action="/" method="get">
-        <div class="survey-page page-1">
-            <div>
-            <h1>Vi behöver din åsikt!</h1>
-              <p>För att vi ska kunna göra malmo.se bättre behöver vi din åsikt. Det enda du behöver göra är att svara på två frågor. Det tar mindre än 15 sekunder.</p>
-              <div id="survey-actions">
-                <button id="survey-action-ok">Ja gärna!</button>
-                <button id="survey-action-snooze">Vänta lite...</button>
-                <button id="survey-action-no">Nej, inte idag</button>
-              </div>
-            </div>
-        </div>
-        <div class="survey-page page-2">
+        <section class="page-1 box-content">
+          <p>För att vi ska kunna göra malmo.se bättre behöver vi din åsikt. Det enda du behöver göra är att svara på två frågor. Det tar mindre än 15 sekunder.</p>
+          <div class="actions">
+            <button class="btn btn-default" id="survey-action-ok">Ja gärna!</button>
+            <button class="btn btn-default" id="survey-action-snooze">Vänta lite...</button>
+            <button class="btn btn-default" id="survey-action-no">Nej, inte idag</button>
+          </div>
+        </section>
+        <section class="page-2">
           <h1>Din åsikt</h1>
           <p>Välj ett alternativ för varje fråga.</p>
           <label for="role">I vilken roll besöker du malmo.se idag? </label>
@@ -241,22 +241,22 @@ jQuery ($) ->
             <option value="2">2</option>
             <option value="1">1 – Mycket missnöjd</option>
           </select>
-          <div id="survey-actions">
-            <button id="survey-action-send">Skicka in</button>
+          <div class="actions">
+      defaultbutton class="btn btn-primary" id="survey-action-send">Skicka in</button>
           </div>
-        </div>
-        <div class="survey-page page-3">
+       efaultr
+        <section class="page-3">
           <h1>Tack för dina svar!</h1>
           <p>Dina svar kommer att användas för att göra malmo.se bättre!</p>
-          <div id="survey-actions">
-            <button id="survey-action-done">Stäng</button>
+          <div class="actions">
+           defaultn class="btn btn-primary" id="survey-action-done">Stäng</button>
           </div>
-        </div>
+        </sdefault
       </form>
-    </div>'
+    </section>'
 
     # The user is already selected, is the session old enough and is the snooze, if any, time over?
-    if debugSurvey || alreadySelected() and sessionOldEnough() and not snoozedRecently()
+    if debugMode || alreadySelected() and sessionOldEnough() and not snoozedRecently()
       initSurvey()
 
     # The session is new, check if the user should have the survey
