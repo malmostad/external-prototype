@@ -10,6 +10,11 @@
     &.page-1 {
       display: block;
     }
+    h1 {
+      @extend %h1.body-copy;
+      font-family: $serif;
+      margin: .2em 0 .5em;;
+    }
     p {
       font-family: $serif;
       font-size: emize(18, 14);

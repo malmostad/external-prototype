@@ -30,8 +30,8 @@ jQuery ($) ->
 
       # Switch between pages in the survey
       showSlide = (slide) ->
-        $survey.find(".survey-page").hide()
-        $survey.find(".survey-page.page-" + slide).show().find("select, button").first().focus()
+        $survey.find("section").hide()
+        $survey.find("section.page-" + slide).show().find("select, button").first().focus()
 
       # Show form validation errors to user
       validationAlert = (field) ->
@@ -110,18 +110,18 @@ jQuery ($) ->
         event.preventDefault()
         writePersistentCookie "not_now", msecNow()
         writeSessionCookie "selected", false
-        $survey.dialog "close"
+        $survey.remove()
 
       # User do not want to take the survey right now, she will be reminded during the session
       $("#survey-action-snooze").on 'click', (event) ->
         event.preventDefault()
         writeSessionCookie "snooze", msecNow()
-        $survey.dialog "close"
+        $survey.remove()
 
       # Close the dialog after the Thank you page
       $("#survey-action-done").on 'click', (event) ->
         event.preventDefault()
-        $survey.dialog "close"
+        $survey.remove()
 
     # Read persisten and session cookies that keep track of the survey
     # Get the persistent cookie where the user roles is stored
@@ -195,13 +195,12 @@ jQuery ($) ->
         <section class="page-1 box-content">
           <p>För att vi ska kunna göra malmo.se bättre behöver vi din åsikt. Det enda du behöver göra är att svara på två frågor. Det tar mindre än 15 sekunder.</p>
           <div class="actions">
-            <button class="btn btn-default" id="survey-action-ok">Ja gärna!</button>
-            <button class="btn btn-default" id="survey-action-snooze">Vänta lite...</button>
-            <button class="btn btn-default" id="survey-action-no">Nej, inte idag</button>
+            <button type="button" class="btn btn-default" id="survey-action-ok">Ja gärna!</button>
+            <button type="button" class="btn btn-default" id="survey-action-snooze">Vänta lite...</button>
+            <button type="button" class="btn btn-default" id="survey-action-no">Nej, inte idag</button>
           </div>
         </section>
-        <section class="page-2">
-          <h1>Din åsikt</h1>
+        <section class="page-2 box-content">
           <p>Välj ett alternativ för varje fråga.</p>
           <label for="role">I vilken roll besöker du malmo.se idag? </label>
           <select id="role" name="roll">
@@ -242,16 +241,16 @@ jQuery ($) ->
             <option value="1">1 – Mycket missnöjd</option>
           </select>
           <div class="actions">
-      defaultbutton class="btn btn-primary" id="survey-action-send">Skicka in</button>
+            <button type="button" class="btn btn-primary" id="survey-action-send">Skicka in</button>
           </div>
-       efaultr
-        <section class="page-3">
+        </section>
+        <section class="page-3 box-content">
           <h1>Tack för dina svar!</h1>
           <p>Dina svar kommer att användas för att göra malmo.se bättre!</p>
           <div class="actions">
-           defaultn class="btn btn-primary" id="survey-action-done">Stäng</button>
+           <button type="button" class="btn btn-default" id="survey-action-done">Stäng</button>
           </div>
-        </sdefault
+        </section>
       </form>
     </section>'
 
