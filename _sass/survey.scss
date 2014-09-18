@@ -20,4 +20,8 @@
       font-size: emize(18, 14);
     }
   }
+  select {
+    max-width: 30em;
+    margin-bottom: 2em;
+  }
 }
