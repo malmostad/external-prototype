@@ -35,13 +35,8 @@ jQuery ($) ->
 
       # Show form validation errors to user
       validationAlert = (field) ->
-        $("#" + field).before('<p class="alert">Välja ett alternativ:').prev().animate
-          opacity: 0
-          , 400, ->
-            $(@).animate
-              opacity: 1
-            , 1000
-            return
+        $("#" + field).closest(".form-group").addClass "warning"
+        $survey.find(".page-2 p").addClass "warning"
 
       # Push answers to Google Analytics
       pushToGA = (values) ->
@@ -94,7 +89,7 @@ jQuery ($) ->
         event.preventDefault()
 
         # Validate form
-        $("#survey p.alert").remove()
+        $("#survey .warning").remove()
         validates = true
         formValues = $("#survey-form").serializeArray()
         $.each formValues, () ->
@@ -205,9 +200,9 @@ jQuery ($) ->
           <p>Välj ett alternativ för varje fråga.</p>
 
           <div class="form-group">
-            <label for="role" class="control-label">I vilken roll besöker du malmo.se idag? </label>
+            <label for="roll" class="control-label">I vilken roll besöker du malmo.se idag? </label>
             <div class="controls">
-              <select id="role" name="roll" class="form-control">
+              <select id="roll" name="roll" class="form-control">
                 <option></option>
                 <option value="enkat-bo-malmo">Bor i Malmö</option>
                 <option value="enkat-bo-skane">Bor i annan skånsk kommun</option>
@@ -226,9 +221,9 @@ jQuery ($) ->
           </div>
 
           <div class="form-group">
-            <label for="purpose" class="control-label">Vad vill du göra på malmo.se just detta besök?</label>
+            <label for="syfte" class="control-label">Vad vill du göra på malmo.se just detta besök?</label>
             <div class="controls">
-              <select id="purpose" name="syfte" class="form-control">
+              <select id="syfte" name="syfte" class="form-control">
                 <option></option>
                 <option value="enkat-tjanst">Använda en tjänst, t.ex.</option>
                 <option value="enkat-kontakt">Hitta kontaktuppgifter</option>
