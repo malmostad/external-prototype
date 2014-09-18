@@ -206,8 +206,18 @@ jQuery ($) ->
       else
         writeSessionCookie "selected", false
 
-    # Sorry guys, the survey must be pushed out to many webapps on different
-    # sub domains simultioniously and we don't want XSS problems so we put all markup here
+    # Get the users survey history data and her roles
+    readCookies()
+    # Should we show the survey or not?
+
+    # The user is already selected, is the session old enough and is the snooze, if any, time over?
+    if alreadySelected() and sessionOldEnough() and not snoozedRecently()
+      initSurvey()
+
+    # The session is new, check if the user should have the survey
+    else if not sessionTracking.selected
+      qualifyUserForSurvey()
+
     markup = '<div id="survey">
     <form id="survey-form" action="/" method="get">
       <div class="survey-page page-1">
@@ -275,15 +285,3 @@ jQuery ($) ->
       </div>
     </form>
     </div>'
-
-    # Get the users survey history data and her roles
-    readCookies()
-    # Should we show the survey or not?
-
-    # The user is already selected, is the session old enough and is the snooze, if any, time over?
-    if alreadySelected() and sessionOldEnough() and not snoozedRecently()
-      initSurvey()
-
-    # The session is new, check if the user should have the survey
-    else if not sessionTracking.selected
-      qualifyUserForSurvey()
