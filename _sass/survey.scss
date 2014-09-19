@@ -1,9 +1,5 @@
 #survey {
   margin: 1em 0 1.5em;
-  border: $success-border;
-  h1.box-title {
-    background: $success-color;
-  }
   section {
     display: none;
     padding-bottom: 1em;
@@ -17,7 +13,8 @@
     }
     p {
       font-family: $serif;
-      font-size: emize(18, 14);
+      font-size: emize(17, 14);
+      line-height: emize(25, 17);
     }
   }
   select {
