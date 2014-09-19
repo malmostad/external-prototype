@@ -50,7 +50,7 @@ jQuery ($) ->
             # GA "Event label"
             @.value,
             # GA "Event Value", if integer
-            parseInt(@.value, 10) == if @.value then parseInt(@.value, 10) else 0
+            parseInt(@.value, 10) is if @.value then parseInt(@.value, 10) else 0
           ]
 
       # Collect data from survey form
