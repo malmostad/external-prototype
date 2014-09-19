@@ -78,7 +78,6 @@ jQuery ($) ->
 
       # User want to take the survey
       $("#survey-action-ok").on 'click', (event) ->
-        event.preventDefault()
         showSlide 2
 
       $('#survey-form').on 'submit', (event) ->
@@ -86,14 +85,12 @@ jQuery ($) ->
 
       # User submits the survey
       $('#survey-action-send').on 'click', (event) ->
-        event.preventDefault()
-
         # Validate form
-        $("#survey .warning").remove()
+        $("#survey .warning").removeClass("warning")
         validates = true
         formValues = $("#survey-form").serializeArray()
         $.each formValues, () ->
-          if !@.value
+          if not @.value
             validationAlert @.name
             validates = false
             return
@@ -102,20 +99,17 @@ jQuery ($) ->
 
       # User do not want to take the survey now
       $("#survey-action-no").on 'click', (event) ->
-        event.preventDefault()
         writePersistentCookie "not_now", msecNow()
         writeSessionCookie "selected", false
         $survey.remove()
 
       # User do not want to take the survey right now, she will be reminded during the session
       $("#survey-action-snooze").on 'click', (event) ->
-        event.preventDefault()
         writeSessionCookie "snooze", msecNow()
         $survey.remove()
 
       # Close the dialog after the Thank you page
       $("#survey-action-done").on 'click', (event) ->
-        event.preventDefault()
         $survey.remove()
 
     # Read persisten and session cookies that keep track of the survey
