@@ -2,8 +2,10 @@
 name: External Prototype
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, .gitignore, README.md, COPYING, build.sh]
-domain: http://malmostad.github.io
-baseurl: /external-prototype
+# domain: http://malmostad.github.io
+domain: http://webapps07.malmo.se
+baseurl: /juni2014
+# baseurl: /external-prototype
 # cdn_url: //assets.malmo.se/external/v4-staging
 cdn_url: //www.local.malmo.se:3001/assets
 permalink: /:categories/:title
