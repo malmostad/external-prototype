@@ -1,5 +1,6 @@
 main.news-archive {
   > section {
+    clear: both;
     margin-bottom: 2em;
     a {
       p {
@@ -17,6 +18,15 @@ main.news-archive {
       font-family: $sans-serif;
       font-size: emize(14, 17);
       white-space: nowrap;
+    }
+    img {
+      float: right;
+      width: 12em;
+      height: auto;
+      margin: .4em 0 1em 1em;
+      @media (max-width: 32em) {
+        display: none;
+      }
     }
   }
 }
