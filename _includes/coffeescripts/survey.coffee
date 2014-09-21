@@ -187,7 +187,6 @@ jQuery ($) ->
           <p>För att vi ska kunna göra malmo.se bättre behöver vi din åsikt. Det enda du behöver göra är att svara på två frågor. Det tar mindre än 15 sekunder.</p>
           <div class="actions">
             <button type="button" class="btn btn-default" id="survey-action-ok">Ja gärna!</button>
-            <button type="button" class="btn btn-default" id="survey-action-snooze">Vänta lite...</button>
             <button type="button" class="btn btn-default" id="survey-action-no">Nej, inte idag</button>
           </div>
         </section>
