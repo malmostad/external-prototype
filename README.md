@@ -9,7 +9,7 @@ Mobile first prototypes for external web content. Developed with Jekyll 2 using 
 ## Setup
     $ bundle install
 
-## Build site
+## Build site before deployment
     jekyll build
 
 ## Run locally on port 4000
