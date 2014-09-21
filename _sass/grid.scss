@@ -6,7 +6,8 @@
 }
 
 section.body-copy,
-article.body-copy {
+article.body-copy,
+main.news-archive {
   clear: both;
   @include columns(8, false, 4%);
   margin-bottom: 1em;
@@ -24,7 +25,8 @@ nav.basic {
 
   article.body-copy,
   nav.content,
-  nav.basic {
+  nav.basic,
+  main.news-archive {
     @include columns(12);
   }
 }

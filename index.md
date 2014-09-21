@@ -31,6 +31,13 @@ permalink: /
       <li><a href="{{ site.baseurl }}/survey/">Med enkät</a></li>
     </ul>
   </nav>
+  <h2>Nyheter</h2>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}/news/">Nyhetsarkiv</a></li>
+      <li><a href="{{ site.baseurl }}/news-page/">Nyhetssida</a></li>
+    </ul>
+  </nav>
   <h2>Navigeringssidor</h2>
   <nav>
     <ul>

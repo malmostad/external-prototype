@@ -1,0 +1,22 @@
+main.news-archive {
+  > section {
+    margin-bottom: 2em;
+    a {
+      p {
+        color: $body-color;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    h1 {
+      @extend %h2.body-copy;
+      margin-top: 0;
+    }
+    time {
+      font-family: $sans-serif;
+      font-size: emize(14, 17);
+      white-space: nowrap;
+    }
+  }
+}
