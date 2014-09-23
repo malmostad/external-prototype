@@ -1,9 +1,5 @@
 ---
 ---
-
-// Dev: sass --watch stylesheets/application.scss
-// Before pushing to Github: ./build.sh
-
 @import '../vendor/malmo_shared_assets/stylesheets/malmo_external';
 @import 'grid';
 @import 'feedback';
