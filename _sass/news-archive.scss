@@ -30,3 +30,7 @@ main.news-archive {
     }
   }
 }
+
+nav .current { // FIXME: remove, should be in global assets by now
+  font-weight: bold;
+}
