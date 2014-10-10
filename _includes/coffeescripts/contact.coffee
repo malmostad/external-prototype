@@ -8,9 +8,8 @@ jQuery ($) ->
 
   $("aside.contact-us .write-to-us").click (event) ->
     event.preventDefault()
-    $(@).hide()
-    $("aside.contact-us .write-to-us-form").slideDown(100)
+    $form = $(@).hide().closest(".vcard").find(".write-to-us-form")
+    $form.slideDown(100)
     $('html, body').animate
-      scrollTop: $("aside.contact-us form").offset().top - 35
+      scrollTop: $form.offset().top - 35
     , 100
-
