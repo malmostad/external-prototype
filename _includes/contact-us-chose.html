@@ -1,65 +1,90 @@
-<aside class="contact-us vcard basic">
+<aside class="contact-us basic">
   <h1>Kontakta oss</h1>
 
-  <div class="fn">Vägledningscentrum</div>
-  <div class="write-to-us"><a href="/">Skriv till oss</a></div>
+  <div class="district-selector">
+    <form id="contact-district-selector-form" method="post" action="/kontaktruta/select.do">
+      <fieldset>
+        <select id="contact-district" name="district">
+          <option value="">Välj stadsområde</option>
+          <option value="NORR">Norr</option>
+          <option value="ÖSTER">Öster</option>
+          <option value="SÖDER">Söder</option>
+          <option value="VÄSTER">Väster</option>
+          <option value="INNERSTADEN" selected="selected">Innerstaden</option>
+        </select>
+        <input type="submit" name="select" value="OK" class="btn btn-default btn-sm">
+      </fieldset>
 
-  <div>E-post: <span class="email">vagledningscentrum@malmo.se</span></div>
-  <div>Tel: <span class="tel">040-34 49 95</span></div>
-
-  <form action="{{ site.baseurl }}/" method="post" class="basic write-to-us-form">
-    <h2 class="group-title">Skriv till oss</h2>
-    <fieldset>
-      <div class="form-group">
-        <label for="name" class="control-label">Namn:*</label>
-        <input class="form-control controls" type="text" id="name" name="name" placeholder="Ditt för och efternamn"/>
-      </div>
-
-      <div class="form-group">
-        <label for="email" class="control-label">E-post:</label>
-        <input class="controls form-control" type="email" id="email" name="email" placeholder="Din e-postadress"/>
-      </div>
-
-      <div class="form-group">
-        <label for="phone" class="control-label">Telefon dagtid:</label>
-        <input class="form-control controls" type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer inklusive riktnummer"/>
-      </div>
-
-      <div class="form-group">
-        <label for="subject" class="control-label">Meddelandet avser:</label>
-        <div class="controls">
-          <select id="subject" class="form-control">
-            <option value=""></option>
-            <option>Felanmälan</option>
-            <option>Fråga</option>
-            <option>Annat</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="message" class="control-label">Meddelande:</label>
-        <textarea id="message" name="message" rows="8" class="controls form-control" placeholder=""></textarea>
-      </div>
-
-      <div class="form-group">
-        <span class="control-label"></span>
-        <div class="controls">
-          <input type="submit" value="Skicka in ditt meddelande" class="btn btn-primary"/>
-        </div>
-      </div>
-    </fieldset>
-  </form>
-
-  <h2>Postadress</h2>
-  <div class="adr">
-    <div class="fn">Vägledningscentrum</div>
-    <div class="post-office-box">Föreningsgatan 7A</div>
-    <div><span class="postal-code">211 44</span> <span class="locality">Malmö</span></div>
+      <fieldset>
+        <label for="contact-area-search" class="district-search">Hitta stadsområde via gatuadress</label>
+        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+        <input type="text" id="contact-area-search" name="district-search" class="input-text ui-autocomplete-input" value="Skriv in en adress" onclick="if (this.value = 'Skriv in en adress') this.value='';" autocomplete="off">
+      </fieldset>
+    </form>
   </div>
 
-  <h2 class="visiting-address">Besöksadress</h2>
-  <div class="street-address">Föreningsgatan 7A</div>
-  <div><a href="http://www.malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map" data-scroll-to=".visiting-address" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
-  <div class="contact-us-map"></div>
+
+  <div class="vcard">
+    <h2 class="fn">Vägledningscentrum i innerstaden</h2>
+    <div class="write-to-us"><a href="/">Skriv till oss</a></div>
+
+    <div>E-post: <span class="email">vagledningscentrum@malmo.se</span></div>
+    <div>Tel: <span class="tel">040-34 49 95</span></div>
+
+    <form action="{{ site.baseurl }}/" method="post" class="basic write-to-us-form">
+      <h2 class="group-title">Skriv till oss</h2>
+      <fieldset>
+        <div class="form-group">
+          <label for="name" class="control-label">Namn:*</label>
+          <input class="form-control controls" type="text" id="name" name="name" placeholder="Ditt för och efternamn"/>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="control-label">E-post:</label>
+          <input class="controls form-control" type="email" id="email" name="email" placeholder="Din e-postadress"/>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="control-label">Telefon dagtid:</label>
+          <input class="form-control controls" type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer inklusive riktnummer"/>
+        </div>
+
+        <div class="form-group">
+          <label for="subject" class="control-label">Meddelandet avser:</label>
+          <div class="controls">
+            <select id="subject" class="form-control">
+              <option value=""></option>
+              <option>Felanmälan</option>
+              <option>Fråga</option>
+              <option>Annat</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="control-label">Meddelande:</label>
+          <textarea id="message" name="message" rows="8" class="controls form-control" placeholder=""></textarea>
+        </div>
+
+        <div class="form-group">
+          <span class="control-label"></span>
+          <div class="controls">
+            <input type="submit" value="Skicka in ditt meddelande" class="btn btn-primary"/>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <h3>Postadress</h3>
+    <div class="adr">
+      <div class="fn">Vägledningscentrum</div>
+      <div class="post-office-box">Föreningsgatan 7A</div>
+      <div><span class="postal-code">211 44</span> <span class="locality">Malmö</span></div>
+    </div>
+
+    <h3 class="visiting-address v-1">Besöksadress</h3>
+    <div class="street-address">Föreningsgatan 7A</div>
+    <div><a href="http://www.malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-1" data-scroll-to=".visiting-address.v-1" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
+    <div class="contact-us-map m-1"></div>
+  </div>
 </aside>
