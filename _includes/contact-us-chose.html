@@ -1,25 +1,26 @@
-<aside class="contact-us multi-districts basic">
+<aside class="contact-us multi-district basic">
   <h1>Kontakta oss</h1>
 
   <div class="district-selector">
-    <form id="contact-district-selector-form" method="post" action="/kontaktruta/select.do">
-      <fieldset>
-        <select id="contact-district" name="district">
-          <option value="">Välj stadsområde</option>
+    <form id="contact-district-selector-form" class="form-inline" method="post" action="/kontaktruta/select.do">
+      <div class="form-group">
+        <select id="contact-district" name="district" class="form-control">
+          <option value="">Välj stadsområde:</option>
           <option value="innerstaden" selected="selected">Innerstaden</option>
           <option value="norr">Norr</option>
           <option value="söder">Söder</option>
           <option value="väster">Väster</option>
           <option value="öster">Öster</option>
         </select>
-        <button type="button" value="OK" class="btn btn-default btn-sm"/>
-      </fieldset>
+        <button type="button" class="btn btn-default">Välj</button>
+      </div>
 
-      <fieldset>
-        <label for="contact-area-search" class="district-search">Hitta stadsområde via gatuadress</label>
-        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-        <input type="text" id="contact-area-search" name="district-search" class="input-text ui-autocomplete-input" value="Skriv in en adress" onclick="if (this.value = 'Skriv in en adress') this.value='';" autocomplete="off"/>
-      </fieldset>
+      <div class="form-group">
+        <label for="contact-area-search" class="district-search control-label">Hitta stadsområde via adress:</label>
+        <div class="controls">
+          <input type="text" id="contact-area-search" name="district-search" class="form-control" placeholder="Hitta stadsområde via adress" />
+        </div>
+      </div>
     </form>
   </div>
 
