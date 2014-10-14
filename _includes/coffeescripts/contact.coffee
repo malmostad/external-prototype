@@ -10,20 +10,18 @@ jQuery ($) ->
     event.preventDefault()
     $trigger = $(@)
 
-    # Clone form template and replace the link with it
+    # Clone form template
     $form = $("#contact-us-form-template").clone()
     $form.removeAttr("id")
 
-    # Inject the form after the trigger
-    $trigger.hide().after($form.show())
-
+    # Post the form w/ Ajax on submit
     $form.submit (event) ->
       event.preventDefault()
-      $form.find("input[type=submit]").val("Skickar meddelande...").attr("disabled", "disabled")
+      $form.find("input[type=submit]").val("Skickar meddelande ...").attr("disabled", "disabled")
       $.ajax
         type: "POST"
-        url: $trigger.attr('data-action') + "&contactid=#{$trigger.attr('data-contact-id')}"
-        data: $form.serialize()
+        url: $trigger.attr('data-action')
+        data: $form.serialize() + "&contactid=#{$trigger.attr('data-contact-id')}"
         success: (data) ->
           # Replace the form with the repsonce html
           # This is either
@@ -31,7 +29,11 @@ jQuery ($) ->
           #   * the form w/ validation messages
           $form.replaceWith(data)
         error: (x, y, z) ->
-          $form.after('<div class="error">Ett fel inträffade, vänligen försök senare.</div>')
+          # Server error or timeout, nothing to do
+          $form.after('<div class="error">Ett fel inträffade, vänligen försök senare eller skicka ditt meddelande till nedanstående e-postadress.</div>')
+
+    # Replace the trigger w/ the form
+    $trigger.replaceWith($form.show())
 
     # Scroll to top of form
     $('html, body').animate
