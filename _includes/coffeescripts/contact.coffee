@@ -14,34 +14,36 @@ jQuery ($) ->
       scrollTop: $form.offset().top - 35
     , 100
 
-  # District selector for Contact us triggered:
-  #   * on page load from cookie
-  #   * when user selects from menu
-  #   * when user enter an address search
+  # District selector for Contact us
   if $("aside.contact-us.multi-district").length
     $.cookie.json = true
-    $contactDistrict = $("#contact-district")
+    $chooseDistrict = $("#choose-district")
+    $selectDistrict = $chooseDistrict.find("select")
 
-    $("aside.contact-us.multi-district .vcard").hide()
-
-    # District selector is changed by user or address search
-    $contactDistrict.change ->
+    showDistrictContanct = (district) ->
       # Hide all contact cards
       $("aside.contact-us.multi-district .vcard").hide()
-      # Show selected districts contact card
-      $("#district-#{$(@).val()}").show()
+
+      # Show selected contact card
+      $("#district-#{district}").show()
+
+      # Set district in select menu
+      $selectDistrict.val district
 
       # Set selected district in cookie
-      $.cookie('city-district', $(@).val())
+      $.cookie('city-district', district)
 
     # Get selected district from cookie if any
     selectedDistrict = $.cookie('city-district')
     if selectedDistrict
-      $contactDistrict.val selectedDistrict
-      $contactDistrict.change()
+      showDistrictContanct selectedDistrict
 
-    # User types an address and select
-    $("#district-search").autocomplete
+    # District selector is changed by user or address search
+    $selectDistrict.change ->
+      showDistrictContanct $(@).val()
+
+    # User types an address
+    $chooseDistrict.find("input").autocomplete
       source: (request, response) ->
         $.ajax
           url: "//xyz.malmo.se/rest/1.0/addresses/"
@@ -55,4 +57,4 @@ jQuery ($) ->
               district: item.towndistrict
       minLength: 2
       select: (event, ui) ->
-        $contactDistrict.val(ui.item.district.toLowerCase()).change()
+        showDistrictContanct ui.item.district.toLowerCase()

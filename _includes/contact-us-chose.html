@@ -1,24 +1,21 @@
 <aside class="contact-us multi-district basic">
   <h1>Kontakta oss</h1>
 
-  <div class="district-selector">
-    <form id="contact-district-selector-form" class="form-inline" method="post" action="/kontaktruta/select.do">
-      <div class="form-group">
-        <select id="contact-district" name="district" class="form-control">
-          <option value="">Välj stadsområde:</option>
-          <option value="innerstaden">Innerstaden</option>
-          <option value="norr">Norr</option>
-          <option value="söder">Söder</option>
-          <option value="väster">Väster</option>
-          <option value="öster">Öster</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="district-search" class="district-search control-label">Hitta stadsområde via adress:</label>
-        <input type="text" id="district-search" name="district-search" class="form-control" placeholder="Hitta stadsområde via adress"/>
-      </div>
-    </form>
-  </div>
+  <form class="form-inline" id="choose-district">
+    <div class="form-group">
+      <select name="district" class="form-control">
+        <option value="">Välj stadsområde:</option>
+        <option value="innerstaden">Innerstaden</option>
+        <option value="norr">Norr</option>
+        <option value="söder">Söder</option>
+        <option value="väster">Väster</option>
+        <option value="öster">Öster</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Hitta stadsområde via adress"/>
+    </div>
+  </form>
 
   <div class="vcard" id="district-innerstaden">
     <h2 class="fn">Vägledningscentrum i Innerstaden</h2>
