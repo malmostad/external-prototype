@@ -8,18 +8,28 @@ jQuery ($) ->
 
   $("aside.contact-us .write-to-us").click (event) ->
     event.preventDefault()
-    $this = $(@)
+    $trigger = $(@)
 
     # Clone form template and replace the link with it
     $form = $("#contact-us-form-template").clone()
     $form.removeAttr("id")
-    $this.hide().after($form.show())
 
-    # Get the forms action value from links data-action attribute
-    $form.attr("action", $this.attr("data-action"))
+    # Inject the form after the trigger
+    $trigger.hide().after($form.show())
 
-    # Add hidden input with the contact id
-    $form.append("<input type='hidden' name='contactid' value='#{$this.attr("data-contact-id")}'>")
+    $form.submit (event) ->
+      event.preventDefault()
+      $form.find("input[type=submit]").val("Skickar meddelande...").attr("disabled", "disabled")
+      $.ajax
+        type: "POST"
+        url: $trigger.attr('data-action') + "&contactid=#{$trigger.attr('data-contact-id')}"
+        data: $form.serialize()
+        success: (data) ->
+          # Replace the form with the repsonce html
+          # This is either the success msg or the form w/ validation msgs
+          $form.replaceWith(data)
+        error: (x, y, z) ->
+          $form.after('<div class="error">Ett fel inträffade, vänligen försök senare.</div>')
 
     # Scroll to top of form
     $('html, body').animate
