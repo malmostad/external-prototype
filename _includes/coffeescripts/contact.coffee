@@ -17,7 +17,14 @@ jQuery ($) ->
   # District selector for Contact us
   if $("aside.contact-us.multi-district").length
     $.cookie.json = true
+
+    # The form
     $chooseDistrict = $("#choose-district")
+
+    # Prevent the form for being submited
+    $chooseDistrict.submit -> event.preventDefault()
+
+    # Selectbox
     $selectDistrict = $chooseDistrict.find("select")
 
     showDistrictContanct = (district) ->
@@ -33,16 +40,19 @@ jQuery ($) ->
       # Set selected district in cookie
       $.cookie('city-district', district)
 
-    # Get selected district from cookie if any
-    selectedDistrict = $.cookie('city-district')
-    if selectedDistrict
-      showDistrictContanct selectedDistrict
+    # Select district from cookie on load
+    storedDistrict = $.cookie('city-district')
+    if !!storedDistrict
+      showDistrictContanct storedDistrict
+    else
+      $("aside.contact-us.multi-district .vcard").hide()
 
     # District selector is changed by user or address search
     $selectDistrict.change ->
       showDistrictContanct $(@).val()
 
-    # User types an address
+    # Autocomplete for street addresses
+    # Get address suggestions w/ districts from SBK's map service
     $chooseDistrict.find("input").autocomplete
       source: (request, response) ->
         $.ajax
