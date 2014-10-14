@@ -14,21 +14,31 @@ jQuery ($) ->
       scrollTop: $form.offset().top - 35
     , 100
 
-
-  # District selector for Contact us
+  # District selector for Contact us triggered:
+  #   * on page load from cookie
+  #   * when user selects from menu
+  #   * when user enter an address search
   if $("aside.contact-us.multi-district").length
+    $.cookie.json = true
+    $contactDistrict = $("#contact-district")
+
     $("aside.contact-us.multi-district .vcard").hide()
 
-    $.cookie.json = true
-    # Get selected district
+    # District selector is changed by user or address search
+    $contactDistrict.change ->
+      # Hide all contact cards
+      $("aside.contact-us.multi-district .vcard").hide()
+      # Show selected districts contact card
+      $("#district-#{$(@).val()}").show()
+
+      # Set selected district in cookie
+      $.cookie('city-district', $(@).val())
+
+    # Get selected district from cookie if any
     selectedDistrict = $.cookie('city-district')
     if selectedDistrict
-      $("#contact-district").val selectedDistrict
-      $("#district-#{selectedDistrict}").show()
-
-    # User selects a district
-    $("#contact-district").change ->
-      updateVCard $(@).val()
+      $contactDistrict.val selectedDistrict
+      $contactDistrict.change()
 
     # User types an address and select
     $("#district-search").autocomplete
@@ -42,19 +52,7 @@ jQuery ($) ->
           success: (data) ->
             response $.map data.addresses, (item) ->
               label: "#{item.name} (#{item.towndistrict})"
-              value: item.name
               district: item.towndistrict
       minLength: 2
       select: (event, ui) ->
-        district = ui.item.district.toLowerCase()
-        $("#contact-district").val(ui.item.district.toLowerCase())
-        $("#district-search").val()
-        updateVCard district
-
-  updateVCard = (district) ->
-    $("aside.contact-us.multi-district .vcard").hide()
-    $("#district-#{district}").show()
-
-    # Set selected district in cookie
-    $.cookie('city-district', district)
-    $("#district-search").val("")
+        $contactDistrict.val(ui.item.district.toLowerCase()).change()
