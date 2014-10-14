@@ -8,10 +8,22 @@ jQuery ($) ->
 
   $("aside.contact-us .write-to-us").click (event) ->
     event.preventDefault()
-    $form = $(@).hide().closest(".vcard").find(".write-to-us-form")
-    $form.slideDown(100)
+    $this = $(@)
+
+    # Clone form template and replace the link with it
+    $form = $("#contact-us-form-template").clone()
+    $form.removeAttr("id")
+    $this.hide().after($form.show())
+
+    # Get the forms action value from links data-action attribute
+    $form.attr("action", $this.attr("data-action"))
+
+    # Add hidden input with the contact id
+    $form.append("<input type='hidden' name='contactid' value='#{$this.attr("data-contact-id")}'>")
+
+    # Scroll to top of form
     $('html, body').animate
-      scrollTop: $form.offset().top - 35
+      scrollTop: $form.offset().top - 45
     , 100
 
   # District selector for Contact us
