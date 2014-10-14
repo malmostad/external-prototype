@@ -26,7 +26,9 @@ jQuery ($) ->
         data: $form.serialize()
         success: (data) ->
           # Replace the form with the repsonce html
-          # This is either the success msg or the form w/ validation msgs
+          # This is either
+          #   * the success message
+          #   * the form w/ validation messages
           $form.replaceWith(data)
         error: (x, y, z) ->
           $form.after('<div class="error">Ett fel inträffade, vänligen försök senare.</div>')
