@@ -13,3 +13,23 @@ jQuery ($) ->
     $('html, body').animate
       scrollTop: $form.offset().top - 35
     , 100
+
+
+  # District selector for Contact us
+  if $("aside.contact-us.multi-district").length
+    $("aside.contact-us.multi-district .vcard").hide()
+
+    $.cookie.json = true
+    # Get selected district
+    selectedDistrict = $.cookie('city-district')
+    if selectedDistrict
+      $("#contact-district").val selectedDistrict
+      $("#district-#{selectedDistrict}").show()
+
+    # User selects a district
+    $("#contact-district").change ->
+      $("aside.contact-us.multi-district .vcard").hide()
+      $("#district-#{$(@).val()}").show()
+
+      # Set selected district in cookie
+      $.cookie('city-district', $(@).val())
