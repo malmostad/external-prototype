@@ -56,7 +56,7 @@ jQuery ($) ->
     # Selectbox
     $selectDistrict = $chooseDistrict.find("select")
 
-    showDistrictContanct = (district) ->
+    showDistrictContact = (district) ->
       # Hide all contact cards
       $("aside.contact-us.multi-district .vcard").hide()
 
@@ -72,13 +72,13 @@ jQuery ($) ->
     # Select district from cookie on load
     storedDistrict = $.cookie('city-district')
     if !!storedDistrict
-      showDistrictContanct storedDistrict
+      showDistrictContact storedDistrict
     else
       $("aside.contact-us.multi-district .vcard").hide()
 
     # District selector is changed by user or address search
     $selectDistrict.change ->
-      showDistrictContanct $(@).val()
+      showDistrictContact $(@).val()
 
     # Autocomplete for street addresses
     # Get address suggestions w/ districts from SBK's map service
@@ -97,4 +97,4 @@ jQuery ($) ->
               district: item.towndistrict
       minLength: 2
       select: (event, ui) ->
-        showDistrictContanct ui.item.district.toLowerCase()
+        showDistrictContact ui.item.district.toLowerCase()
