@@ -67,7 +67,7 @@ jQuery ($) ->
       $selectDistrict.val district
 
       # Set selected district in cookie
-      $.cookie('city-district', district)
+      $.cookie('city-district', district, { expires: 365, path: '/' } )
 
     # Select district from cookie on load
     storedDistrict = $.cookie('city-district')
@@ -90,6 +90,7 @@ jQuery ($) ->
           data:
             q: request.term
             items: 10
+            group_by: "district"
           success: (data) ->
             response $.map data.addresses, (item) ->
               label: "#{item.name} (#{item.towndistrict})"
