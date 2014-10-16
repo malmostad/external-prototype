@@ -85,7 +85,7 @@ jQuery ($) ->
     $chooseDistrict.find("input").autocomplete
       source: (request, response) ->
         $.ajax
-          url: "//xyz.malmo.se/rest/1.0/addresses/"
+          url: "//kartor.malmo.se/api/v1/district_from_address/"
           dataType: "jsonp"
           data:
             q: request.term
@@ -93,7 +93,7 @@ jQuery ($) ->
             group_by: "district"
           success: (data) ->
             response $.map data.addresses, (item) ->
-              label: "#{item.name} (#{item.towndistrict})"
+              label: item.name
               district: item.towndistrict
       minLength: 2
       select: (event, ui) ->
