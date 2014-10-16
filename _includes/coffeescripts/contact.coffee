@@ -30,10 +30,10 @@ jQuery ($) ->
           $form.replaceWith(data)
         error: (x, y, z) ->
           # Server error or timeout, nothing to do
-          # FIXME: Remove this dummy for success messsage
-          $form.replaceWith('<div class="success">Ditt meddelande har skickats till vagledningscentrum@malmo.se.</div>')
           # FIXME: Uncomment the real error message
           # $form.after('<div class="error">Ett fel inträffade, vänligen försök senare eller skicka ditt meddelande till nedanstående e-postadress.</div>')
+          # FIXME: Remove this dummy success messsage used in the prototype
+          $form.replaceWith('<div class="success">Ditt meddelande har skickats till vagledningscentrum@malmo.se.</div>')
 
     # Replace the trigger w/ the form
     $trigger.replaceWith($form.show())
