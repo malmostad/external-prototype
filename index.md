@@ -31,6 +31,7 @@ permalink: /
       <li><a href="{{ site.baseurl }}/survey/">Med enkät</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-18/">Kontaktruta med flera kontakter</a></li>
       <li><a href="{{ site.baseurl }}/body-copy-19/">Kontaktruta med stadsdelsväljare</a></li>
+      <li><a href="{{ site.baseurl }}/body-copy-20/">Objektslistning</a></li>
     </ul>
   </nav>
   <h2>Nyheter</h2>
