@@ -1,18 +1,39 @@
-# jekyll serve --baseurl "" --watch
-name: External Prototype
-markdown: kramdown
-# exclude: [Gemfile, Gemfile.lock, .gitignore, README.md, COPYING]
+# jekyll serve -w
+name: Prototype Views
+exclude: [Gemfile, Gemfile.lock, .gitignore, README.md]
 domain: http://malmostad.github.io
-baseurl: /external-prototype
-# domain: http://webapps07.malmo.se
-# baseurl: /juni2014
-# baseurl: /external-prototype
-cdn_url: //assets.malmo.se/external/v4-staging
-# cdn_url: //www.local.malmo.se:3001/assets
-permalink: /:categories/:title
-relative_permalinks: false
+baseurl: /prototypes
+external_cdn_url: //assets.malmo.se/external/v4-staging
+internal_cdn_url: //assets.malmo.se/internal/v4-staging
+# internal_cdn_url: //www.local.malmo.se:3001/assets
+# external_cdn_url: //www.local.malmo.se:3001/assets
+
+collections:
+  internal_pages:
+    output: true
+    permalink: /internal/:path/index.html
+  external_pages:
+    output: true
+    permalink: /external/:path/index.html
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "internal_pages"
+    values:
+      layout: "internal-default"
+  -
+    scope:
+      path: ""
+      type: "external_pages"
+    values:
+      layout: "external-default"
+
 sass:
   style: :compressed
+
+markdown: kramdown
 kramdown:
   auto_ids: true
   footnote_nr: 1
