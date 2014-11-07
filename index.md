@@ -11,7 +11,14 @@ title: Prototypvyer
 </nav>
 
 <section class="body-copy toc">
-  <h1>Prototypvyer</h1>
+  <h1>Prototypvyer, Komin</h1>
+  <h2>Navigeringssidor</h2>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-1/">Med direktlänkar + nyheter</a></li>
+    </ul>
+  </nav>
+  <h1>Prototypvyer, malmo.se</h1>
   <h2>Innehållssidor</h2>
   <nav>
     <ul>
@@ -47,12 +54,6 @@ title: Prototypvyer
       <li><a href="{{ site.baseurl }}/external/nav-page-1/">Med direktlänkar + nyheter</a></li>
       <li><a href="{{ site.baseurl }}/external/nav-page-3/">Med sammanfattningar</a></li>
       <li><a href="{{ site.baseurl }}/external/start-page-2/">Startsida, sammanslagen</a></li>
-    </ul>
-  </nav>
-  <h2>Navigeringssidor, Intranet</h2>
-  <nav>
-    <ul>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-1/">Med direktlänkar + nyheter</a></li>
     </ul>
   </nav>
   <h2>Bibliotekssök</h2>

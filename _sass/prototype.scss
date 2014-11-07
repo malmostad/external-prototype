@@ -6,3 +6,7 @@ article.body-copy {
 section.toc ul {
   margin-left: 0;
 }
+
+section.toc nav + h1 {
+  margin-top: 2em;
+}
