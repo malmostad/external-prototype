@@ -15,7 +15,8 @@ title: Prototypvyer
   <h2>Navigeringssidor</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-1/">Med direktlänkar + nyheter</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field/">Arbetsfält med nyheter</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-department/">Förvaltning med nyheter</a></li>
     </ul>
   </nav>
   <h1>Prototypvyer, malmo.se</h1>
