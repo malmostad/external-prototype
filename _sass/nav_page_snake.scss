@@ -1,13 +1,13 @@
 nav.nav-page-snake {
   @include clearfix();
   clear: left;
-  margin: 1em 0 0em;
-  -webkit-column-width: 10em;
-  -moz-column-width: 10em;
-  column-width: 10em;
-  -webkit-column-gap: 2.5em;
-  -moz-column-gap: 2.5em;
-  column-gap: 2.5em;
+  margin: 1em 0 1em;
+  -webkit-column-width: 11em;
+  -moz-column-width: 11em;
+  column-width: 11em;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
 
   ul {
     list-style: none;
@@ -16,8 +16,6 @@ nav.nav-page-snake {
   }
   li {
     padding: 0;
-    li {
-    }
   }
   > ul > li {
     padding-bottom: 1em;
@@ -25,15 +23,24 @@ nav.nav-page-snake {
     page-break-inside: avoid;
     break-inside: avoid;  }
   a {
-    display: inline-block;
-    margin: 0 0 .5em;
+    display: block;
+    margin: 0;
+    padding: .4em 0;
     font-family: $sans-serif;
     line-height: 1.2;
     color: black;
+    // word-wrap: break-word;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
   }
   > ul > li > a {
     font-size: emize(16);
     font-weight: bold;
+    border-bottom: $border;
+    margin-bottom: 0;
+    padding-bottom: .2em;
   }
   li li a {
     font-size: emize(14);
