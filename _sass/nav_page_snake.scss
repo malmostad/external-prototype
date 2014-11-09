@@ -1,13 +1,16 @@
 nav.nav-page-snake {
   @include clearfix();
   clear: left;
-  margin: 1em 0 1em;
+  margin: 1.4em 0 1em;
   -webkit-column-width: 11em;
   -moz-column-width: 11em;
   column-width: 11em;
-  -webkit-column-gap: 2em;
-  -moz-column-gap: 2em;
-  column-gap: 2em;
+  -webkit-column-gap: 1.6em;
+  -moz-column-gap: 1.6em;
+  column-gap: 1.6em;
+  -webkit-column-rule: $border;
+  -moz-column-rule: $border;
+  column-rule: $border;
 
   ul {
     list-style: none;
@@ -18,7 +21,7 @@ nav.nav-page-snake {
     padding: 0;
   }
   > ul > li {
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
@@ -26,7 +29,7 @@ nav.nav-page-snake {
   a {
     display: block;
     margin: 0;
-    padding: .4em 0;
+    padding: .2em 0;
     font-family: $sans-serif;
     line-height: 1.2;
     color: black;
@@ -39,11 +42,12 @@ nav.nav-page-snake {
   > ul > li > a {
     font-size: emize(16);
     font-weight: bold;
-    border-bottom: $border;
-    margin-bottom: 0;
-    padding-bottom: .2em;
+    // border-bottom: $border;
+    padding: 0 0 .1em 0;
   }
   li li a {
     font-size: emize(14);
+    // margin: 0 0 0 .8em;
+    // text-indent: -.8em;
   }
 }
