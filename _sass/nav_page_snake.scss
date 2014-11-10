@@ -1,7 +1,7 @@
 nav.nav-page-snake {
   @include clearfix();
   clear: left;
-  margin: 1.4em 0 1em;
+  margin: 1.4em 0 2.5em;
   -webkit-column-width: 11em;
   -moz-column-width: 11em;
   column-width: 11em;
@@ -17,34 +17,39 @@ nav.nav-page-snake {
     margin: 0;
     padding: 0;
   }
+
   li {
     padding: 0;
   }
+
   > ul > li {
-    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
   }
+
   a {
     display: block;
     margin: 0;
     padding: .2em 0;
     font-family: $sans-serif;
     line-height: 1.2;
-    color: black;
+    color: #000;
     // word-wrap: break-word;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
   }
+
   > ul > li > a {
     font-size: emize(16);
     font-weight: bold;
     // border-bottom: $border;
     padding: 0 0 .1em 0;
   }
+
   li li a {
     font-size: emize(14);
     // margin: 0 0 0 .8em;
