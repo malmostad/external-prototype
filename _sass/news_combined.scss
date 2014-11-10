@@ -1,5 +1,6 @@
 section.news-combined {
   @include clearfix();
+  margin-bottom: 1em;
 
   section {
     margin-bottom: 1.5em;
@@ -68,6 +69,62 @@ section.news-combined {
         font-family: $sans-serif;
         font-size: emize(14);
         color: $link-color;
+      }
+    }
+  }
+
+  section.with-image,
+  section.with-preamble {
+    h1 {
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: $serif;
+      font-size: emize(21);
+      line-height: 1.2;
+      @media (max-width: 40em) { font-size: emize(19); }
+      @media (max-width: 26em) { font-size: emize(21); }
+      font-weight: normal;
+      color: #000;
+    }
+
+    .crop {
+      display: block;
+      width: 100%;
+      position: relative;
+      height: 0;
+      padding-top: 56.25%;
+      margin-bottom: .3em;
+      overflow: hidden;
+      background: $background-light;
+      border: $border-dark;
+      @include box-sizing(border-box);
+    }
+
+    img {
+      @include box-sizing(border-box);
+      position: absolute;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      max-height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    p {
+      color: #000;
+      font-size: emize(15);
+      line-height: 1.4;
+    }
+
+    a:hover {
+      // text-decoration: none;
+      h1 {
+        text-decoration: underline;
       }
     }
   }
