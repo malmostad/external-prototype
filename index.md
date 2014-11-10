@@ -38,6 +38,8 @@ title: Prototypvyer
       <li><a href="{{ site.baseurl }}/external/survey/">Med enkät</a></li>
       <li><a href="{{ site.baseurl }}/external/body-copy-18/">Kontaktruta med flera kontakter</a></li>
       <li><a href="{{ site.baseurl }}/external/body-copy-19/">Kontaktruta med stadsdelsväljare</a></li>
+      <li><a href="{{ site.baseurl }}/external/body-copy-20/">Objektslistning, porträttbild</a></li>
+      <li><a href="{{ site.baseurl }}/external/body-copy-21/">Objektslistning, landskapsbild</a></li>
     </ul>
   </nav>
   <h2>Nyheter</h2>
