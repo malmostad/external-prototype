@@ -14,7 +14,7 @@ title: Prototypvyer
   <h1>Prototypvyer, Komin</h1>
   <h2>Navigeringssidor</h2>
   <nav>
-    <ol>
+    <ul>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-1/">3 bildnyheter och 1 ticker (under)</a></li>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-2/">4 bildnyheter (under)</a></li>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-3/">3 bildnyheter och 1 ticker + 4 tickers (under)</a></li>
@@ -28,7 +28,7 @@ title: Prototypvyer
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-10/">4 bildnyheter + 4 tickers × 2 (över)</a></li>
 
       <li><a href="{{ site.baseurl }}/internal/nav-page-department/">Worst case scenario nav</a></li>
-    </ol>
+    </ul>
   </nav>
   <h1>Prototypvyer, malmo.se</h1>
   <h2>Innehållssidor</h2>
