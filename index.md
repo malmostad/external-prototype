@@ -14,10 +14,21 @@ title: Prototypvyer
   <h1>Prototypvyer, Komin</h1>
   <h2>Navigeringssidor</h2>
   <nav>
-    <ul>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field/">Arbetsfält med nyheter</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-department/">Förvaltning med nyheter</a></li>
-    </ul>
+    <ol>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-1/">3 bildnyheter och 1 ticker (under)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-2/">4 bildnyheter (under)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-3/">3 bildnyheter och 1 ticker + 4 tickers (under)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-4/">4 tickers × 2 (under)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-5/">4 bildnyheter + 4 tickers × 2 (under)</a></li>
+
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-6/">3 bildnyheter och 1 ticker (över)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-7/">4 bildnyheter (över)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-8/">3 bildnyheter och 1 ticker + 4 tickers (över)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-9/">4 tickers × 2 (över)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-10/">4 bildnyheter + 4 tickers × 2 (över)</a></li>
+
+      <li><a href="{{ site.baseurl }}/internal/nav-page-department/">Worst case scenario nav</a></li>
+    </ol>
   </nav>
   <h1>Prototypvyer, malmo.se</h1>
   <h2>Innehållssidor</h2>
