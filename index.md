@@ -19,8 +19,8 @@ title: Prototypvyer
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-1/">3 bildnyheter och 1 ticker (under)</a></li>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-2/">4 bildnyheter (under)</a></li>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-3/">3 bildnyheter och 1 ticker + 4 tickers (under)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-4/">4 tickers × 2 (under)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-5/">4 bildnyheter + 4 tickers × 2 (under)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-4/">4 tickers × 2 (under)</a> [funkar inte]</li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-5/">4 bildnyheter + 4 tickers × 2 (under)</a> [funkar dåligt]</li>
 
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-6/">3 bildnyheter och 1 ticker (över)</a></li>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-7/">4 bildnyheter (över)</a></li>
