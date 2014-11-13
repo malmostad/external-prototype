@@ -31,7 +31,7 @@ title: Prototypvyer
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-8/">3 bildnyheter och 1 ticker + 4 tickers</a></li>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-9/">4 tickers × 2</a> (funkar dåligt)</li>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-10/">4 bildnyheter + 4 tickers × 2</a> (funkar dåligt)</li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-11/">Manuell meny</a> (lite poänglöst)</li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-11/">Manuell meny, max 4 val</a> (lite poänglöst)</li>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-12/">Manuell meny, bredare kolumner</a> (lite utspritt i de flesta bredder)</li>
     </ul>
 
