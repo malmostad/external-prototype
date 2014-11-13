@@ -69,6 +69,13 @@ nav.snake {
   }
 }
 
+.alt nav.snake {
+  -webkit-column-width: 14em;
+  -moz-column-width: 14em;
+  column-width: 14em;
+}
+
+
 body.touch nav.snake {
   a {
     padding: .5em 0;
