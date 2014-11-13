@@ -1,7 +1,18 @@
+h1.body-copy.snake {
+  margin-bottom: .5em;
+}
+
+h2.snake-title {
+  font-family: $sans-serif;
+  font-size: emize(22);
+  border-bottom: #000 3px solid;
+  margin-bottom: .5em;
+}
+
 nav.snake {
   @include clearfix();
   clear: left;
-  margin: 1.4em 0 2.5em;
+  margin: 0 0 2.5em;
   -webkit-column-width: 11em;
   -moz-column-width: 11em;
   column-width: 11em;
@@ -48,11 +59,18 @@ nav.snake {
     font-weight: bold;
     // border-bottom: $border;
     padding: 0 0 .1em 0;
+    color: $link-color;
   }
 
   li li a {
     font-size: emize(14);
     // margin: 0 0 0 .8em;
     // text-indent: -.8em;
+  }
+}
+
+body.touch nav.snake {
+  a {
+    padding: .5em 0;
   }
 }

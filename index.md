@@ -15,22 +15,29 @@ title: Prototypvyer
   <h2>Navigeringssidor</h2>
   <p>Tidiga skisser under förändring. Alla har navigering i flödande kolumner.</p>
   <nav>
+    <h3>Nyheter under</h3>
     <ul>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-1/">3 bildnyheter och 1 ticker (under)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-2/">4 bildnyheter (under)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-3/">3 bildnyheter och 1 ticker + 4 tickers (under)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-4/">4 tickers × 2 (under)</a> [funkar inte]</li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-5/">4 bildnyheter + 4 tickers × 2 (under)</a> [funkar dåligt]</li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-1/">3 bildnyheter och 1 ticker</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-2/">4 bildnyheter</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-3/">3 bildnyheter och 1 ticker + 4 tickers</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-4/">4 tickers × 2</a> (funkar inte)</li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-5/">4 bildnyheter + 4 tickers × 2</a> (funkar dåligt)</li>
+    </ul>
 
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-6/">3 bildnyheter och 1 ticker (över)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-7/">4 bildnyheter (över)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-8/">3 bildnyheter och 1 ticker + 4 tickers (över)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-9/">4 tickers × 2 (över)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-10/">4 bildnyheter + 4 tickers × 2 (över)</a></li>
+    <h3>Nyheter över</h3>
+    <ul>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-6/">3 bildnyheter och 1 ticker</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-7/">4 bildnyheter</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-8/">3 bildnyheter och 1 ticker + 4 tickers</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-9/">4 tickers × 2 (funkar inte)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-10/">4 bildnyheter + 4 tickers × 2 (funkar inte)</a></li>
+    </ul>
 
+<!--     <h3>Övrigt</h3>
+    <ul>
       <li><a href="{{ site.baseurl }}/internal/nav-page-department/">Worst case scenario nav</a></li>
     </ul>
-  </nav>
+ -->  </nav>
   <h1>Prototypvyer, malmo.se</h1>
   <h2>Innehållssidor</h2>
   <nav>
