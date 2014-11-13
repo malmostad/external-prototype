@@ -13,6 +13,7 @@ title: Prototypvyer
 <section class="body-copy toc">
   <h1>Prototypvyer, Komin</h1>
   <h2>Navigeringssidor</h2>
+  <p>Tidiga skisser under förändring. Alla har navigering i flödande kolumner.</p>
   <nav>
     <ul>
       <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-1/">3 bildnyheter och 1 ticker (under)</a></li>
