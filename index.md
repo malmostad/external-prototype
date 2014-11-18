@@ -39,7 +39,15 @@ title: Prototypvyer
     <ul>
       <li><a href="{{ site.baseurl }}/internal/nav-page-department/">Worst case scenario nav</a></li>
     </ul>
- -->  </nav>
+ -->
+
+    <h2>Baserat på nuvarande Komin</h2>
+    <ul>
+      <li><a href="{{ site.baseurl }}/internal/oldstart-1/">Förvaltning</a></li>
+      <li><a href="{{ site.baseurl }}/internal/oldstart-2/">Arbetsfält</a></li>
+    </ul>
+  </nav>
+
   <h1>Prototypvyer, malmo.se</h1>
   <h2>Innehållssidor</h2>
   <nav>
