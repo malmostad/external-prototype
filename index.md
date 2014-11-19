@@ -43,8 +43,8 @@ title: Prototypvyer
 
     <h2>Baserat på nuvarande Komin</h2>
     <ul>
-      <li><a href="{{ site.baseurl }}/internal/oldstart-1/">Förvaltning</a></li>
-      <li><a href="{{ site.baseurl }}/internal/oldstart-2/">Arbetsfält</a></li>
+      <li><a href="{{ site.baseurl }}/internal/intermediate-start-1/">Förvaltning</a></li>
+      <li><a href="{{ site.baseurl }}/internal/intermediate-start-2/">Arbetsfält</a></li>
     </ul>
   </nav>
 

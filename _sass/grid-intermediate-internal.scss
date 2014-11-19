@@ -1,0 +1,5 @@
+section.start {
+  clear: both;
+  @include columns(8, false, 4%);
+  margin-bottom: 1em;
+}
