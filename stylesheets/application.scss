@@ -2,7 +2,6 @@
 ---
 @import '../vendor/malmo_shared_assets/stylesheets/malmo_external';
 @import 'grid';
-@import 'grid-intermediate-internal';
 @import 'feedback';
 @import 'nav_page_with_direct_links';
 @import 'nav_page_with_summaries';
@@ -16,3 +15,5 @@
 @import 'library_search';
 @import 'object-listing';
 @import 'prototype';
+
+@import 'sv-ugly';
