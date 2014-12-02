@@ -1,20 +1,29 @@
-section.start {
-  clear: both;
-  @include columns(8, false, 4%);
-  margin-bottom: 1em;
-}
-
 section.sv-ugly-start {
   clear: both;
   @include columns(8, false, 4%);
   margin-bottom: 1em;
-  .sv-text-portlet,
-  .sv-old-text-portlet,
-  .sv-text-portlet {
-    h1,
+  .full-col {
+    h1 {
+      @extend %h1.body-copy;
+    }
+  }
+
+  .banner,
+  .discuss-box {
     h2 {
       @extend %h1.aside;
     }
+  }
+  .first-col,
+  .second-col {
+    h1 {
+      @extend %h1.aside;
+    }
+  }
+
+  .sv-text-portlet,
+  .sv-old-text-portlet,
+  .sv-text-portlet {
     h3 {
       @extend %h3.body-copy;
     }
