@@ -11,26 +11,41 @@ section.sv-ugly-start {
   .sv-text-portlet,
   .sv-old-text-portlet,
   .sv-text-portlet {
-    h1, h2 {
+    h1,
+    h2 {
       @extend %h1.aside;
     }
     h3 {
       @extend %h3.body-copy;
     }
+    p {
+      @extend %p.body-copy;
+    }
   }
   .sv-archive-portlet {
     h1,
     h2 {
-      @extend %h3.body-copy;
+      @extend %h2.body-copy;
+      clear: both;
     }
     ul {
       list-style: none;
       margin-left: 0;
       padding-left: 0;
     }
+    .normal {
+      @extend %p.body-copy;
+    }
     .table-text {
       font-family: $sans-serif;
-      font-size: emize(12);
+      font-size: emize(14);
+    }
+    img {
+      clear: both;
+      float: right;
+      max-width: 6em;
+      margin-left: 1em;
+      margin-bottom: 1em;
     }
   }
 }
