@@ -3,3 +3,34 @@ section.start {
   @include columns(8, false, 4%);
   margin-bottom: 1em;
 }
+
+section.sv-ugly-start {
+  clear: both;
+  @include columns(8, false, 4%);
+  margin-bottom: 1em;
+  .sv-text-portlet,
+  .sv-old-text-portlet,
+  .sv-text-portlet {
+    h1, h2 {
+      @extend %h1.aside;
+    }
+    h3 {
+      @extend %h3.body-copy;
+    }
+  }
+  .sv-archive-portlet {
+    h1,
+    h2 {
+      @extend %h3.body-copy;
+    }
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .table-text {
+      font-family: $sans-serif;
+      font-size: emize(12);
+    }
+  }
+}

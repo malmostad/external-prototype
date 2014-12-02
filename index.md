@@ -44,8 +44,8 @@ title: Prototypvyer
     <h2>Baserat på nuvarande Komin</h2>
     <ul>
       <li><a href="{{ site.baseurl }}/internal/intermediate-start-1/">Förvaltning</a></li>
-      <li><a href="{{ site.baseurl }}/internal/intermediate-start-2/">Förvaltning (SV-kod)</a></li>
-      <li><a href="{{ site.baseurl }}/internal/intermediate-start-3/">Arbetsfält (SV-kod)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly-2/">Förvaltning (SV fulkod)</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly-3/">Arbetsfält (SV fulkod)</a></li>
     </ul>
   </nav>
 
