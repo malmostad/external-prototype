@@ -12,12 +12,30 @@ section.sv-ugly-start {
   .discuss-box {
     h2 {
       @extend %h1.aside;
+      margin-top: 1.5em;
     }
   }
+
+  .sv-channel {
+    margin: 0;
+  }
+
   .first-col,
   .second-col {
     h1 {
       @extend %h1.aside;
+    }
+    .table-text {
+      font-family: $sans-serif;
+      font-size: emize(14);
+      margin: .5em 0;
+      strong {
+        font-weight: normal !important;
+      }
+    }
+    .sv-text-align-right {
+      clear: both;
+      text-align: right;
     }
   }
 
@@ -31,11 +49,19 @@ section.sv-ugly-start {
       @extend %p.body-copy;
     }
   }
+
   .sv-archive-portlet {
+    .sv-channel-item {
+      p.normal {
+        margin-bottom: 0;
+      }
+    }
+
     h1,
     h2 {
       @extend %h2.body-copy;
       clear: both;
+      margin-top: .8em;
     }
     ul {
       list-style: none;
@@ -45,16 +71,23 @@ section.sv-ugly-start {
     .normal {
       @extend %p.body-copy;
     }
-    .table-text {
-      font-family: $sans-serif;
-      font-size: emize(14);
-    }
     img {
       clear: both;
       float: right;
       max-width: 6em;
       margin-left: 1em;
-      margin-bottom: 1em;
+    }
+  }
+
+  ul.footer-meta {
+    border-top: $border;
+    padding-top: .5em;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    font-family: $sans-serif;
+    li {
+      font-size: emize(14);
     }
   }
 }
