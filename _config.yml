@@ -11,10 +11,10 @@ internal_cdn_url: //assets.malmo.se/internal/v4-staging
 collections:
   internal_pages:
     output: true
-    permalink: /internal/:path/index.html
+    permalink: /internal/:path/
   external_pages:
     output: true
-    permalink: /external/:path/index.html
+    permalink: /external/:path/
 
 defaults:
   -
