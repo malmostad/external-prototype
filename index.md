@@ -19,35 +19,6 @@ title: Prototypvyer
     </ul>
   </nav>
 
-  <h2>Nuvarande startsidor, CSS:ad SV-fulkod</h2>
-  <h3>Arbetsfält</h3>
-  <nav>
-    <ul>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/bibliotek/">Bibliotek</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/chef/">Chef</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/ekonomi/">Ekonomi</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/folkhalsa/">Folkhälsa</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/forskola_utbildning/">Förskola &amp; utbildning</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/hr/">HR</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/individ_familj/">Individ &amp; familj</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/integration_arbetsmarknad/">Integration &amp; arbetsmarknad</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/it/">IT</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/kommunikationsarbete/">Kommunikationsarbete</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/naringsliv_foretagare/">Näringsliv/företagare</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/stadsutveckling/">Stadsutveckling</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/trygghets_sakerhetsarbete/">Trygghets- &amp; säkerhetsarbete</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/vard_omsorg/">Vård &amp; omsorg</a></li>
-      <li><a href="{{ site.baseurl }}/internal/working-fields/arendeberedning/">Ärendeberedning</a></li>
-    </ul>
-  </nav>
-
-  <h3>Förvaltningar</h3>
-  <nav>
-    <ul>
-      <li><a href="{{ site.baseurl }}/internal/departments/gatukontoret/">Gatukontoret</a></li>
-    </ul>
-  </nav>
-
   <h1>Prototypvyer, malmo.se</h1>
   <h2>Innehållssidor</h2>
   <nav>
