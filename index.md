@@ -23,28 +23,28 @@ title: Prototypvyer
   <h3>Arbetsfält</h3>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/bibliotek/">Bibliotek</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/chef/">Chef</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/ekonomi/">Ekonomi</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/folkhalsa/">Folkhälsa</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/forskola_utbildning/">Förskola &amp; utbildning</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/hr/">HR</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/individ_familj/">Individ &amp; familj</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/integration_arbetsmarknad/">Integration &amp; arbetsmarknad</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/it/">IT</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/kommunikationsarbete/">Kommunikationsarbete</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/naringsliv_foretagare/">Näringsliv/företagare</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/stadsutveckling/">Stadsutveckling</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/trygghets_sakerhetsarbete/">Trygghets- &amp; säkerhetsarbete</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/vard_omsorg/">Vård &amp; omsorg</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/arendeberedning/">Ärendeberedning</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/bibliotek/">Bibliotek</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/chef/">Chef</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/ekonomi/">Ekonomi</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/folkhalsa/">Folkhälsa</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/forskola_utbildning/">Förskola &amp; utbildning</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/hr/">HR</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/individ_familj/">Individ &amp; familj</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/integration_arbetsmarknad/">Integration &amp; arbetsmarknad</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/it/">IT</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/kommunikationsarbete/">Kommunikationsarbete</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/naringsliv_foretagare/">Näringsliv/företagare</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/stadsutveckling/">Stadsutveckling</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/trygghets_sakerhetsarbete/">Trygghets- &amp; säkerhetsarbete</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/vard_omsorg/">Vård &amp; omsorg</a></li>
+      <li><a href="{{ site.baseurl }}/internal/working-fields/arendeberedning/">Ärendeberedning</a></li>
     </ul>
   </nav>
 
   <h3>Förvaltningar</h3>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/gatukontoret/">Gatukontoret</a></li>
+      <li><a href="{{ site.baseurl }}/internal/departments/gatukontoret/">Gatukontoret</a></li>
     </ul>
   </nav>
 
