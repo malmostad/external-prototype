@@ -23,9 +23,21 @@ title: Prototypvyer
   <h3>Arbetsfält</h3>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/kommunikationsarbete/">Kommunikationsarbete</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/bibliotek/">Bibliotek</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/chef/">Chef</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/ekonomi/">Ekonomi</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/folkhalsa/">Folkhälsa</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/forskola_utbildning/">Förskola &amp; utbildning</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/hr/">HR</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/individ_familj/">Individ &amp; familj</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/integration_arbetsmarknad/">Integration &amp; arbetsmarknad</a></li>
       <li><a href="{{ site.baseurl }}/internal/sv-ugly/it/">IT</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-ugly/biblioteket/">Biblioteket</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/kommunikationsarbete/">Kommunikationsarbete</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/naringsliv_foretagare/">Näringsliv/företagare</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/stadsutveckling/">Stadsutveckling</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/trygghets_sakerhetsarbete/">Trygghets- &amp; säkerhetsarbete</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/vard_omsorg/">Vård &amp; omsorg</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-ugly/arendeberedning/">Ärendeberedning</a></li>
     </ul>
   </nav>
 
@@ -59,6 +71,7 @@ title: Prototypvyer
       <li><a href="{{ site.baseurl }}/external/body-copy-21/">Objektslistning, landskapsbild</a></li>
     </ul>
   </nav>
+
   <h2>Nyheter</h2>
   <nav>
     <ul>
@@ -66,6 +79,7 @@ title: Prototypvyer
       <li><a href="{{ site.baseurl }}/external/news-page/">Nyhetssida</a></li>
     </ul>
   </nav>
+
   <h2>Navigeringssidor</h2>
   <nav>
     <ul>
@@ -76,6 +90,7 @@ title: Prototypvyer
       <li><a href="{{ site.baseurl }}/external/start-page-2/">Startsida, sammanslagen</a></li>
     </ul>
   </nav>
+
   <h2>Bibliotekssök</h2>
   <nav>
     <ul>
@@ -83,6 +98,7 @@ title: Prototypvyer
       <li><a href="{{ site.baseurl }}/external/nav-page-library-2/">Med sök och banner</a></li>
     </ul>
   </nav>
+
   <h2>Bildtester</h2>
   <nav>
     <ul>
