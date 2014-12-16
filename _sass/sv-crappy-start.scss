@@ -6,14 +6,8 @@ section.sv-crappy-start {
     @include columns(12, true);
   }
 
-  .deco-start-compact {
-    h2 {
-      /* font-family: \$sans-serif; */
-      font-size: emize(17);
-    }
-  }
-
-  .full-col {
+  .full-col,
+  .pagecontent .pagecontent {
     h1 {
       @extend %h1.body-copy;
     }
@@ -31,11 +25,17 @@ section.sv-crappy-start {
     margin: 0;
   }
 
+  h2 {
+    @extend %h2.body-copy;
+    margin-top: 0;
+  }
+
   .first-col,
   .second-col {
     h1 {
       @extend %h1.aside;
     }
+
     .table-text {
       font-family: $sans-serif;
       font-size: emize(14);
@@ -71,16 +71,19 @@ section.sv-crappy-start {
       }
     }
 
-    h1,
-    h2 {
+    h1 {
       @extend %h2.body-copy;
-      clear: both;
-      margin-top: .8em;
+      margin-top: 0;
     }
     ul {
       list-style: none;
       margin-left: 0;
       padding-left: 0;
+    }
+    li {
+      margin-bottom: 1em;
+      clear: both;
+      @include clearfix();
     }
     .normal {
       @extend %p.body-copy;
@@ -91,6 +94,19 @@ section.sv-crappy-start {
       max-width: 6em;
       margin-left: 1em;
     }
+  }
+
+  .deco-start-compact {
+    h2 {
+      font-size: emize(17);
+    }
+    li {
+      margin-bottom: .5em;
+    }
+  }
+
+  .sv-linkicon {
+    padding-left: .5em;
   }
 }
 
