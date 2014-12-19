@@ -11,14 +11,6 @@ title: Prototypvyer
 </nav>
 
 <section class="body-copy toc">
-  <h1>Prototypvyer, Komin</h1>
-  <h2>Navigeringssida</h2>
-  <nav>
-    <ul>
-      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-7/">4 bildnyheter</a></li>
-    </ul>
-  </nav>
-
   <h1>Prototypvyer, malmo.se</h1>
   <h2>Innehållssidor</h2>
   <nav>
