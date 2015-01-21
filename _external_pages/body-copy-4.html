@@ -1,0 +1,85 @@
+---
+title:  Bassida med formulär
+---
+
+{% include breadcrumbs.html %}
+
+<article class="body-copy" role="main">
+  <h1>Anmäl ditt barn till 5:2-menyn</h1>
+
+  <p class="preamble">
+    Preamble, sed ad homero similique. Et has everti oportere
+    adversarium, epicuri singulis persequeris ea qui, dissentiet
+    philosophia eu est. Possim timeam nec te. Alia enim ex usu, in
+    mazim consul duo.
+  </p>
+
+  <h2>Anmälan</h2>
+
+  <form action="{{ site.baseurl }}/external/body-copy-4/" method="post" class="basic">
+    <section>
+      <p class="help-block">
+        Fyll i uppgifterna på heder och samvete.
+      </p>
+
+      <div class="form-group">
+        <label for="person-name" class="control-label">Barnets namn:*</label>
+        <input type="text" id="person-name" name="person-name" class="controls form-control" placeholder="t.ex. Frank Mosely"/>
+      </div>
+      <div class="form-group">
+        <label for="social-security" class="control-label">Barnets personnummer:*</label>
+        <div class="controls">
+          <input type="text" id="social-security" name="social-security" class="form-control" placeholder="t.ex. 031231-1234"/>
+          <p class="help-block">
+            Använd formatet 031231-1234
+          </p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email-x" class="control-label">Min e-postadress:*</label>
+        <input type="email" id="email-x" name="email" class="form-control controls" placeholder="t.ex. joan.doe@malmo.se"/>
+      </div>
+
+      <div class="form-group">
+        <div class="control-label">Mitt barn äter följande:*</div>
+        <div class="controls">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="color-2" value="red"/> 5
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="color-2" value="green"/> 2
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="color-2" value="blue"/> 5:2
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="comment-x" class="control-label">Kommentarer:*</label>
+        <div class="controls">
+          <textarea id="comment-x" name="comment" rows="5" class="form-control"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <span class="control-label"></span>
+        <div class="controls">
+          <input type="submit" value="Skicka in anmälan" class="btn btn-primary"/>
+        </div>
+      </div>
+    </section>
+  </form>
+</article>
+
+{% include content_nav.html %}
+
+{% include contact-us.html %}
+{% include feedback.html %}

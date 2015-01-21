@@ -1,0 +1,83 @@
+h1.body-copy.snake {
+  margin-bottom: .5em;
+}
+
+h2.snake-title {
+  font-family: $sans-serif;
+  font-size: emize(22);
+  border-bottom: #000 3px solid;
+  margin-bottom: .5em;
+}
+
+nav.snake {
+  @include clearfix();
+  clear: left;
+  margin: 0 0 2.5em;
+  -webkit-column-width: 11em;
+  -moz-column-width: 11em;
+  column-width: 11em;
+  -webkit-column-gap: 1.6em;
+  -moz-column-gap: 1.6em;
+  column-gap: 1.6em;
+  -webkit-column-rule: $border;
+  -moz-column-rule: $border;
+  column-rule: $border;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  > ul > li {
+    margin-bottom: 1.5em;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  a {
+    display: block;
+    margin: 0;
+    padding: .2em 0;
+    font-family: $sans-serif;
+    line-height: 1.2;
+    color: #000;
+    // word-wrap: break-word;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
+
+  > ul > li > a {
+    font-size: emize(16);
+    font-weight: bold;
+    // border-bottom: $border;
+    padding: 0 0 .1em 0;
+    color: $link-color;
+  }
+
+  li li a {
+    font-size: emize(14);
+    // margin: 0 0 0 .8em;
+    // text-indent: -.8em;
+  }
+}
+
+.alt nav.snake {
+  -webkit-column-width: 14em;
+  -moz-column-width: 14em;
+  column-width: 14em;
+}
+
+
+body.touch nav.snake {
+  a {
+    padding: .5em 0;
+  }
+}
