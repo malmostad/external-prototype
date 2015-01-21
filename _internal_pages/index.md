@@ -20,6 +20,14 @@ permalink: /internal/index.html
     </ul>
   </nav>
 
+  <h2>Baserad på nuvarande startsidor</h2>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}/internal/departments/clean/">Förvaltning</a></li>
+    </ul>
+  </nav>
+
+
   <h2>Nuvarande startsidor, CSS:ad SV-fulkod</h2>
   <h3>Arbetsfält</h3>
   <nav>
