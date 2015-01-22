@@ -16,51 +16,53 @@ section.start-page-main {
     padding: 0;
   }
 
-  section.primary-news {
+  section {
     h1 {
       @extend %h1.aside;
       margin-top: 1.5em;
     }
+    .more {
+      font-family: $sans-serif;
+      font-size: emize(14, 16);
+    }
+  }
 
+  section.primary-news {
     .text {
-      @include columns(10, true);
+      @include columns(9.5, true);
     }
     .img {
-      @include columns(2);
-      &::after {
-        content: '\a0';
-        display: inline-block;
-      }
+      @include columns(2.5);
+      margin-top: .3em;
+      background: $background-light;
     }
 
     li {
       @include clearfix();
-      margin: 0 0 1em;
+      margin: 0 0 1.5em;
       padding: 0;
     }
 
     h2 {
       font-weight: normal;
-      font-size: emize(22);
+      font-size: emize(24);
       margin: 0;
     }
     p {
-      font-size: emize(15);
+      font-size: emize(17);
       line-height: 1.3;
       margin: 0;
     }
     .date {
       display: inline-block;
       font-family: $sans-serif;
-      font-size: emize(12, 15);
+      font-size: emize(14, 17);
       white-space: nowrap;
     }
     img {
-      margin-top: .3em;
       width: 100%;
       height: auto;
       border: 0;
-      background: $background-light;
     }
   }
 }
