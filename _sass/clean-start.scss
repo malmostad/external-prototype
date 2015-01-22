@@ -21,6 +21,12 @@ section.start-page-main {
         margin-right: 1em;
       }
     }
+    .date {
+      display: inline-block;
+      font-family: $sans-serif;
+      font-size: emize(14, 17);
+      white-space: nowrap;
+    }
   }
 
   section.primary-news,
@@ -58,12 +64,6 @@ section.start-page-main {
       font-size: emize(17);
       line-height: emize(23, 17);
       margin: 0;
-    }
-    .date {
-      display: inline-block;
-      font-family: $sans-serif;
-      font-size: emize(14, 17);
-      white-space: nowrap;
     }
     img {
       width: 100%;
@@ -124,6 +124,9 @@ section.start-page-main {
       font-size: emize(17);
       margin: 0 0 .5em;
       padding: 0;
+    }
+    .more {
+      margin-top: 1em;
     }
   }
 }
