@@ -1,6 +1,7 @@
 section.start-page-main {
   @include columns(8, false, 4%);
   margin-bottom: 1em;
+  overflow: hidden;
   @media (max-width: 48em) {
     @include columns(12, true);
   }
@@ -150,6 +151,12 @@ section.start-page-main {
     h1 {
       margin-top: 0;
     }
+  }
+
+  div.banner img {
+    margin-bottom: 1.5em;
+    width: 100%;
+    height: auto;
   }
 }
 
