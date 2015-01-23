@@ -122,6 +122,10 @@ section.sv-crappy-start {
       float: left;
       width: 18%;
       max-width: 18%;
+      @media (max-width: 32em) {
+        width: 15%;
+        max-width: 15%;
+      }
       height: auto;
       margin: .3em 1em 0 0;
     }
@@ -131,6 +135,8 @@ section.sv-crappy-start {
     .normal {
       font-size: emize(17);
       line-height: emize(23, 17);
+      overflow: hidden;
+      display: block;
     }
   }
 
@@ -145,6 +151,8 @@ section.sv-crappy-start {
       font-size: emize(15);
       line-height: emize(21, 15);
       margin: 0;
+      overflow: hidden;
+      display: block;
     }
   }
 
