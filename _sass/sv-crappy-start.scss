@@ -34,6 +34,7 @@ section.sv-crappy-start {
   .second-col {
     h1 {
       @extend %h1.aside;
+      margin: 1.5em 0 .5em;
     }
 
     .table-text {
@@ -43,13 +44,6 @@ section.sv-crappy-start {
       strong {
         font-weight: normal !important;
       }
-    }
-    .sv-text-align-right {
-      clear: both;
-      margin-top: .5em;
-      text-align: right;
-      font-family: $sans-serif;
-      font-size: emize(14);
     }
   }
 
@@ -107,6 +101,82 @@ section.sv-crappy-start {
 
   .sv-linkicon {
     padding-left: .5em;
+  }
+
+
+  .content {
+    @include clearfix();
+  }
+  section {
+    @include clearfix();
+    margin-bottom: 2em;
+  }
+
+  section.deco-employee-news,
+  section.deco-primary-news {
+    img {
+      float: left;
+      width: 30%;
+      margin: 0 1em 0 0;
+    }
+  }
+
+  section.deco-primary-news {
+    p {
+      font-size: emize(17);
+      line-height: emize(25, 17);
+    }
+    .deco-more {
+      font-size: emize(14, 17);
+    }
+  }
+
+  section.deco-employee-news,
+  section.deco-secondary-news {
+    h2 {
+      font-weight: normal;
+      font-size: emize(17);
+      margin: 0 0 .2em;
+    }
+    .normal {
+      font-size: emize(15);
+      line-height: emize(21, 15);
+      margin: 0;
+    }
+    .deco-more {
+      font-size: emize(14, 15);
+    }
+  }
+
+  section.deco-secondary-news {
+    img {
+      float: right;
+      width: 30%;
+      margin-left: 1em;
+    }
+    .normal {
+      margin-bottom: 1em;
+    }
+  }
+
+  section.deco-link-list {
+    ul {
+      margin: 1em 0 0 1.2em;
+      padding: 0;
+    }
+    li {
+      font-size: emize(17);
+      line-height: emize(23, 17);
+      margin: 0 0 .5em;
+      padding: 0;
+    }
+  }
+
+  .deco-more {
+    clear: both;
+    margin-top: .5em;
+    text-align: left;
+    font-family: $sans-serif;
   }
 }
 

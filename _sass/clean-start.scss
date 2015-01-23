@@ -10,7 +10,7 @@ section.start-page-main {
     margin-bottom: 2em;
     h1 {
       @extend %h1.aside;
-      margin-top: 1.5em;
+      margin: 1.5em 0 .5em;
     }
 
     .more {
