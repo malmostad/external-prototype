@@ -48,16 +48,25 @@ section.start-page-main {
   section.primary-news {
     .img {
       @include columns(2.5, false, 3%);
+      @media (max-width: 32em) {
+        @include columns(2, false, 3%);
+      }
       margin-top: .3em;
       background: $background-light;
     }
     .text {
       @include columns(9.5, true, 3%);
+      @media (max-width: 32em) {
+        @include columns(10, true, 3%);
+      }
     }
 
     h2 {
       font-weight: normal;
       font-size: emize(24);
+      @media (max-width: 32em) {
+        font-size: emize(20);
+      }
       margin: 0 0 .2em;
     }
     p {
@@ -77,9 +86,15 @@ section.start-page-main {
   section.social-news {
     .text {
       @include columns(9.5, true, 3%);
+      @media (max-width: 32em) {
+        @include columns(10, true, 3%);
+      }
     }
     .img {
       @include columns(2.5, false, 3%);
+      @media (max-width: 32em) {
+        @include columns(2, false, 3%);
+      }
       margin-top: .3em;
       background: $background-light;
       img {
