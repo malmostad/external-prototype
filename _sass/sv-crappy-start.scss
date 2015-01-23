@@ -32,13 +32,13 @@ section.sv-crappy-start {
 
   .first-col,
   .second-col {
-    h1 {
+    h1:not(.box-title) {
       @extend %h1.aside;
-      margin: 1.5em 0 .5em;
+      margin: 0 0 .5em;
     }
 
     .table-text {
-      font-family: $sans-serif;
+      font-family: \$sans-serif;
       font-size: emize(14);
       margin: .5em 0;
       strong {
@@ -107,27 +107,30 @@ section.sv-crappy-start {
   .content {
     @include clearfix();
   }
+
   section {
     @include clearfix();
     margin-bottom: 2em;
+    h2 {
+      margin-top: 0 !important;
+    }
   }
 
   section.deco-employee-news,
   section.deco-primary-news {
     img {
       float: left;
-      width: 30%;
-      margin: 0 1em 0 0;
+      width: 18%;
+      max-width: 18%;
+      height: auto;
+      margin: .3em 1em 0 0;
     }
   }
 
   section.deco-primary-news {
-    p {
+    .normal {
       font-size: emize(17);
-      line-height: emize(25, 17);
-    }
-    .deco-more {
-      font-size: emize(14, 17);
+      line-height: emize(23, 17);
     }
   }
 
@@ -142,9 +145,6 @@ section.sv-crappy-start {
       font-size: emize(15);
       line-height: emize(21, 15);
       margin: 0;
-    }
-    .deco-more {
-      font-size: emize(14, 15);
     }
   }
 
@@ -165,30 +165,37 @@ section.sv-crappy-start {
       padding: 0;
     }
     li {
-      font-size: emize(17);
+      font-size: 17px !important;
+      font-family: $serif;
       line-height: emize(23, 17);
       margin: 0 0 .5em;
       padding: 0;
     }
   }
 
-  .deco-more {
-    clear: both;
-    margin-top: .5em;
-    text-align: left;
+  .more {
+    font-size: 14px !important;
     font-family: $sans-serif;
+    clear: both;
+    margin: .5em 0 0;
+  }
+
+  .deco-banner img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 1.5em;
   }
 }
 
 ul.footer-meta {
   @include clearfix();
   @include columns(12);
-  border-top: $border;
+  border-top: \$border;
   padding-top: .5em;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  font-family: $sans-serif;
+  font-family: \$sans-serif;
   li {
     font-size: emize(14);
   }
