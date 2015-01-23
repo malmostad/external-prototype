@@ -8,7 +8,34 @@ section.movies {
     margin: 0;
     padding: 0;
   }
-  ul li {
+
+  ul.n4 li {
+    margin-bottom: 1.2em;
+    @include columns(3, false);
+    &:last-child {
+      @include columns(3, true);
+      margin-bottom: 2em;
+    }
+    @media (min-width: 26em) and (max-width: 33em) {
+      &:nth-child(2n+1) {
+        @include columns(6, false, 4%);
+      }
+      &:nth-child(2n) {
+        @include columns(6, true, 4%);
+      }
+      &:nth-child(2n+3) {
+        clear: left;
+      }
+    }
+    @media (max-width: 25.99em) {
+      &:nth-child(n+0) {
+        @include columns(12, true);
+        clear: left;
+      }
+    }
+  }
+
+  ul.n6 li {
     margin-bottom: 1.2em;
     @include columns(2, false);
     &:last-child {
@@ -87,11 +114,6 @@ section.movies {
     background: $background-light;
     border: 1px solid #000;
   }
-  .city-council {
-    .crop {
-    }
-  }
-
 
   .play {
     position: absolute;
@@ -133,9 +155,6 @@ section.movies {
     color: #fff;
     &:hover {
       text-decoration: underline;
-    }
-    &::after {
-      // content: ' …'
     }
   }
 }
