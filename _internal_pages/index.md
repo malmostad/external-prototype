@@ -13,21 +13,21 @@ permalink: /internal/index.html
 
 <section class="body-copy toc">
   <h1>Prototypvyer, Komin</h1>
-<!--   <h2>Navigeringssida</h2>
-<nav>
-  <ul>
-    <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-7/">4 bildnyheter</a></li>
-  </ul>
-</nav>
- -->
-  <h2>Baserad på nuvarande startsidor</h2>
+  <h2>Navigeringssida</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/internal/departments/clean/">Förvaltning</a></li>
+      <li><a href="{{ site.baseurl }}/internal/nav-page-working-field-7/">4 bildnyheter</a></li>
     </ul>
   </nav>
 
+<!--   <h2>Baserad på nuvarande startsidor</h2>
+<nav>
+  <ul>
+    <li><a href="{{ site.baseurl }}/internal/departments/clean/">Förvaltning</a></li>
+  </ul>
+</nav>
 
+ -->
   <h2>Nuvarande startsidor, CSS:ad SV-fulkod</h2>
   <h3>Arbetsfält</h3>
   <nav>
