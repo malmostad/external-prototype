@@ -96,7 +96,7 @@ section.start-page-main {
       @media (max-width: 32em) {
         @include columns(2, false, 3%);
       }
-      margin-top: .3em;
+      margin-top: .2em;
       background: $background-light;
       img {
         width: 100%;
