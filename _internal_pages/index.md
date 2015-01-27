@@ -23,8 +23,8 @@ permalink: /internal/index.html
   <h2>Baserad på nuvarande startsidor</h2>
   <nav>
     <ul>
-      <li><a href="{{ site.baseurl }}/internal/departments/clean/">Förvaltning</a></li>
-      <li><a href="{{ site.baseurl }}/internal/departments/clean-banner/">Som ovan + banner</a></li>
+      <li><a href="{{ site.baseurl }}/internal/departments/clean/">Förvaltning, kort</a></li>
+      <li><a href="{{ site.baseurl }}/internal/departments/clean-banner/">Förvaltning med fler objekt</a></li>
       <li><a href="{{ site.baseurl }}/internal/departments/sv-coded/">Förvaltning (stiltvingad SV-kod + dekorationsblock)</a></li>
       <li><a href="{{ site.baseurl }}/internal/departments/sv-coded-banner/">Som ovan + banner</a></li>
     </ul>
