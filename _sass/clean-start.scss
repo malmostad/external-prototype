@@ -50,17 +50,11 @@ section.start-page-main {
   section.primary-news {
     .img {
       @include columns(2.5, false, 3%);
-      @media (max-width: 32em) {
-        @include columns(2, false, 3%);
-      }
       margin-top: .3em;
       background: $background-light;
     }
     .text {
       @include columns(9.5, true, 3%);
-      @media (max-width: 32em) {
-        @include columns(10, true, 3%);
-      }
     }
 
     h2 {
@@ -89,13 +83,13 @@ section.start-page-main {
     .text {
       @include columns(10.5, true, 2%);
       @media (max-width: 32em) {
-        @include columns(10, true, 3%);
+        @include columns(9.5, true, 3%);
       }
     }
     .img {
       @include columns(1.5, false, 2%);
       @media (max-width: 32em) {
-        @include columns(2, false, 3%);
+        @include columns(2.5, false, 3%);
       }
       margin-top: .2em;
       background: $background-light;
