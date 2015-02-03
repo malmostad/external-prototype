@@ -24,6 +24,7 @@ permalink: /internal/index.html
   <nav>
     <ul>
       <li><a href="{{ site.baseurl }}/internal/departments/clean/">Förvaltning</a></li>
+      <li><a href="{{ site.baseurl }}/internal/departments/clean-overview/">Förvaltning + översikt</a></li>
       <li><a href="{{ site.baseurl }}/internal/departments/clean-banner/">Som ovan + banner</a></li>
       <li><a href="{{ site.baseurl }}/internal/departments/sv-coded/">Förvaltning (stiltvingad SV-kod + dekorationsblock)</a></li>
       <li><a href="{{ site.baseurl }}/internal/departments/sv-coded-banner/">Som ovan + banner</a></li>

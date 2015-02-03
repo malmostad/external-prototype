@@ -4,6 +4,7 @@ section.start-page-main {
   overflow: hidden;
   @media (max-width: 48em) {
     @include columns(12, true);
+    margin-bottom: 2em;
   }
 
   section {
@@ -157,6 +158,25 @@ section.start-page-main {
   div.banner img {
     width: 100%;
     height: auto;
+  }
+}
+
+.overview-title {
+  @include clearfix();
+  @include columns(12);
+  margin-top: 1.5em;
+}
+
+nav.overview {
+  @include clearfix();
+  @include columns(12);
+  margin: 0 0 .5em;
+}
+
+nav.content.show-overview {
+  margin-top: -1em;
+  li a {
+    border-top: $border;
   }
 }
 
