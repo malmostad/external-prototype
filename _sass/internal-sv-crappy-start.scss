@@ -194,17 +194,3 @@ section.sv-crappy-start {
     margin: 0 0 1.5em;
   }
 }
-
-ul.footer-meta {
-  @include clearfix();
-  @include columns(12);
-  border-top: \$border;
-  padding-top: .5em;
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-  font-family: \$sans-serif;
-  li {
-    font-size: emize(14);
-  }
-}

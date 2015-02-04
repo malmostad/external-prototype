@@ -1,24 +1,7 @@
 ---
 ---
 @import '../vendor/malmo_shared_assets/stylesheets/malmo_internal';
-
 @import 'shared';
 
-@import 'sv-crappy-start';
-@import 'sv-crappy-start-movies';
-
-@import 'clean-start';
-
-/* body {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  .wrapper {
-    padding: 0;
-    section, aside, nav {
-      float: none !important;
-      width: 100% !important;
-    }
-  }
-}
- */
+@import 'internal-sv-crappy-start';
+@import 'internal-start';
