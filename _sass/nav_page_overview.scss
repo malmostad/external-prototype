@@ -13,15 +13,9 @@ nav.overview {
   @include clearfix();
   clear: left;
   margin: 0 0 2.5em;
-  -webkit-column-width: 11em;
-  -moz-column-width: 11em;
-  column-width: 11em;
-  -webkit-column-gap: 1.6em;
-  -moz-column-gap: 1.6em;
-  column-gap: 1.6em;
-  -webkit-column-rule: $border;
-  -moz-column-rule: $border;
-  column-rule: $border;
+  @include column-width(11em);
+  @include column-gap(1.6em);
+  @include column-rule($border);
 
   ul {
     list-style: none;
@@ -48,33 +42,25 @@ nav.overview {
     line-height: 1.2;
     color: #000;
     // word-wrap: break-word;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
+    @include hyphens(auto);
   }
 
   > ul > li > a {
     font-size: emize(16);
     font-weight: bold;
     // border-bottom: $border;
-    padding: 0 0 .1em 0;
+    padding: 0 0 .1em;
     color: $link-color;
   }
 
   li li a {
     font-size: emize(14);
-    // margin: 0 0 0 .8em;
-    // text-indent: -.8em;
   }
 }
 
 .alt nav.overview {
-  -webkit-column-width: 14em;
-  -moz-column-width: 14em;
-  column-width: 14em;
+  @include column-width(14em);
 }
-
 
 body.touch nav.overview {
   a {
