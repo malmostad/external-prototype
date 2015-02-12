@@ -12,9 +12,9 @@ title: Prototypvyer
 
 <section class="body-copy toc">
   <h1>Prototypvyer, Komin</h1>
-  <p>Nätåtkomst krävs för att bilder ska visas</p>
 
   <h2>Startsidor</h2>
+  <p>Nätåtkomst krävs för att bilder ska visas</p>
   <nav>
     <ul>
       <li><a href="{{ site.baseurl }}/internal/clean/">Förvaltning</a></li>
