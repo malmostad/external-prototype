@@ -13,13 +13,5 @@ permalink: /internal/index.html
 
 <section class="body-copy toc">
   <h1>Prototypvyer, Komin</h1>
-
-  <h2>Startsidor</h2>
-  <nav>
-    <ul>
-      <li><a href="{{ site.baseurl }}/internal/clean/">Förvaltning</a></li>
-      <li><a href="{{ site.baseurl }}/internal/clean-banner/">Förvaltning med fler objekt</a></li>
-      <li><a href="{{ site.baseurl }}/internal/sv-coded/">Experiment med stiltvingad SV-kod + dekorationer</a></li>
-    </ul>
-  </nav>
+  <p><a href="{{ site.baseurl }}/">Finns nu i huvudmenyn</a></p>
 </section>

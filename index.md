@@ -11,6 +11,20 @@ title: Prototypvyer
 </nav>
 
 <section class="body-copy toc">
+  <h1>Prototypvyer, Komin</h1>
+  <p>Nätåtkomst krävs för att bilder ska visas</p>
+
+  <h2>Startsidor</h2>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}/internal/clean/">Förvaltning</a></li>
+      <li><a href="{{ site.baseurl }}/internal/clean-banner/">Förvaltning med fler objekt</a></li>
+      <li><a href="{{ site.baseurl }}/internal/sv-coded/">Experiment med stiltvingad SV-kod + dekorationer</a></li>
+    </ul>
+  </nav>
+</section>
+
+<section class="body-copy toc">
   <h1>Prototypvyer, malmo.se</h1>
   <h2>Innehållssidor</h2>
   <nav>
