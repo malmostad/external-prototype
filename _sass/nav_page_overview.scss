@@ -28,7 +28,8 @@ nav.overview {
   }
 
   > ul > li {
-    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    overflow: hidden;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
