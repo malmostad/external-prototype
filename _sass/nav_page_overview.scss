@@ -14,6 +14,7 @@ nav.overview {
   clear: left;
   margin: 0 0 2.5em;
   @include column-width(11em);
+  @include column-fill(balance);
   @include column-gap(1.6em);
   @include column-rule($border);
 
