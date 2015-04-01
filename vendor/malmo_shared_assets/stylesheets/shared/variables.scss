@@ -3,9 +3,9 @@ $body-color: #000;
 $link-color: #007896;
 
 // Fonts
-$sans-serif: 'OpenSans', 'Droid Sans', 'Verdana', 'DejaVu Sans', 'Bitstream Vera Sans', sans-serif;
-$serif: Georgia, 'Droid Serif', 'DejaVu Serif', 'Bitstream Vera Serif', serif;
-$monospace: Consolas, Inconsolata, 'Droid Sans Mono', 'DejaVu Mono', 'Bitstream Vera Mono', monospace;
+$sans-serif: 'OpenSans', 'Droid Sans', 'Verdana', 'DejaVu Sans', sans-serif;
+$serif: Georgia, 'Droid Serif', 'DejaVu Serif', serif;
+$monospace: Consolas, Inconsolata, 'Courier New', 'Liberation Mono', 'Droid Sans Mono', 'DejaVu Mono', monospace;
 
 // Borders around boxes and underlines
 $border-color: #b5b5b5;
@@ -22,6 +22,10 @@ $background-light-hover: darken($background-light, 5%);
 $background-dark: #888;
 $background-darker: darken($background-dark, 34%);
 $background-footer: darken($background-light, 5%);
+
+// Title bars for boxes
+$box-title-background: #757575;
+$box-title-color: #fff;
 
 $text-color-dark: $background-dark;
 
