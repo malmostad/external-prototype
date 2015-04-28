@@ -193,33 +193,40 @@ title: Startsida
 
   <section class="movies">
     <h1>Webbvideo</h1>
+
+    <div class="bc-video-box">
+    	<video id="bc-video"
+    	  data-account="745456160001"
+    	  data-player="ac887454-ec8b-4ffc-a530-4af5c1c8e8c7"
+    	  data-embed="default"
+        data-video-id="4116313334001"
+    	  class="video-js bc-video" controls>
+  	  </video>
+      <!-- FIXME: use script loaded async -->
+      <script src="//players.brightcove.net/745456160001/ac887454-ec8b-4ffc-a530-4af5c1c8e8c7_default/index.min.js"></script>
+    </div>
+
     <ul class="n4">
-      <li>
-        <a href="{{ site.baseurl }}/external/body-copy-2/">
-          <div class="crop">
-            <img src="{{ site.baseurl }}/images/news-3.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
-            <div class="play"></div>
-          </div>
-          <h2>Introduktion för nyanställda</h2>
-        </a>
+      <li class="show-inline" data-video-id="4116313334001">
+        <div class="crop">
+          <img src="{{ site.baseurl }}/images/news-3.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
+          <div class="play"></div>
+        </div>
+        <h2>Introduktion för nyanställda</h2>
       </li>
-      <li>
-        <a href="{{ site.baseurl }}/external/body-copy-2/">
-          <div class="crop">
-            <img src="{{ site.baseurl }}/images/news-1.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
-            <div class="play"></div>
-          </div>
-          <h2>Föreläsning om organisationsstruktur</h2>
-        </a>
+      <li class="show-inline" data-video-id="4144112584001">
+        <div class="crop">
+          <img src="{{ site.baseurl }}/images/news-1.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
+          <div class="play"></div>
+        </div>
+        <h2>Föreläsning om organisationsstruktur</h2>
       </li>
-      <li>
-        <a href="{{ site.baseurl }}/external/body-copy-2/">
-          <div class="crop">
-            <img src="{{ site.baseurl }}/images/malmokommission.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
-            <div class="play"></div>
-          </div>
-          <h2>Nya Stadskontoret</h2>
-        </a>
+      <li class="show-inline" data-video-id="4116313334001">
+        <div class="crop">
+          <img src="{{ site.baseurl }}/images/malmokommission.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
+          <div class="play"></div>
+        </div>
+        <h2>Nya Stadskontoret</h2>
       </li>
       <li>
         <a href="{{ site.baseurl }}/external/body-copy-2/">
