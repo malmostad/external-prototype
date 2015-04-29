@@ -308,49 +308,7 @@ title: Startsida
       <li><a href="#">Använd rätt mallar: så blir det snyggt i Word och Excel</a></li>
     </ul>
   </section>
-
-  <section class="movies">
-    <h1>Webbvideo</h1>
-    <ul class="n4">
-      <li>
-        <a href="{{ site.baseurl }}/external/body-copy-2/">
-          <div class="crop">
-            <img src="{{ site.baseurl }}/images/news-3.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
-            <div class="play"></div>
-          </div>
-          <h2>Introduktion för nyanställda</h2>
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/external/body-copy-2/">
-          <div class="crop">
-            <img src="{{ site.baseurl }}/images/news-1.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
-            <div class="play"></div>
-          </div>
-          <h2>Föreläsning om organisationsstruktur</h2>
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/external/body-copy-2/">
-          <div class="crop">
-            <img src="{{ site.baseurl }}/images/malmokommission.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
-            <div class="play"></div>
-          </div>
-          <h2>Nya Stadskontoret</h2>
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/external/body-copy-2/">
-          <div class="crop">
-            <img src="{{ site.baseurl }}/images/news-2.jpg" alt="{{ site.baseurl }}/external/body-copy-2/"/>
-            <div class="play"></div>
-          </div>
-          <h2>Instruktion Platina</h2>
-        </a>
-      </li>
-    </ul>
-    <a class="more" href="{{ site.baseurl }}/external/body-copy-2/">Fler filmer</a>
-  </section>
+  {% include internal/movies.html %}
 </section>
 
 {% include internal/stadskontoret-nav.html %}
