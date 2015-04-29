@@ -1,13 +1,11 @@
 jQuery ($) ->
   $movies = $('section.movies')
   $videoBox = $movies.find('.bc-video-box')
-
   bcPlayer = false
-  bcLoaded = false
 
   $movies.find(".show-inline").click ->
     $videoId = $(@).attr('data-video-id')
-    if bcLoaded
+    if bcPlayer
       showVideo $videoId
     else
       $.ajax
@@ -15,27 +13,22 @@ jQuery ($) ->
         cache: true
         url: '//players.brightcove.net/745456160001/ac887454-ec8b-4ffc-a530-4af5c1c8e8c7_default/index.min.js'
         success: ->
-          bcLoaded = true
+          bcPlayer = videojs('bc-video')
           showVideo $videoId
           return
     return
 
   showVideo = ($videoId) ->
-    $('#bc-video').attr('data-video-id', $videoId)
-    $videoBox.show()
-    console.log $('#bc-video')
-    videojs('bc-video', { 'video-id': 4116313334001 }).ready ->
-      console.log 'Y'
-      bcPlayer = @
-      bcPlayer.play()
-      window.bc = bcPlayer
+    $videoBox.slideDown 200
+    $('html, body').animate
+      scrollTop: $(".movies").offset().top - 45
+    , 200
 
-      # videoId = $videoId.attr('data-video-id')
-      # bcPlayer.play()
-      return
-    # videojs('bc-video', { 'video-id': 4116313334001, "autoplay": true }, ->
-    #   console.log @
-    #   # @play()
-    # )
-
+    # FIXME: use $videoId to set video
+    bcPlayer.src({
+      "type":"video/mp4",
+      "src": "http://brightcove.vo.llnwd.net/v1/uds/pd/745456160001/201503/1629/745456160001_4144200317001_4144112584001.mp4"
+    })
+    bcPlayer.play()
+    return
   return
