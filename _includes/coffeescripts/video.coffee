@@ -24,11 +24,13 @@ jQuery ($) ->
       scrollTop: $(".movies").offset().top - 45
     , 200
 
-    # FIXME: use $videoId to set video
-    bcPlayer.src({
-      "type":"video/mp4",
-      "src": "http://brightcove.vo.llnwd.net/v1/uds/pd/745456160001/201503/1629/745456160001_4144200317001_4144112584001.mp4"
-    })
+    # FIXME: use $videoId to set video and let BC select media type
+    bcPlayer.src([
+      {
+        "type":"video/mp4",
+        "src": "http://brightcove.vo.llnwd.net/v1/uds/pd/745456160001/201503/1629/745456160001_4144200317001_4144112584001.mp4"
+      }
+    ])
     bcPlayer.play()
     return
   return
