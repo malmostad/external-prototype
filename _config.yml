@@ -33,6 +33,9 @@ defaults:
 sass:
   style: :compressed
 
+gems:
+  - jekyll-coffeescript
+
 markdown: kramdown
 kramdown:
   auto_ids: true
@@ -40,4 +43,4 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: rsquo,rsquo,rdquo,rdquo
-  use_coderay: false
+  enable_coderay: false
