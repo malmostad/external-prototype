@@ -1,11 +1,27 @@
 jQuery ($) ->
-  $("aside.feedback .trigger").click ->
-    $(@).hide()
-    $("aside.feedback form").slideDown(100)
+  # FIXME: POST the feedback form with Ajax
+  $("aside.feedback form").submit (event) ->
+    event.preventDefault()
+    $('aside.feedback .initiate').remove()
+    $("aside.feedback .comment").replaceWith('<div class="success">Du har nu hjälpt oss att förbättra malmo.se</div>')
     $('html, body').animate
-      scrollTop: $("aside.feedback").offset().top - 45
+      scrollTop: $("aside.feedback").offset().top - 60
     , 100
 
+  # Show feedback comment field
+  $("aside.feedback .trigger").click ->
+    $('aside.feedback h1').text("Hjälp oss att förbättra webbplatsen!")
+    $('aside.feedback .initiate').remove()
+    $("aside.feedback form input[name=rating]").prop("value", "Nej")
+
+    $comment = $("aside.feedback .comment")
+    $comment.slideDown(100)
+    $comment.find("textarea").focus()
+    $('html, body').animate
+      scrollTop: $("aside.feedback h1").offset().top - 60
+    , 100
+
+  # Show contact us form
   $("aside.contact-us .write-to-us").click (event) ->
     event.preventDefault()
     $trigger = $(@)

@@ -4,10 +4,20 @@ aside.feedback {
     margin-top: 1em;
     font-size: emize(16, 14);
   }
+  .initiate {
+    button,
+    input {
+      min-width: 5em;
+    }
+  }
   .trigger {
     margin: 1em 0;
   }
-  form {
+  .comment {
     display: none;
+    margin-top: 1em;
+  }
+  .success {
+    margin-top: 1em;
   }
 }
