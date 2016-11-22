@@ -3,7 +3,7 @@ jQuery ($) ->
   $("aside.feedback form").submit (event) ->
     event.preventDefault()
     $('aside.feedback .initiate').remove()
-    $("aside.feedback .comment").replaceWith('<div class="success">Du har nu hjälpt oss att förbättra malmo.se</div>')
+    $("aside.feedback .comment").replaceWith('<div class="success">Tack, du har nu hjälpt oss att förbättra malmo.se</div>')
     $('html, body').animate
       scrollTop: $("aside.feedback").offset().top - 60
     , 100
