@@ -10,7 +10,7 @@ Mobile first prototypes for web content. Developed with Jekyll 2 using asset pip
     $ bundle install
 
 ## Deploy
-When you push to the gh-pages branch, the Jekyll site is deployed to http://malmostad.github.io/prototypes/
+When you push to the gh-pages branch, the Jekyll site is deployed to https://malmostad.github.io/prototypes/
 
 ## Run locally on http://localhost:4000/prototypes
     jekyll serve -w
